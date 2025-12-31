@@ -270,11 +270,6 @@ hash = "c28becba17bfc669db81c3a194521c4078f33dcc9d24d546583130a9bacf1a94"
 metafile = true
 
 [[files]]
-file = "tacz/Apocalypse_v1.1.7_G.zip.pw.toml"
-hash = "726663f150cc7ed7eaff961157f3bbc9ab72be9a4ece9a092025ed905514d59b"
-metafile = true
-
-[[files]]
 file = "tacz/Eurrussia-Variantz-3.0.5c-hotfix.zip.pw.toml"
 hash = "b4598fbdd706fca9aa089a9529288f3a6ab2d0e15b954ad7d2046a5497696faa"
 metafile = true
