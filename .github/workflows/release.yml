@@ -89,12 +89,15 @@ jobs:
             
             1. **[Hamachi](https://vpn.net/)** をインストールしてネットワークに参加（サーバー管理者から情報を受け取る）
             2. **[Prism Launcher](https://prismlauncher.org/download/)** をインストール
-            3. Prism Launcher で **「起動構成を追加」** → **「zipからインポート」**
-            4. 以下の URL を入力：
+            3. Prism Launcher で **「起動構成を追加」** → **「インポート」**
+            4. **「ローカルファイルへのパスまたは直リンク」** に以下の URL を入力：
                ```
                https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
                ```
-            5. 起動してサーバーに接続！（IP はサーバー管理者に確認）
+            5. **「OK」** をクリック
+            6. 起動してサーバーに接続！（IP はサーバー管理者に確認）
+            
+            > 🇺🇸 English UI: **Add Instance** → **Import** → Paste URL in **"Local file or link to a direct download"** → **OK**
             
             ✅ **メモリ設定（6GB）は自動適用済み**
             ✅ **初回起動時に全ての Mod と TaCZ 銃パックが自動ダウンロード**
