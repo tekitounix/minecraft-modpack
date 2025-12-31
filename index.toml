@@ -5,12 +5,16 @@ file = ".github/workflows/discord-notify.yml"
 hash = "6184ffd5b12d7eff7152a2919663e8f604b51c06b1dfaecbdacda782f6f44a49"
 
 [[files]]
+file = ".github/workflows/release.yml"
+hash = "add9b44bbd3bbbb5c430c390f3c9cb10921454b7a19cd50ecfc0c38e9dc8435c"
+
+[[files]]
 file = ".github/workflows/update-index.yml"
 hash = "43ac91b590f65b287bc0452c3ca52ea231d4a08e5a742ce056d9cd74b9eb4880"
 
 [[files]]
 file = "README.md"
-hash = "a8585c73aa42de43cbf49a38b6cace62d9c37f36c94e6c5851157b17aa3dcdfe"
+hash = "def634088b706703d3329256a01e03f7a6e1fadb4a8c0f44400af6edfdb7cca7"
 
 [[files]]
 file = "mods/ashvehicle.pw.toml"
