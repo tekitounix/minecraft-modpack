@@ -46,7 +46,7 @@ jobs:
           OverrideMemory=true
           MinMemAlloc=2048
           MaxMemAlloc=6144
-          PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
+          PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar -g -s client https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
           name=Modpack Server
           EOF
           
