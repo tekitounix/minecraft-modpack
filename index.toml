@@ -5,6 +5,10 @@ file = "jars/ashvehicle-4.1-8.7-SNAPSHOT.jar"
 hash = "79d55640685b5abfa5f510355b97edc5bc1203464167ae8c8384a03d99dd9924"
 
 [[files]]
+file = "jars/iguana_lib-1.0.4-forge-1.20.1.jar"
+hash = "51897099598bdf9d049cd1cbef36d3046f6ac34b39a11e3192125b0387145ca0"
+
+[[files]]
 file = "mods/ashvehicle.pw.toml"
 hash = "5276229db4e01ea428a5525d0d223e7d832e404324cb575b87b6f062769e5f15"
 metafile = true
@@ -56,7 +60,7 @@ metafile = true
 
 [[files]]
 file = "mods/iguana-lib.pw.toml"
-hash = "5dbab4fad45597f6ba947565fc48e3dcfe97d8b6b7f82a7fa8a84da53180f8a9"
+hash = "f3e298d220996b06dff5231a63a5085bd1804eeec4bbd013d5d038f60c46d150"
 metafile = true
 
 [[files]]

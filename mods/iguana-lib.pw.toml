@@ -1,13 +1,9 @@
 name = "Iguana Lib"
-filename = "iglib-1.0.5-forge-1.20.1.jar"
+filename = "iguana_lib-1.0.4-forge-1.20.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/5axv9QEo/versions/7q9XiWze/iglib-1.0.5-forge-1.20.1.jar"
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/jars/iguana_lib-1.0.4-forge-1.20.1.jar"
 hash-format = "sha512"
-hash = "d18ebf0a661e13b5309c17df2d795e19936547e82071103811a4dc3059bacc4790c7087c4ab7e42a94c56da79b940d17ff4bf33476cea94a96bb7b43e9e8aa75"
+hash = "69921d8e22f7e349675db067989eefe1f81a16f25db0301c402c090454bfc32a38fac3756c1267c12457d12d77774ad3839640a16f3e5d464820919bc932ec9f"
 
-[update]
-[update.modrinth]
-mod-id = "5axv9QEo"
-version = "7q9XiWze"
