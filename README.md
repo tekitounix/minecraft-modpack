@@ -1,22 +1,47 @@
-# Custom Modpack for Minecraft 1.20.1
+# 🎮 Custom Modpack for Minecraft 1.20.1
+
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)](https://minecraft.net)
+[![Forge](https://img.shields.io/badge/Forge-47.4.0-orange)](https://files.minecraftforge.net)
 
 Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
-## �� インストール方法（1回だけ）
+---
 
-### Prism Launcher / MultiMC を使用
+## 📦 インストール方法
 
-1. **[Prism Launcher](https://prismlauncher.org/)** をインストール（推奨）
+### 方法1: 自動インストール（推奨）
+
+Prism Launcher / MultiMC を使用すると、起動時に自動で Mod が更新されます。
+
+1. **[Prism Launcher](https://prismlauncher.org/)** をインストール
 2. 「インスタンスを追加」→「Minecraft 1.20.1」→「Forge 47.4.0」を選択
 3. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
 4. インスタンスの `.minecraft` フォルダに配置
-5. インスタンス設定 → 「カスタムコマンド」→ 「Pre-launch command」に以下を設定:
+5. インスタンス設定 → 「カスタムコマンド」→ 「Pre-launch command」:
 
-```
+```bash
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/YOUR_USERNAME/minecraft-modpack/main/pack.toml
 ```
 
-6. **完了！** 以降はゲーム起動時に自動で Mod が更新されます ✨
+6. **完了！** 以降はゲーム起動時に自動更新されます ✨
+
+### 方法2: 手動インストール
+
+公式ランチャーを使用する場合:
+
+**macOS/Linux:**
+```bash
+cd scripts && ./install.sh
+```
+
+**Windows:**
+```
+scripts\install.bat をダブルクリック
+```
+
+### 方法3: ZIP ダウンロード
+
+[Releases](../../releases) から最新の ZIP をダウンロードして展開。
 
 ---
 
@@ -41,38 +66,96 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
 ## 📋 Mod 一覧
 
-| カテゴリ | Mod |
-|---------|-----|
-| 🔫 銃火器 | TaCZ, Superb Warfare, WWII Machine Guns |
-| 🚗 乗り物 | Immersive Aircraft, ASH Vehicles, MCSP Military Vehicle |
-| 🛋️ 家具 | Paladin's Furniture, Refurbished Furniture, Macaw's シリーズ |
-| 🍳 料理 | Farmer's Delight |
-| ⚡ パフォーマンス | Embeddium, Oculus |
+### 銃火器・戦闘
+| Mod | 説明 |
+|-----|------|
+| TaCZ (Timeless and Classics Zero) | リアルな銃火器 |
+| TaCZ Tweaks | TaCZ の調整・拡張 |
+| Superb Warfare | 追加武器 |
+| WWII Machine Guns | 第二次世界大戦の機関銃 |
+
+### 乗り物
+| Mod | 説明 |
+|-----|------|
+| Immersive Aircraft | 飛行機・グライダー |
+| ASH Vehicles | 車両 |
+| MCSP Military Vehicle | 軍用車両 |
+
+### 家具・建築
+| Mod | 説明 |
+|-----|------|
+| Paladin's Furniture | 家具セット |
+| Refurbished Furniture | モダン家具 |
+| Macaw's シリーズ | 橋、ドア、フェンス、屋根、窓など |
+
+### その他
+| Mod | 説明 |
+|-----|------|
+| Farmer's Delight | 料理拡張 |
+| Embeddium | パフォーマンス改善 |
+| Oculus | シェーダー対応 |
+
+---
 
 ## 🖥️ サーバー情報
 
-- **IP:** `25.51.29.103:25565`
-- **Hamachi ネットワーク:** 要参加
+| 項目 | 値 |
+|------|-----|
+| **IP** | `25.51.29.103:25565` |
+| **ネットワーク** | Hamachi 要参加 |
+| **バージョン** | Minecraft 1.20.1 + Forge 47.4.0 |
+
+---
 
 ## ⚠️ TaCZ 拡張パックについて
 
-TaCZ の拡張パック（銃パック）は自動ダウンロードに対応していません。
-初回のみ手動でダウンロードして `.minecraft/tacz/` に配置してください。
+TaCZ の拡張パック（銃パック）は Packwiz での自動配布に対応していません。
+初回のみ以下から手動ダウンロードし、`.minecraft/tacz/` に配置してください。
 
-## 🛠️ 管理者向け: Mod の追加・更新方法
+| パック名 | ダウンロード |
+|----------|--------------|
+| Default Gun Pack | TaCZ に同梱 |
+| Apocalypse Pack | [CurseForge](https://www.curseforge.com/minecraft/texture-packs/tacz-apocalypse-gun-pack) |
+| その他 | サーバー管理者から配布 |
+
+---
+
+## 🛠️ 管理者向け
+
+### Mod の追加・更新
 
 ```bash
-cd modpack
+# Modrinth から追加
+./bin/packwiz modrinth install <mod-name>
 
-# Mod を追加（Modrinth から）
-./packwiz modrinth install <mod-name>
+# CurseForge から追加
+./bin/packwiz curseforge install <mod-name>
 
-# Mod を追加（CurseForge から）  
-./packwiz curseforge install <mod-name>
+# 全 Mod を更新
+./bin/packwiz update --all
 
-# 既存 Mod を更新
-./packwiz update --all
+# インデックス再生成
+./bin/packwiz refresh
 
 # 変更をプッシュ（自動で Discord 通知）
-git add -A && git commit -m "Add new mod" && git push
+git add -A && git commit -m "Update mods" && git push
+```
+
+### ZIP 配布用パッケージ作成
+
+```bash
+./scripts/package.sh
+# → dist/mods-YYYYMMDD.zip, dist/tacz-YYYYMMDD.zip
+```
+
+### ディレクトリ構造
+
+```
+modpack/
+├── .github/workflows/    # GitHub Actions（自動更新・Discord通知）
+├── mods/                 # Mod 定義ファイル（.pw.toml）
+├── scripts/              # インストーラースクリプト
+├── pack.toml             # Packwiz 設定
+├── index.toml            # Mod インデックス（自動生成）
+└── README.md             # このファイル
 ```

@@ -9,3 +9,5 @@ Thumbs.db
 
 # Packwiz cache
 .packwizrc
+dist/
+dist/
