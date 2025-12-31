@@ -1,8 +1,0 @@
-name = "RFP v1.0.8.zip"
-filename = "RFP v1.0.8.zip"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/RFP%20v1.0.8.zip"
-hash-format = "sha512"
-hash = "dc9933404a7d18a2ab3df21ba59dfe830825aec3d33320b74f576852d302356565164be20f14f772add98299e6ccf0609a79c71e7732740385379e530f7a4bc2"

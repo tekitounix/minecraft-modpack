@@ -1,8 +1,0 @@
-name = "Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
-filename = "Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
-hash-format = "sha512"
-hash = "f9e464074ab667e6f1119673a86e1b313a3ff934e4241f3a4e6348937cf3aeb21a8759eb77ff78ffa74622da798ab7f31429d8a4b3c607d62bb75b74d42369e7"

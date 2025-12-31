@@ -1,8 +1,0 @@
-name = "ARIPS_ver.1.2.3-LVS.zip"
-filename = "ARIPS_ver.1.2.3-LVS.zip"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/ARIPS_ver.1.2.3-LVS.zip"
-hash-format = "sha512"
-hash = "c258c7583055e53d861124717116cb416a4bdcb02d53c88428e9080452e077d80d9cc5e242c8671f284301463620f782fff07e7460761fbada451eb66f0ee235"

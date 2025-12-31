@@ -1,8 +1,0 @@
-name = "The Continental v1.4.zip"
-filename = "The Continental v1.4.zip"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/The%20Continental%20v1.4.zip"
-hash-format = "sha512"
-hash = "f05de665a9b3e492a1203bebb541c6b50f2d6562acfb7df93d4fd728ae083af9bb122ce0eec0d8dcc2f138b8f8163f5d626b85739d32c9e0024ddd9faa012a7c"

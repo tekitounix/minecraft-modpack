@@ -1,8 +1,0 @@
-name = "Eurrussia-Variantz-3.0.5c-hotfix.zip"
-filename = "Eurrussia-Variantz-3.0.5c-hotfix.zip"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/Eurrussia-Variantz-3.0.5c-hotfix.zip"
-hash-format = "sha512"
-hash = "e1e78597e71aa74efafc26b575caa7821c05bf860c8591c7eec728dece337f1f6b8db8d6b5c1e2d832bcc081d33646805156fe95af9aceb3ce6a00db81fb8883"
