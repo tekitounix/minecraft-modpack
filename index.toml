@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/discord-notify.yml"
-hash = "8427fbdb0126eafe0689e893d616727d28ef1ede2c97c7966a6df02755e5076f"
+hash = "6184ffd5b12d7eff7152a2919663e8f604b51c06b1dfaecbdacda782f6f44a49"
 
 [[files]]
 file = ".github/workflows/update-index.yml"
-hash = "c2f24ed84daae858a85105c6aca570709b187db7da58cd24df845df06e5bb6a1"
+hash = "4b3763d9ceba9378023bcadfb8e940bddf65446ddb37930c6a2223c74926c8ad"
 
 [[files]]
 file = "README.md"
