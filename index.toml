@@ -53,163 +53,163 @@ file = "gunpacks/throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
 hash = "af32e24ff6f7c4249d078259cb871f853226493b63992063c140d73a2bbc2711"
 
 [[files]]
-file = "jars/FarmersDelight-1.20.1-1.2.9.jar"
+file = "mods/FarmersDelight-1.20.1-1.2.9.jar"
 hash = "45e8e4daf04283fc5a7fec955e6a1e622ee0e9d4e1b5e79dbcf5b095bb510082"
 
 [[files]]
-file = "jars/MCSP-1.20.1-V1.0.5.jar"
+file = "mods/MCSP-1.20.1-V1.0.5.jar"
 hash = "94242f0fbd5f7fe62293d4e5d91148aaf5ec0d34656fe5c91b5b2a3baea06ce9"
 
 [[files]]
-file = "jars/ManyIdeasCore-1.20.1-1.4.2.jar"
+file = "mods/ManyIdeasCore-1.20.1-1.4.2.jar"
 hash = "723002fef1e7a8f008602e57598efd2d603a07a4b7fa0a4f4574ce03ad340e1c"
 
 [[files]]
-file = "jars/ManyIdeasDoors-1.20.1-1.2.3.jar"
+file = "mods/ManyIdeasDoors-1.20.1-1.2.3.jar"
 hash = "a3bf21f9f0ef1c3e08552319bb517825c2aa6a3eaddc91038de0fa60a6a37851"
 
 [[files]]
-file = "jars/Parachute Forge.jar"
+file = "mods/Parachute Forge.jar"
 hash = "952f0f205ac378db284181ac47368f96dfb7f4ceca08b7337445bfa1dd77adc1"
 
 [[files]]
-file = "jars/Patchouli-1.20.1-84.1-FORGE.jar"
+file = "mods/Patchouli-1.20.1-84.1-FORGE.jar"
 hash = "9cc38ebb5e29b350222e337b7a5a2ba238c802230a89434ce00e90ee3026d056"
 
 [[files]]
-file = "jars/RecipesLibrary-1.20.1-2.0.1.jar"
+file = "mods/RecipesLibrary-1.20.1-2.0.1.jar"
 hash = "d0bef24e090b8002f6fbc86c35e0c2c52612ffd853e21e788a9572f466d55ff3"
 
 [[files]]
-file = "jars/ashvehicle-4.1-8.7-SNAPSHOT.jar"
+file = "mods/ashvehicle-4.1-8.7-SNAPSHOT.jar"
 hash = "79d55640685b5abfa5f510355b97edc5bc1203464167ae8c8384a03d99dd9924"
 
 [[files]]
-file = "jars/cloth-config-11.1.136-forge.jar"
+file = "mods/cloth-config-11.1.136-forge.jar"
 hash = "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
 
 [[files]]
-file = "jars/configured-forge-1.20.1-2.2.3.jar"
+file = "mods/configured-forge-1.20.1-2.2.3.jar"
 hash = "05dceddd57825f911135c929504ef320b75953d05e7dc918dba58a0574e5315f"
 
 [[files]]
-file = "jars/curios-forge-5.14.1+1.20.1.jar"
+file = "mods/curios-forge-5.14.1+1.20.1.jar"
 hash = "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"
 
 [[files]]
-file = "jars/embeddium-0.3.31+mc1.20.1.jar"
+file = "mods/embeddium-0.3.31+mc1.20.1.jar"
 hash = "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
 
 [[files]]
-file = "jars/endlessammo-1.2.0.jar"
+file = "mods/endlessammo-1.2.0.jar"
 hash = "aad1f64a7469f11c6fa68e2f6f9d977f0c3e3ca5a45be50bbffcd89506f16ab3"
 
 [[files]]
-file = "jars/fels_mgrwwii-1.1.2-forge-1.20.1.jar"
+file = "mods/fels_mgrwwii-1.1.2-forge-1.20.1.jar"
 hash = "99fd61bfd467de95555dfc90092db5da5e3c53088cca4a867df5d3be55e9b5ee"
 
 [[files]]
-file = "jars/framework-forge-1.20.1-0.7.15.jar"
+file = "mods/framework-forge-1.20.1-0.7.15.jar"
 hash = "0c29b9bab2ca7209a6cc8d80b2cd06daa4be2da81b636f7292cebebfaaea6c08"
 
 [[files]]
-file = "jars/geckolib-forge-1.20.1-4.7.2.jar"
+file = "mods/geckolib-forge-1.20.1-4.7.2.jar"
 hash = "13926e4c3f64dcf67109ed3e3c85d6eb9ba8089eaa308de17eb15d2f846e3f3d"
 
 [[files]]
-file = "jars/guccivuitton-1.20.1-0.2.2.jar"
+file = "mods/guccivuitton-1.20.1-0.2.2.jar"
 hash = "9247e55f20acf8ec89af56d4ad45fcc8fe08bee9f7189421ef31835f3516bd57"
 
 [[files]]
-file = "jars/iguana_lib-1.0.4-forge-1.20.1.jar"
+file = "mods/iguana_lib-1.0.4-forge-1.20.1.jar"
 hash = "51897099598bdf9d049cd1cbef36d3046f6ac34b39a11e3192125b0387145ca0"
 
 [[files]]
-file = "jars/immersive_aircraft-1.2.2+1.20.1-forge.jar"
+file = "mods/immersive_aircraft-1.2.2+1.20.1-forge.jar"
 hash = "84e1e87d32e4a8b36cd9529efcb633c2a8c8c189d15e61a7b422310047566b89"
 
 [[files]]
-file = "jars/jei-1.20.1-forge-15.20.0.112.jar"
+file = "mods/jei-1.20.1-forge-15.20.0.112.jar"
 hash = "2d3a86f503dbde51afa5142951525c37e227016ce8d9e7dfd10bbdd9233f0204"
 
 [[files]]
-file = "jars/kotlinforforge-4.11.0-all.jar"
+file = "mods/kotlinforforge-4.11.0-all.jar"
 hash = "ef988f86d170af499d147ea8a5c34c99dbd6d8f4a5ad236a4b43818dc4470a10"
 
 [[files]]
-file = "jars/lrtactical-1.20.1-0.3.0.jar"
+file = "mods/lrtactical-1.20.1-0.3.0.jar"
 hash = "98c86c584d56adba158343edf9090d18bf86bb6a06dc54488bbfdd183d0a2556"
 
 [[files]]
-file = "jars/mcw-bridges-3.1.0-mc1.20.1forge.jar"
+file = "mods/mcw-bridges-3.1.0-mc1.20.1forge.jar"
 hash = "beaefe9bf9ce1b28d2e6a9957d31ad0c7c0d047b856eecd29ffc2731824fd926"
 
 [[files]]
-file = "jars/mcw-doors-1.1.2-mc1.20.1forge.jar"
+file = "mods/mcw-doors-1.1.2-mc1.20.1forge.jar"
 hash = "ca3f93a513f692b28456d1df0bb562ff27564539307618602462ef0d262384a0"
 
 [[files]]
-file = "jars/mcw-fences-1.2.0-1.20.1forge.jar"
+file = "mods/mcw-fences-1.2.0-1.20.1forge.jar"
 hash = "6fe3bc1e2bb26854e2f0f62bacbaea518b4681b342fca52d2ce6c595775c4c88"
 
 [[files]]
-file = "jars/mcw-furniture-3.3.0-mc1.20.1forge.jar"
+file = "mods/mcw-furniture-3.3.0-mc1.20.1forge.jar"
 hash = "65562bcfcf1deb473e68f9f06605f43a521670e2ce3712a60b91bbd2e479fe7c"
 
 [[files]]
-file = "jars/mcw-lights-1.1.2-mc1.20.1forge.jar"
+file = "mods/mcw-lights-1.1.2-mc1.20.1forge.jar"
 hash = "c729c555e5635aeea17ab90acf1532488f96ed409b937ac1a71b40b61d46c1b1"
 
 [[files]]
-file = "jars/mcw-mcwholidays-1.1.1-mc1.20.1forge.jar"
+file = "mods/mcw-mcwholidays-1.1.1-mc1.20.1forge.jar"
 hash = "bdfc2db24c71c40b19c136666a12460556f9f39e49bb2092d6881b67f42896de"
 
 [[files]]
-file = "jars/mcw-mcwwindows-2.4.1-mc1.20.1forge.jar"
+file = "mods/mcw-mcwwindows-2.4.1-mc1.20.1forge.jar"
 hash = "438344fb202a594f47bf490a638a80bf70f4a74c0f1afcec7aa896a753235710"
 
 [[files]]
-file = "jars/mcw-roofs-2.3.2-mc1.20.1forge.jar"
+file = "mods/mcw-roofs-2.3.2-mc1.20.1forge.jar"
 hash = "3554317ad8d082a3d9fb5d8b387f5206e545323b4387ed1b93b7b3bf889def3f"
 
 [[files]]
-file = "jars/mcw-stairs-1.0.1-1.20.1forge.jar"
+file = "mods/mcw-stairs-1.0.1-1.20.1forge.jar"
 hash = "2e79425f5dfe585947270063f71e4fc14ef59f1bcd6911a489e879121e1e0b94"
 
 [[files]]
-file = "jars/oculus-mc1.20.1-1.8.0.jar"
+file = "mods/oculus-mc1.20.1-1.8.0.jar"
 hash = "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef"
 
 [[files]]
-file = "jars/paladin-furniture-mod-1.4.4-forge-mc1.20.1.jar"
+file = "mods/paladin-furniture-mod-1.4.4-forge-mc1.20.1.jar"
 hash = "b81fbaee895cffb109c2a3c2c98f19317eaf04aa72f8bfb11037bde712baa45b"
 
 [[files]]
-file = "jars/player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+file = "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar"
 hash = "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"
 
 [[files]]
-file = "jars/polymorph-forge-0.49.10+1.20.1.jar"
+file = "mods/polymorph-forge-0.49.10+1.20.1.jar"
 hash = "cbe63a0a1cb6ae8dbc0e29bb96d149a137cd4e714b295fa49d230994091d157f"
 
 [[files]]
-file = "jars/refurbished_furniture-forge-1.20.1-1.0.14.jar"
+file = "mods/refurbished_furniture-forge-1.20.1-1.0.14.jar"
 hash = "a44d4b232e906ecdbbddafec5b9edc2c9a1dc8a8fa7d7ea0782f0a694eb9d21a"
 
 [[files]]
-file = "jars/superbwarfare-1.20.1-0.8.7-final-d6ea9a72b.jar"
+file = "mods/superbwarfare-1.20.1-0.8.7-final-d6ea9a72b.jar"
 hash = "d2ace9eaf40d0424dc8909bfd327bbec97a9a1329e0eeb2fb8aa4090094298c8"
 
 [[files]]
-file = "jars/tacz-1.20.1-1.1.6-hotfix.jar"
+file = "mods/tacz-1.20.1-1.1.6-hotfix.jar"
 hash = "f9b4bb27cecff72750e6ef6e72a1ae579006f7dd1d5ac213c9b228fb4c8747fb"
 
 [[files]]
-file = "jars/tacz-tweaks-2.7.1-all.jar"
+file = "mods/tacz-tweaks-2.7.1-all.jar"
 hash = "98782d65632775b3479b50f4e963f42f853f98018b609fe85fa76000dcb0f317"
 
 [[files]]
-file = "jars/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar"
+file = "mods/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar"
 hash = "bd05da3d9df29b914165583f1c6dfd918a138996447ff32c0418329824027a8f"
 
 [[files]]
