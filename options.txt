@@ -200,7 +200,7 @@ key_key.fels_mgrwwii.elevation_down:key.keyboard.s
 key_key.fels_mgrwwii.pull_bolt:key.keyboard.b
 key_key.lrtactical.normal_attack.desc:key.mouse.left
 key_key.lrtactical.sp_attack.desc:key.mouse.right
-key_key.curios.open.desc:key.keyboard.g
+key_key.curios.open.desc:key.keyboard.m
 key_iris.keybind.reload:key.keyboard.r
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o

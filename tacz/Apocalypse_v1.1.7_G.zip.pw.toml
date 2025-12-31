@@ -1,0 +1,8 @@
+name = "Apocalypse_v1.1.7_G.zip"
+filename = "Apocalypse_v1.1.7_G.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/Apocalypse_v1.1.7_G.zip"
+hash-format = "sha512"
+hash = "REPLACE_ME"
