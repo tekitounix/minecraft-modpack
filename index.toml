@@ -269,11 +269,6 @@ file = "options.txt"
 hash = "ad92c45acf1a7f0da72a41d5b6e9da893e71a54fa2a81f2458e89efd0c8e0594"
 
 [[files]]
-file = "tacz-apocalypse-gun-pack.pw.toml"
-hash = "e76d96fa591f8e3b708bff4013ccea2af72bf1637dc38af1c5a21528fa18ea0e"
-metafile = true
-
-[[files]]
 file = "tacz/ARIPS_ver.1.2.3-LVS.zip.pw.toml"
 hash = "c28becba17bfc669db81c3a194521c4078f33dcc9d24d546583130a9bacf1a94"
 metafile = true
