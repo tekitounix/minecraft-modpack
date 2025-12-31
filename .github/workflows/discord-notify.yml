@@ -24,30 +24,34 @@ jobs:
           echo "mods=$CHANGED" >> $GITHUB_OUTPUT
           
       - name: Send Discord Notification
-        if: ${{ secrets.DISCORD_WEBHOOK != '' }}
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          CHANGED_MODS: ${{ steps.changes.outputs.mods }}
         run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "Discord webhook not configured, skipping notification"
+            exit 0
+          fi
           curl -H "Content-Type: application/json" \
-            -d '{
-              "embeds": [{
-                "title": "🎮 Modpack が更新されました！",
-                "description": "次回ゲーム起動時に自動更新されます。",
-                "color": 5763719,
-                "fields": [
+            -d "{
+              \"embeds\": [{
+                \"title\": \"🎮 Modpack が更新されました！\",
+                \"description\": \"次回ゲーム起動時に自動更新されます。\",
+                \"color\": 5763719,
+                \"fields\": [
                   {
-                    "name": "📦 変更された Mod",
-                    "value": "'"${{ steps.changes.outputs.mods }}"'"
+                    \"name\": \"📦 変更された Mod\",
+                    \"value\": \"$CHANGED_MODS\"
                   },
                   {
-                    "name": "📝 コミット",
-                    "value": "[`'"${GITHUB_SHA:0:7}"'`]('"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/commit/$GITHUB_SHA"')"
+                    \"name\": \"📝 コミット\",
+                    \"value\": \"[\`${GITHUB_SHA:0:7}\`]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)\"
                   }
                 ],
-                "footer": {
-                  "text": "Minecraft 1.20.1 Modpack"
+                \"footer\": {
+                  \"text\": \"Minecraft 1.20.1 Modpack\"
                 },
-                "timestamp": "'"$(date -u +%Y-%m-%dT%H:%M:%SZ)"'"
+                \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
               }]
-            }' \
+            }" \
             "$DISCORD_WEBHOOK"
