@@ -22,26 +22,26 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 ### Step 2: Minecraft インスタンスを作成
 
 1. Prism Launcher を起動
-2. 左上の **「インスタンスを追加」** をクリック
-3. 以下を設定:
-   - **バージョン:** `1.20.1`
-   - **Mod ローダー:** `Forge` → `47.4.0`
-4. **「OK」** で作成
+2. 左上の **「Add Instance」**（インスタンスを追加）をクリック
+3. 左サイドバーで **「Vanilla」** を選択
+4. 以下を設定:
+   - **Version:** `1.20.1`
+   - **Mod Loader:** `Forge` を選択 → `47.4.0` を選択
+5. **「OK」** で作成
 
 ### Step 3: 自動更新を設定
 
-1. 作成したインスタンスを **右クリック** → **「編集」**
-2. 左メニューから **「設定」** を選択
-3. **「カスタムコマンド」** にチェックを入れる
-4. **「Pre-launch command」** に以下をコピペ:
+1. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
+2. 作成したインスタンスを **右クリック** → **「Folder」** → **「Minecraft Folder (.minecraft)」**
+3. 開いたフォルダに `packwiz-installer-bootstrap.jar` を配置
+4. インスタンスを **右クリック** → **「Edit」**
+5. 左メニューから **「Settings」** を選択
+6. **「Custom commands」** にチェックを入れる
+7. **「Pre-launch command」** に以下をコピペ:
 
 ```
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
 ```
-
-5. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
-6. インスタンスを右クリック → **「フォルダ」** → **「Minecraft フォルダ」**
-7. ダウンロードした `packwiz-installer-bootstrap.jar` をこのフォルダに配置
 
 ### Step 4: 起動！
 
