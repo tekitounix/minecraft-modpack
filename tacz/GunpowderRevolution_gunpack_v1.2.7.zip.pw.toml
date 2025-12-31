@@ -1,0 +1,8 @@
+name = "GunpowderRevolution_gunpack v1.2.7.zip"
+filename = "GunpowderRevolution_gunpack v1.2.7.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/GunpowderRevolution_gunpack%20v1.2.7.zip"
+hash-format = "sha512"
+hash = "ee6f8c57faf38e875510a00a4bc80b4273a42ded3e69dea3f7316b04eb4deef1aa1ea566f08c082018e8ee75ec9fb3e89c8e191d574a1a983c77642673484fee"

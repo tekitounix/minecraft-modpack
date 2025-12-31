@@ -1,0 +1,8 @@
+name = "throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
+filename = "throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
+hash-format = "sha512"
+hash = "46a7871e9f68d087bfc279f09d3e0bd17fe06fce1c07103697b81eef29c27391bd950534e9a8e8c119ac8348c8d557e059ee7c7a588bf22aa51bde03db555d1e"

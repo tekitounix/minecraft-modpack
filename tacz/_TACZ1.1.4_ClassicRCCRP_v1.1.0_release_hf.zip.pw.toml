@@ -1,0 +1,8 @@
+name = "[TACZ1.1.4]ClassicRCCRP v1.1.0 release hf.zip"
+filename = "[TACZ1.1.4]ClassicRCCRP v1.1.0 release hf.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/%5BTACZ1.1.4%5DClassicRCCRP%20v1.1.0%20release%20hf.zip"
+hash-format = "sha512"
+hash = "eacbae36dc93d5c30bf1ca60f35311b7f5d0901973a49003631c5b81779ef9bb7c54029bdc2227c8601aca231bf1c5220b427e1d1881c7c6f531af78a3ceeb0f"

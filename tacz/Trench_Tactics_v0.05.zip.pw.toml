@@ -1,0 +1,8 @@
+name = "Trench_Tactics v0.05.zip"
+filename = "Trench_Tactics v0.05.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/Trench_Tactics%20v0.05.zip"
+hash-format = "sha512"
+hash = "c2234a6dce4772409ee346c5bfa764629db5b5f3be84c48b398b8c1754a0977e21b9ca23ef3f61fa41b0af5d9d92d8a8081b79071be7ee60886bb6af3b25860b"

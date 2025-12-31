@@ -1,0 +1,8 @@
+name = "antiques_gunpack_v0.2.2.zip"
+filename = "antiques_gunpack_v0.2.2.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/antiques_gunpack_v0.2.2.zip"
+hash-format = "sha512"
+hash = "1b8d9d3d928d66843299bf70385d37b6edb37d818bc6d31b6fa6edd0db41fb4043086212652b89688cfc557dae58e54663d89cec4a03cee590b9d271afabd915"

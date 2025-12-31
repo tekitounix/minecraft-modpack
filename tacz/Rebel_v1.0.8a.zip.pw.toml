@@ -1,0 +1,8 @@
+name = "Rebel v1.0.8a.zip"
+filename = "Rebel v1.0.8a.zip"
+side = "both"
+
+[download]
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/gunpacks/Rebel%20v1.0.8a.zip"
+hash-format = "sha512"
+hash = "dd0690a4b91d1fbc7e3bd09a527ecc4768fc4a70113be62f843b18f00094ba4991e6d8a3182223f1de1b81bfa92a99aa3c45cf81f411eb42e3023f7e54226f94"
