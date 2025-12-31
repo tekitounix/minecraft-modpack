@@ -88,47 +88,47 @@ metafile = true
 
 [[files]]
 file = "mods/macaws-bridges.pw.toml"
-hash = "48b6be3ef711114f233e0c36d7f625b1e42c247c3e78a51fd7498886657a2384"
+hash = "ee387ba74c2c7e999d48071408abbd1ca322e70f36e79c590a150c9572d3a9cb"
 metafile = true
 
 [[files]]
 file = "mods/macaws-doors.pw.toml"
-hash = "33af5f73cc7b802cf45b02ef7ec7b9a516919d55ed32a035a4661f33331b5531"
+hash = "e4f414ece2ec81f6dd2dfb8c0176670a576b988f60c8b45a1f4b749b4d008c9d"
 metafile = true
 
 [[files]]
 file = "mods/macaws-fences-and-walls.pw.toml"
-hash = "e06e7671526fab9f0452efe4ede713c0eeec62f7b6df272e1ca512d0c83061a8"
+hash = "f009a177c97f9d189e9131704095060364b8201c83bd9118d89a11d25a6d2655"
 metafile = true
 
 [[files]]
 file = "mods/macaws-furniture.pw.toml"
-hash = "78c848b18a1103f75baa409d69e1a09127b12b56cfd265637eff34dd0158be40"
+hash = "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f"
 metafile = true
 
 [[files]]
 file = "mods/macaws-holidays.pw.toml"
-hash = "59af63b963258a9925a271727a9c66b535ca1123f82474fe6724c17cb0f17422"
+hash = "89b70edc735520b663c44075cd43df5a9a15c6fe90c0fba383b5507c5247366e"
 metafile = true
 
 [[files]]
 file = "mods/macaws-lights-and-lamps.pw.toml"
-hash = "267838bebfa91d1f3a5b8a06f9e1232d7f1ecaf33c723a680ec1ea1475ae1be1"
+hash = "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23"
 metafile = true
 
 [[files]]
 file = "mods/macaws-roofs.pw.toml"
-hash = "6445161fb93a765e776f97573a32af44d0615133b76f33d56da1b842eb5fc377"
+hash = "1191b45155fb0f23f5a3fe4b9170b73f52a1c9599de504fe922e4ea7e7e3c95f"
 metafile = true
 
 [[files]]
 file = "mods/macaws-stairs.pw.toml"
-hash = "a0fa36681c24ebe3c13ad80e08e18d712f2ce4ac74c0fdfbaf469e466bc1c16f"
+hash = "660d02d6316790b8b661d995c8e30d20891db05a337dc4e5c9d805c73a8fa14f"
 metafile = true
 
 [[files]]
 file = "mods/macaws-windows.pw.toml"
-hash = "915c326cc126e10fabd967f44a18e90ebde16ad2e13fc02f56ff95ad22cda448"
+hash = "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb"
 metafile = true
 
 [[files]]
