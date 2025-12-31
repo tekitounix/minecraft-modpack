@@ -20,7 +20,7 @@ Prism Launcher / MultiMC を使用すると、起動時に自動で Mod が更�
 5. インスタンス設定 → 「カスタムコマンド」→ 「Pre-launch command」:
 
 ```bash
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/YOUR_USERNAME/minecraft-modpack/main/pack.toml
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
 ```
 
 6. **完了！** 以降はゲーム起動時に自動更新されます ✨
