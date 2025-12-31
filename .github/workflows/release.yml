@@ -82,13 +82,21 @@ jobs:
           body: |
             ## 🎮 Modpack 更新
             
-            ### インストール方法
-            1. [Prism Launcher](https://prismlauncher.org/download/) をインストール
-            2. `modpack-prism.zip` をダウンロード
-            3. Prism Launcher で「起動構成を追加」→「zipからインポート」
-            4. 起動！
+            ### 📥 インストール方法
             
-            初回起動時に全ての Mod が自動ダウンロードされます。
+            1. **[Hamachi](https://vpn.net/)** をインストールしてネットワークに参加
+            2. **[Prism Launcher](https://prismlauncher.org/download/)** をインストール
+            3. Prism Launcher で **「起動構成を追加」** → **「zipからインポート」**
+            4. 以下の URL を入力：
+               ```
+               https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
+               ```
+            5. **メモリ設定**: 起動構成を右クリック → 編集 → 設定 → Java → 最大メモリを **6144 MB** に設定
+            6. 起動してサーバーに接続！（IP: `25.51.29.103`）
+            
+            初回起動時に全ての Mod と TaCZ 銃パックが自動ダウンロードされます ✨
+            
+            📖 詳細は [README](https://github.com/tekitounix/minecraft-modpack#readme) を参照
           files: modpack-prism.zip
           draft: false
           prerelease: false
