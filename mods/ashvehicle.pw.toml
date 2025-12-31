@@ -1,13 +1,8 @@
 name = "[SBW] AshVehicle"
-filename = "ashvehicle-4.3-8.8-SNAPSHOT.jar"
+filename = "ashvehicle-4.1-8.7-SNAPSHOT.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "f6d6a05941af21d5335aafbb9431e076ee294786"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 7315476
-project-id = 1291715
+url = "https://github.com/tekitounix/minecraft-modpack/raw/main/jars/ashvehicle-4.1-8.7-SNAPSHOT.jar"
+hash-format = "sha512"
+hash = "7263dadba087164ae7bdc2ed6a56f9e127e5e517811fa21bc19dae2a9733583fd5bde4d2b465b9c254cfc8075766cd0fa52e5552675cb3b50c021597a43234ea"

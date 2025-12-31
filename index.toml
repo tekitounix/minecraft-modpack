@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = "jars/ashvehicle-4.1-8.7-SNAPSHOT.jar"
+hash = "79d55640685b5abfa5f510355b97edc5bc1203464167ae8c8384a03d99dd9924"
+
+[[files]]
 file = "mods/ashvehicle.pw.toml"
-hash = "fca37d9bfd36ced4188c3f8460d00495c9f7789223c8ff3e3ffce8c66e3186bc"
+hash = "5276229db4e01ea428a5525d0d223e7d832e404324cb575b87b6f062769e5f15"
 metafile = true
 
 [[files]]
