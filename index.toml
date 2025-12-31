@@ -6,7 +6,7 @@ hash = "6184ffd5b12d7eff7152a2919663e8f604b51c06b1dfaecbdacda782f6f44a49"
 
 [[files]]
 file = ".github/workflows/update-index.yml"
-hash = "0c54f36741357e81234b4e625dcd1276080699eea8c06a93aae9f182f368744c"
+hash = "43ac91b590f65b287bc0452c3ca52ea231d4a08e5a742ce056d9cd74b9eb4880"
 
 [[files]]
 file = "README.md"
