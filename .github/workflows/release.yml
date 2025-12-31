@@ -6,8 +6,12 @@ on:
     branches: [main]
     paths:
       - 'mods/**'
+      - 'gunpacks/**'
+      - 'jars/**'
+      - 'config/**'
       - 'pack.toml'
       - 'index.toml'
+  workflow_dispatch:
 
 jobs:
   build:
