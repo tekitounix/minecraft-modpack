@@ -82,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
-hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
+hash = "70a4ecd9d0c04ad20aeb976c1ee28933ce48a0a1f43df42deafaeb2ad7235297"
 metafile = true
 
 [[files]]
@@ -194,12 +194,13 @@ hash = "d97655330510c21898fe03027bd9841e34af2c6bc89372f22a6b23e71068b5ab"
 metafile = true
 
 [[files]]
-file = "mods/tacz-tweaks-2.7.1-all.jar"
-hash = "98782d65632775b3479b50f4e963f42f853f98018b609fe85fa76000dcb0f317"
+file = "mods/tacz-tweaks.pw.toml"
+hash = "d37cfe952a966bc4ffde79eb53b730de9b7d77fc515c30650133d13d9cc99001"
+metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "c08817fe8025a9d62c8f7abd5f56a54b90673e5ab60f39ae8fa1d70d5ace529b"
+hash = "f3b3d035b89519faccc4ddd8b0b4407ce96c0eb49068fe50a445d43a3baa8bea"
 metafile = true
 
 [[files]]
