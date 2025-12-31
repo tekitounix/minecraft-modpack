@@ -1,0 +1,206 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/ashvehicle.pw.toml"
+hash = "e555fbc080e1d5381c3ea01ba8dc9e8d9034c6bfc189fac72f4b3c5e9136c41f"
+metafile = true
+
+[[files]]
+file = "mods/better-parachute-paraquedas.pw.toml"
+hash = "20a1b075e968ab360874cd9f08209bf4e4a3bbb2f0b3d8493538032b65313695"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
+metafile = true
+
+[[files]]
+file = "mods/configured.pw.toml"
+hash = "c1bdeff356cd2ac164e2c0e6d0ceeda234db9774c2df44fb9f0e71d3960cc3f1"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
+metafile = true
+
+[[files]]
+file = "mods/embeddium.pw.toml"
+hash = "a1575677daaaf6ea6dac12e5a10073e34025e5ca2c35b6d36ad4a5a0edbc0e82"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "067fc433511066d18b1795b86c9856246a8da7f9a4316afd6b25e5eee181f660"
+metafile = true
+
+[[files]]
+file = "mods/fels-machine-guns-wwii.pw.toml"
+hash = "ccd8a93a81f32b7e1a347c899504c27b9a34bc2313a40e95b9b97d12de3c258d"
+metafile = true
+
+[[files]]
+file = "mods/framework.pw.toml"
+hash = "376f8a190f00bd120193d7a665ebe1b03dfe329cc395f7d944f7216c1182c84d"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "c931f7daf7871aa42f640e41c0b720d7988a1ee1eecae64b3af2c176b1d56343"
+metafile = true
+
+[[files]]
+file = "mods/iguana-lib.pw.toml"
+hash = "0834edba8208be0c39e6681efb671db7a8504c2f8086189a062bf303001b7ee8"
+metafile = true
+
+[[files]]
+file = "mods/immersive-aircraft.pw.toml"
+hash = "9406e74a2166c58db37c0ba2a29da94723d0c158b05cc6bf22355f7855a27709"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "5f7c3cf35124bf96e880cc8562fc44ac15990a89b07db299aed9a88ce3752cb1"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "1678327ac50408273c1828b631929128d3fdfd54cda7b2e823ce9352495a68ff"
+metafile = true
+
+[[files]]
+file = "mods/macaws-bridges.pw.toml"
+hash = "48b6be3ef711114f233e0c36d7f625b1e42c247c3e78a51fd7498886657a2384"
+metafile = true
+
+[[files]]
+file = "mods/macaws-doors.pw.toml"
+hash = "33af5f73cc7b802cf45b02ef7ec7b9a516919d55ed32a035a4661f33331b5531"
+metafile = true
+
+[[files]]
+file = "mods/macaws-fences-and-walls.pw.toml"
+hash = "754a03e5f088d19287fe2f25b7b3165dd4e44e294838c679b218fcac54a11b5b"
+metafile = true
+
+[[files]]
+file = "mods/macaws-furniture.pw.toml"
+hash = "3706f6817a641198fc325d578d189d502af7c3444148a72e4dc23f214c3611a1"
+metafile = true
+
+[[files]]
+file = "mods/macaws-holidays.pw.toml"
+hash = "860ca7ae384e490703e24592d4ec2b5b487612ddc80a7316ee3809fb8d303dc5"
+metafile = true
+
+[[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+hash = "9662a11bbab322c2c29d84bf88d0a6c11e3dbfc2e996a484fa1a1ef2f91a18ad"
+metafile = true
+
+[[files]]
+file = "mods/macaws-roofs.pw.toml"
+hash = "6445161fb93a765e776f97573a32af44d0615133b76f33d56da1b842eb5fc377"
+metafile = true
+
+[[files]]
+file = "mods/macaws-stairs.pw.toml"
+hash = "9906e6412e0dbce8a80dad82699d576f95c04cc4574e636705d9ac3e6686b0a2"
+metafile = true
+
+[[files]]
+file = "mods/macaws-windows.pw.toml"
+hash = "8ee3776430187fb4d69278e645e10fefb7fe7342caee0a5861479ce25956713a"
+metafile = true
+
+[[files]]
+file = "mods/manyideas-core.pw.toml"
+hash = "138932c84890c25da9e9a2ae1d8b450b627d6c13e2cd048e60fd4cfec7cd76ea"
+metafile = true
+
+[[files]]
+file = "mods/manyideas-doors.pw.toml"
+hash = "548d16d7f0c909854128a1eca9eca35b4837e8c04901370773cd5e24a57017e8"
+metafile = true
+
+[[files]]
+file = "mods/mcsp-military-vehicle.pw.toml"
+hash = "69fdde7006e0c6229a03ecda54fafe6bc05a743d051342c6a545446534042d50"
+metafile = true
+
+[[files]]
+file = "mods/oculus.pw.toml"
+hash = "5ef885f9912ff6aa73db254b63a3cd22520f06261bc3c38e7c92f449806a9044"
+metafile = true
+
+[[files]]
+file = "mods/paladins-furniture.pw.toml"
+hash = "1cb5ba542a089c3831e8661e0b4a088ffa0a7b3ca5e4962d77e9529962810d95"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "dec2bc011d4ca1d451aaa3eea477f13366bfb13beba0716018f47d9331a50d8e"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "b52622122c19a3894e62fc5506d7c3332d202504fd406d6718be646f979feb40"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "8c65958007f81cdf1a57dac999ec7ffdde17cce6154c9a2f75bbb389fd11efbf"
+metafile = true
+
+[[files]]
+file = "mods/recipes-library.pw.toml"
+hash = "652abe9780694aacade5cd54711cd25228f7e2f7656e98207a14ce5c639270c7"
+metafile = true
+
+[[files]]
+file = "mods/refurbished-furniture.pw.toml"
+hash = "d0bf99ee6738fe077f5da39695f8f04aaa5fc25b5aad9387310d9d6134759500"
+metafile = true
+
+[[files]]
+file = "mods/superb-warfare.pw.toml"
+hash = "2cfac1e46e4913ace8c70a998876b3567b3caa60bcf285547ea5413d3e176fbc"
+metafile = true
+
+[[files]]
+file = "mods/tacz-endless-ammo.pw.toml"
+hash = "064cb58f3d36b03828ea6f2f2980a46bb9f620d9ccd6c6329ff3140b21dc5559"
+metafile = true
+
+[[files]]
+file = "mods/tacz-gucci-vuitton-attachments.pw.toml"
+hash = "a15342a63bf18e434f474e8a420af783aceb24b70ca261d0513857668b8eca84"
+metafile = true
+
+[[files]]
+file = "mods/tacz-lesraisins-tactical-equipements.pw.toml"
+hash = "d97655330510c21898fe03027bd9841e34af2c6bc89372f22a6b23e71068b5ab"
+metafile = true
+
+[[files]]
+file = "mods/tacz-tweaks.pw.toml"
+hash = "4ad23be2d9949f7304293864fcfbafbbebf73442cba2358290cec3bc3a571275"
+metafile = true
+
+[[files]]
+file = "mods/timeless-and-classics-zero.pw.toml"
+hash = "31b3ec584b0adb3d6c3d9bcbbce1a310b442817672886f5ac2fd80e341a4bc79"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "c08817fe8025a9d62c8f7abd5f56a54b90673e5ab60f39ae8fa1d70d5ace529b"
+metafile = true
+
+[[files]]
+file = "tacz-apocalypse-gun-pack.pw.toml"
+hash = "e76d96fa591f8e3b708bff4013ccea2af72bf1637dc38af1c5a21528fa18ea0e"
+metafile = true

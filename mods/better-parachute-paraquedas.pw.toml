@@ -1,0 +1,13 @@
+name = "Better Parachute - Paraquedas"
+filename = "Parachute Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7a64891cb241de8457d3768b0786ec91eea6dafd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5387271
+project-id = 1028443

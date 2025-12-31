@@ -1,0 +1,13 @@
+name = "[SBW] AshVehicle"
+filename = "ashvehicle-4.1-8.7-SNAPSHOT.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "280019926f0f6bc99afb1218e840ff07d2bc763c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7017845
+project-id = 1291715

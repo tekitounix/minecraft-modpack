@@ -1,0 +1,13 @@
+name = "Fel's Machine Guns WWII"
+filename = "fels_mgrwwii-1.1.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e8c708ba90f934152273e9434d43cafdc2edaf2b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6633897
+project-id = 1137618
