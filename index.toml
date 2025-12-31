@@ -1,34 +1,13 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/discord-notify.yml"
-hash = "6184ffd5b12d7eff7152a2919663e8f604b51c06b1dfaecbdacda782f6f44a49"
-
-[[files]]
-file = ".github/workflows/release.yml"
-hash = "add9b44bbd3bbbb5c430c390f3c9cb10921454b7a19cd50ecfc0c38e9dc8435c"
-
-[[files]]
-file = ".github/workflows/update-index.yml"
-hash = "43ac91b590f65b287bc0452c3ca52ea231d4a08e5a742ce056d9cd74b9eb4880"
-
-[[files]]
-file = "README.md"
-hash = "c96964548767394d8c137014d1bb1ab26d7374642383ec09203493e816418add"
-
-[[files]]
-file = "mods/ashvehicle.pw.toml"
-hash = "e555fbc080e1d5381c3ea01ba8dc9e8d9034c6bfc189fac72f4b3c5e9136c41f"
-metafile = true
-
-[[files]]
 file = "mods/better-parachute-paraquedas.pw.toml"
 hash = "20a1b075e968ab360874cd9f08209bf4e4a3bbb2f0b3d8493538032b65313695"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
+hash = "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
 metafile = true
 
 [[files]]
@@ -38,17 +17,17 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
+hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
 metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
-hash = "a1575677daaaf6ea6dac12e5a10073e34025e5ca2c35b6d36ad4a5a0edbc0e82"
+hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
 metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "067fc433511066d18b1795b86c9856246a8da7f9a4316afd6b25e5eee181f660"
+hash = "9f2ffb0d4c65fcb2a96878287a7119459b9d0637c395e5097d691416690d6563"
 metafile = true
 
 [[files]]
@@ -63,27 +42,32 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "c931f7daf7871aa42f640e41c0b720d7988a1ee1eecae64b3af2c176b1d56343"
+hash = "88f142bda6bfa6aff4f4d4e12b8ba7581aa40e3f163039a533f09dd6d634e093"
 metafile = true
 
 [[files]]
 file = "mods/iguana-lib.pw.toml"
-hash = "0834edba8208be0c39e6681efb671db7a8504c2f8086189a062bf303001b7ee8"
+hash = "bc084bef59b57ffa2f9a6c89218aa4815d5b54f56437c0b792b33495f2349939"
 metafile = true
 
 [[files]]
 file = "mods/immersive-aircraft.pw.toml"
-hash = "9406e74a2166c58db37c0ba2a29da94723d0c158b05cc6bf22355f7855a27709"
+hash = "d150fa1845c5cd2b017c202e1792a6fe5c5155c34ceb710213370d8d83819924"
 metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "5f7c3cf35124bf96e880cc8562fc44ac15990a89b07db299aed9a88ce3752cb1"
+hash = "b0441c2b5bb6ff680d97eac28d95847f0d4dbee34d1d42d897997b500acd44ca"
 metafile = true
 
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
-hash = "337a4ae7185acc5ae8ca1e85ccf5095ae95edb0c9025c643d2dcbe8d5e29abae"
+hash = "70a4ecd9d0c04ad20aeb976c1ee28933ce48a0a1f43df42deafaeb2ad7235297"
+metafile = true
+
+[[files]]
+file = "mods/lr-tactical.pw.toml"
+hash = "d4f1d19a9c855267a006071277d2fa44a5909dfda6f4b823bf8c91299dfd1381"
 metafile = true
 
 [[files]]
@@ -98,22 +82,22 @@ metafile = true
 
 [[files]]
 file = "mods/macaws-fences-and-walls.pw.toml"
-hash = "b5a95499aa5929e045b19847eec56eb9b38d97f2893e0519abc889defb7e1660"
+hash = "f009a177c97f9d189e9131704095060364b8201c83bd9118d89a11d25a6d2655"
 metafile = true
 
 [[files]]
 file = "mods/macaws-furniture.pw.toml"
-hash = "127e3655bce089a907649a12548e614b68116391abade2e9578f13189ec5dc87"
+hash = "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f"
 metafile = true
 
 [[files]]
 file = "mods/macaws-holidays.pw.toml"
-hash = "ed03282c88aba410e31aa79d9967ed69b77b49401b4c835ed043ef6676bd8d4e"
+hash = "89b70edc735520b663c44075cd43df5a9a15c6fe90c0fba383b5507c5247366e"
 metafile = true
 
 [[files]]
 file = "mods/macaws-lights-and-lamps.pw.toml"
-hash = "3379b8c62b5d564a85ffc5af118e77658527ec01188e83f9728a56db77e0ebd4"
+hash = "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23"
 metafile = true
 
 [[files]]
@@ -123,32 +107,32 @@ metafile = true
 
 [[files]]
 file = "mods/macaws-stairs.pw.toml"
-hash = "77b3b8d67dfc72030727b6302292e81a447ea57fb748532912c42562ec318ca6"
+hash = "660d02d6316790b8b661d995c8e30d20891db05a337dc4e5c9d805c73a8fa14f"
 metafile = true
 
 [[files]]
 file = "mods/macaws-windows.pw.toml"
-hash = "1fcd0dd9bc80d6c5a216350c63a67473d629172896edc75907dbbede6dc1a0ee"
+hash = "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb"
 metafile = true
 
 [[files]]
 file = "mods/manyideas-core.pw.toml"
-hash = "138932c84890c25da9e9a2ae1d8b450b627d6c13e2cd048e60fd4cfec7cd76ea"
+hash = "c1f2efd11a933c8fa868a8bdbecc2036fe33abc144004362b0f86ee53404c405"
 metafile = true
 
 [[files]]
 file = "mods/manyideas-doors.pw.toml"
-hash = "548d16d7f0c909854128a1eca9eca35b4837e8c04901370773cd5e24a57017e8"
+hash = "47b565fbc0f269222372a9386ad353d26f860209e4d41fc0110c4691b9f80c3c"
 metafile = true
 
 [[files]]
 file = "mods/mcsp-military-vehicle.pw.toml"
-hash = "69fdde7006e0c6229a03ecda54fafe6bc05a743d051342c6a545446534042d50"
+hash = "6474459ecf16dea8edc66b28fc3c910cc6b81844053581f754902c56f9d9fb1c"
 metafile = true
 
 [[files]]
 file = "mods/oculus.pw.toml"
-hash = "5ef885f9912ff6aa73db254b63a3cd22520f06261bc3c38e7c92f449806a9044"
+hash = "f83b253ca6a8e6f2f847952704da0e1fb00e65cbb10b7c9cb15d1a1780618da0"
 metafile = true
 
 [[files]]
@@ -158,7 +142,7 @@ metafile = true
 
 [[files]]
 file = "mods/patchouli.pw.toml"
-hash = "dec2bc011d4ca1d451aaa3eea477f13366bfb13beba0716018f47d9331a50d8e"
+hash = "55c6d0b8ee25fd6a37a964805de3d2eab3f20d73a88ba77a63b4a51fd985d9dd"
 metafile = true
 
 [[files]]
@@ -168,47 +152,42 @@ metafile = true
 
 [[files]]
 file = "mods/polymorph.pw.toml"
-hash = "8c65958007f81cdf1a57dac999ec7ffdde17cce6154c9a2f75bbb389fd11efbf"
+hash = "4ab869d8784f4ac318b5c92fa3d9e65f997352b8b57f34b409ca6f171637f0fe"
 metafile = true
 
 [[files]]
 file = "mods/recipes-library.pw.toml"
-hash = "652abe9780694aacade5cd54711cd25228f7e2f7656e98207a14ce5c639270c7"
+hash = "779155317471577b1c73d66584bf2a43bb358662efcf984ced59e0b993a22f62"
 metafile = true
 
 [[files]]
 file = "mods/refurbished-furniture.pw.toml"
-hash = "d0bf99ee6738fe077f5da39695f8f04aaa5fc25b5aad9387310d9d6134759500"
+hash = "2bcee75d08b33dd6506b7cd3f67ea9d0d2c1bf14e26728fa8e12ef19c895b165"
+metafile = true
+
+[[files]]
+file = "mods/sbw-vintage-vehicle-pack.pw.toml"
+hash = "0771b95bfa2cdb39bc9755fd3cf8d86fcd0a430181dc26602b67cfe4b8122e95"
 metafile = true
 
 [[files]]
 file = "mods/superb-warfare.pw.toml"
-hash = "2cfac1e46e4913ace8c70a998876b3567b3caa60bcf285547ea5413d3e176fbc"
-metafile = true
-
-[[files]]
-file = "mods/tacz-endless-ammo.pw.toml"
-hash = "064cb58f3d36b03828ea6f2f2980a46bb9f620d9ccd6c6329ff3140b21dc5559"
+hash = "53184e84ac3cde3073c77b1fa2fd29a88b7580bd1230f744e71af710d00fd630"
 metafile = true
 
 [[files]]
 file = "mods/tacz-gucci-vuitton-attachments.pw.toml"
-hash = "a15342a63bf18e434f474e8a420af783aceb24b70ca261d0513857668b8eca84"
-metafile = true
-
-[[files]]
-file = "mods/tacz-lesraisins-tactical-equipements.pw.toml"
-hash = "d97655330510c21898fe03027bd9841e34af2c6bc89372f22a6b23e71068b5ab"
+hash = "dd600f6fe8ced6d3c1ccbe597d708fe26f1f385db474e0489a93ed69b7f14047"
 metafile = true
 
 [[files]]
 file = "mods/tacz-tweaks.pw.toml"
-hash = "d37cfe952a966bc4ffde79eb53b730de9b7d77fc515c30650133d13d9cc99001"
+hash = "ec8f9ca2e5703a03eec1142a4f3d719216b0234b0b73d107c0953258ee7586df"
 metafile = true
 
 [[files]]
 file = "mods/timeless-and-classics-zero.pw.toml"
-hash = "199087fa3afcccbe6f328ee16f58ab0785bcee13291ebc197f3245c440318e08"
+hash = "c707a4dfd080ecb5a7ff06a62973eef0711cbee6b70eda0d1dec2bc459e12309"
 metafile = true
 
 [[files]]
