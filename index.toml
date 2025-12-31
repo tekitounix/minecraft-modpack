@@ -1,52 +1,60 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/superbwarfare-client.toml"
+hash = "cfcb071fe06862d9e1ffd7c9ac70aa0f70aab073657e8d61aae535a7472ae8d6"
+
+[[files]]
+file = "config/tacztweaks.json"
+hash = "ec4540a020a34b1b1fca27dcee0d5c1026d97a7acb1187a889950788f6bec39a"
+
+[[files]]
 file = "gunpacks/ARIPS_ver.1.2.3-LVS.zip"
-hash = "08e5f402f7e9ec8c5775482816aa6881d4321e944277f719e91a7ffc51ea6697"
+hash = "649d2c2bbfa726e0c42d6f4f9a7c9a6285e0b17e617f022f0925804cd86a5efd"
 
 [[files]]
 file = "gunpacks/Apocalypse_v1.1.4_F.zip"
-hash = "11009a2b4555d7f62c54eab547a8c3734c4ee367bed4cca71c4ca2135b7a4d96"
+hash = "9c23530757bcaacee75dfcaab5a5dab7c9c16f7651430f920f127f244012eef9"
 
 [[files]]
 file = "gunpacks/Eurrussia-Variantz-3.0.5c-hotfix.zip"
-hash = "f2d8c7fce83e20920a2b0408c83940ce7f78dd84db9ff9ec8e7e6b7b0143521e"
+hash = "9b4fd2f14db92ab2cd99e78b44ffb380badfce62090211813efefba81226ba00"
 
 [[files]]
 file = "gunpacks/GunpowderRevolution_gunpack v1.2.7.zip"
-hash = "4344c606948593701f7b544913d31601b13c4b441400db0b8680675b29df0750"
+hash = "5d1deb681fb087442b35f16100aacdf81a13cb9dfd5a1085fef7169e3088a749"
 
 [[files]]
 file = "gunpacks/RFP v1.0.8.zip"
-hash = "fe5cd62bae7515385f305bd72d2486b4c6791c91602c53bdc08ba82ac44f2324"
+hash = "359c83622da3baf6f15daddc98e96778ca91d6a7cf099aa82e40cd448e061196"
 
 [[files]]
 file = "gunpacks/Rebel v1.0.8a.zip"
-hash = "8023ab7b792770e528d0a592feaea48a1e900a721e298209cff6687e361b6a72"
+hash = "a6b62ce960763b9fb006524f5fee7cc463b7828fd348414830bcf03187ef5fd9"
 
 [[files]]
 file = "gunpacks/Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
-hash = "2a3bb72a0320809de3bed36d799b41385bc478b2e22d2e95a6cf54db59a46a32"
+hash = "db829e453f38ec5e91731b90ea48ea13b062e5bd936a12b27407cefba752e439"
 
 [[files]]
 file = "gunpacks/The Continental v1.4.zip"
-hash = "c593810dd00df525437e7a3076a8c64a06684194c1fe0ffb782e371752738c4a"
+hash = "73b8db95c171e01131aeba7e77739612721425f8a93ca000b3914500d05a312c"
 
 [[files]]
 file = "gunpacks/Trench_Tactics v0.05.zip"
-hash = "9faba97f4c62c46e271aba8954f15466e9499b296331448c549747b3a7e9bb00"
+hash = "3d3efcd3e4252768d3bf16a17c3975e654d134b05103fd90ad55a0f0c2276b3e"
 
 [[files]]
 file = "gunpacks/[TACZ1.1.4]ClassicRCCRP v1.1.0 release hf.zip"
-hash = "841bfb2a61d07b5c3b3269bbb0de05d99412e953e53dbf9846943ad45afa9ddd"
+hash = "26728d80db900cc369800a317b095d571d101a18f1ca27c9e10bb91197a4b4db"
 
 [[files]]
 file = "gunpacks/antiques_gunpack_v0.2.2.zip"
-hash = "d7285caf67c5740acff21a0e9e519e73aad988d040a5e2290417a93a817ca86a"
+hash = "f63d1a9526acb0f051c43aba3583b27e67c9011a61152dadc102a25467649035"
 
 [[files]]
 file = "gunpacks/throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
-hash = "4182657d0e1fd2889245df563de163185a410e0239a3c69c545eef373ce1df91"
+hash = "af32e24ff6f7c4249d078259cb871f853226493b63992063c140d73a2bbc2711"
 
 [[files]]
 file = "jars/ashvehicle-4.1-8.7-SNAPSHOT.jar"
@@ -255,6 +263,10 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "f3b3d035b89519faccc4ddd8b0b4407ce96c0eb49068fe50a445d43a3baa8bea"
 metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "ad92c45acf1a7f0da72a41d5b6e9da893e71a54fa2a81f2458e89efd0c8e0594"
 
 [[files]]
 file = "tacz-apocalypse-gun-pack.pw.toml"
