@@ -32,8 +32,8 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 ### Step 3: 自動更新を設定
 
 1. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
-2. 作成した起動構成を **右クリック** → **「フォルダー」** → **「Minecraft フォルダー (.minecraft)」**
-3. 開いたフォルダーに `packwiz-installer-bootstrap.jar` を配置
+2. 作成した起動構成を **右クリック** → **「フォルダー」** → **「Minecraft フォルダー」**
+3. 開いたフォルダーの直下（`options.txt` や `mods` と同じ階層）に `packwiz-installer-bootstrap.jar` を配置
 4. 起動構成を **右クリック** → **「編集」**
 5. 左メニューから **「設定」** を選択
 6. **「カスタムコマンド」** にチェックを入れる
