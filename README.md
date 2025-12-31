@@ -21,11 +21,15 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
 ### Step 2: Modpack をインポート
 
-1. **[最新の modpack-prism.zip](../../releases/latest/download/modpack-prism.zip)** をダウンロード
-2. Prism Launcher で **「起動構成を追加」** をクリック
-3. 左サイドバーで **「zipからインポート」** を選択
-4. ダウンロードした `modpack-prism.zip` を選択
-5. **「OK」** で完了
+1. Prism Launcher で **「起動構成を追加」** をクリック
+2. 左サイドバーで **「zipからインポート」** を選択
+3. 以下の URL を入力:
+
+```
+https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
+```
+
+4. **「OK」** で完了
 
 ### Step 3: 起動！
 
