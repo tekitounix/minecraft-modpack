@@ -19,25 +19,25 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 | macOS | [DMG](https://prismlauncher.org/download/mac/) |
 | Linux | [AppImage / Flatpak](https://prismlauncher.org/download/linux/) |
 
-### Step 2: Minecraft インスタンスを作成
+### Step 2: 起動構成を作成
 
 1. Prism Launcher を起動
-2. 左上の **「Add Instance」**（インスタンスを追加）をクリック
+2. 左上の **「起動構成を追加」** をクリック
 3. 左サイドバーで **「Vanilla」** を選択
 4. 以下を設定:
-   - **Version:** `1.20.1`
-   - **Mod Loader:** `Forge` を選択 → `47.4.0` を選択
+   - **バージョン:** `1.20.1`
+   - **Modローダー:** `Forge` を選択 → `47.4.0` を選択
 5. **「OK」** で作成
 
 ### Step 3: 自動更新を設定
 
 1. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
-2. 作成したインスタンスを **右クリック** → **「Folder」** → **「Minecraft Folder (.minecraft)」**
-3. 開いたフォルダに `packwiz-installer-bootstrap.jar` を配置
-4. インスタンスを **右クリック** → **「Edit」**
-5. 左メニューから **「Settings」** を選択
-6. **「Custom commands」** にチェックを入れる
-7. **「Pre-launch command」** に以下をコピペ:
+2. 作成した起動構成を **右クリック** → **「フォルダー」** → **「Minecraft フォルダー (.minecraft)」**
+3. 開いたフォルダーに `packwiz-installer-bootstrap.jar` を配置
+4. 起動構成を **右クリック** → **「編集」**
+5. 左メニューから **「設定」** を選択
+6. **「カスタムコマンド」** にチェックを入れる
+7. **「起動前に実行するコマンド」** に以下をコピペ:
 
 ```
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
@@ -45,7 +45,7 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
 ### Step 4: 起動！
 
-インスタンスをダブルクリックして起動するだけ！
+起動構成をダブルクリックして起動するだけ！
 
 初回起動時に全ての Mod が自動ダウンロードされます ✨
 
