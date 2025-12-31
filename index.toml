@@ -201,16 +201,6 @@ hash = "f3b3d035b89519faccc4ddd8b0b4407ce96c0eb49068fe50a445d43a3baa8bea"
 metafile = true
 
 [[files]]
-file = "parachute-data-pack.pw.toml"
-hash = "ab3fd6eaba443518e737b462c42bb6dfb2fdccb52732da39bdac904bb95cdd1f"
-metafile = true
-
-[[files]]
-file = "resourcepacks/improved-better-weapons.pw.toml"
-hash = "9f6bf4298e97f0e51e1e9db4a53c04f42f1ed5ae72234c4734538dcd39d43f5b"
-metafile = true
-
-[[files]]
 file = "tacz-apocalypse-gun-pack.pw.toml"
 hash = "e76d96fa591f8e3b708bff4013ccea2af72bf1637dc38af1c5a21528fa18ea0e"
 metafile = true
