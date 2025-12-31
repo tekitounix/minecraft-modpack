@@ -1,13 +1,13 @@
 name = "Iguana Lib"
-filename = "iglib-1.0.5-forge-1.20.1.jar"
+filename = "iguana_lib-1.0.4-forge-1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "8312e0569793bedcad9c404250ac7748393c8153"
+hash = "bb42338fb3edb1fb99abbfc2729dbf77c1958b5f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7193147
+file-id = 6330316
 project-id = 1137214

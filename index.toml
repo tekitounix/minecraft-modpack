@@ -67,7 +67,7 @@ metafile = true
 
 [[files]]
 file = "mods/iguana-lib.pw.toml"
-hash = "bc084bef59b57ffa2f9a6c89218aa4815d5b54f56437c0b792b33495f2349939"
+hash = "0834edba8208be0c39e6681efb671db7a8504c2f8086189a062bf303001b7ee8"
 metafile = true
 
 [[files]]
