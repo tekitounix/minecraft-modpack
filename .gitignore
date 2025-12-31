@@ -10,5 +10,7 @@ Thumbs.db
 # Packwiz cache
 .packwizrc
 dist/
-dist/
+
+# Jarファイルは無視（ただしjarsフォルダは例外）
 *.jar
+!jars/*.jar
