@@ -11,6 +11,7 @@ Thumbs.db
 .packwizrc
 dist/
 
-# Jarファイルは無視（ただしjarsフォルダは例外）
+# Jarファイルは無視（ただしmods/とjars/フォルダは例外）
 *.jar
+!mods/*.jar
 !jars/*.jar
