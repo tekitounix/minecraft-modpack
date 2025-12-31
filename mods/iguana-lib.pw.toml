@@ -1,9 +1,0 @@
-name = "Iguana Lib"
-filename = "iguana_lib-1.0.4-forge-1.20.1.jar"
-side = "both"
-
-[download]
-url = "https://github.com/tekitounix/minecraft-modpack/raw/main/jars/iguana_lib-1.0.4-forge-1.20.1.jar"
-hash-format = "sha512"
-hash = "69921d8e22f7e349675db067989eefe1f81a16f25db0301c402c090454bfc32a38fac3756c1267c12457d12d77774ad3839640a16f3e5d464820919bc932ec9f"
-
