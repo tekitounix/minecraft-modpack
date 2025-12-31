@@ -16,8 +16,9 @@ jobs:
       
       - name: Install Packwiz
         run: |
-          curl -L -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz_linux_amd64
+          curl -sL -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz_linux_amd64
           chmod +x packwiz
+          ./packwiz --version
           
       - name: Refresh Index
         run: ./packwiz refresh
