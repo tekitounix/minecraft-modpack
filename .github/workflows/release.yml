@@ -92,7 +92,7 @@ jobs:
                https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
                ```
             5. **メモリ設定**: 起動構成を右クリック → 編集 → 設定 → Java → 最大メモリを **6144 MB** に設定
-            6. 起動してサーバーに接続！（IP: `25.51.29.103`）
+            6. 起動してサーバーに接続！（IP はサーバー管理者に確認）
             
             初回起動時に全ての Mod と TaCZ 銃パックが自動ダウンロードされます ✨
             
