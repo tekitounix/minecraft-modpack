@@ -1,0 +1,31 @@
+# Mod 追加/更新時に自動で index.toml を再生成
+name: Update Packwiz Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mods/**'
+      - 'pack.toml'
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Packwiz
+        run: |
+          curl -L -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz_linux_amd64
+          chmod +x packwiz
+          
+      - name: Refresh Index
+        run: ./packwiz refresh
+        
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto-update index.toml"
+          git push
