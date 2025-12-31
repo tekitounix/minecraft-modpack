@@ -13,6 +13,10 @@ file = "gunpacks/ARIPS_ver.1.2.3-LVS.zip"
 hash = "649d2c2bbfa726e0c42d6f4f9a7c9a6285e0b17e617f022f0925804cd86a5efd"
 
 [[files]]
+file = "gunpacks/Apocalypse_v1.1.7_G.zip"
+hash = "d5b620657cf0afe89ee671d3d89e7698341106c3b5ac184a8b8688463e2783f2"
+
+[[files]]
 file = "gunpacks/Eurrussia-Variantz-3.0.5c-hotfix.zip"
 hash = "9b4fd2f14db92ab2cd99e78b44ffb380badfce62090211813efefba81226ba00"
 
@@ -215,8 +219,3 @@ hash = "bd05da3d9df29b914165583f1c6dfd918a138996447ff32c0418329824027a8f"
 [[files]]
 file = "options.txt"
 hash = "1a76e3ab121ed7defef02f1a5d53d9100224938d5f950279175b5463042d5886"
-
-[[files]]
-file = "tacz-apocalypse-gun-pack.pw.toml"
-hash = "e76d96fa591f8e3b708bff4013ccea2af72bf1637dc38af1c5a21528fa18ea0e"
-metafile = true
