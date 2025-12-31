@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/ashvehicle.pw.toml"
+hash = "4c5b73357b78ab713f677d1a45b899037b164a293c36449270306598b8c4d4bb"
+metafile = true
+
+[[files]]
 file = "mods/better-parachute-paraquedas.pw.toml"
 hash = "20a1b075e968ab360874cd9f08209bf4e4a3bbb2f0b3d8493538032b65313695"
 metafile = true
