@@ -1,0 +1,94 @@
+# push時に Prism Launcher 用の起動構成zipを自動生成
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mods/**'
+      - 'pack.toml'
+      - 'index.toml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download packwiz-installer-bootstrap
+        run: |
+          curl -sL -o packwiz-installer-bootstrap.jar \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+      
+      - name: Create Prism Launcher instance
+        run: |
+          mkdir -p instance/.minecraft
+          mkdir -p instance
+          
+          # packwiz-installer-bootstrap.jar を配置
+          cp packwiz-installer-bootstrap.jar instance/.minecraft/
+          
+          # Prism Launcher の instance.cfg を作成
+          cat > instance/instance.cfg << 'EOF'
+          InstanceType=OneSix
+          JavaVersion=17
+          LogPrePostOutput=true
+          ManagedPack=false
+          ManagedPackID=
+          ManagedPackName=
+          ManagedPackType=
+          ManagedPackVersionID=
+          ManagedPackVersionName=
+          OverrideCommands=true
+          PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
+          name=Modpack Server
+          EOF
+          
+          # mmc-pack.json を作成（Forge 47.4.0 指定）
+          cat > instance/mmc-pack.json << 'EOF'
+          {
+            "components": [
+              {
+                "uid": "net.minecraft",
+                "version": "1.20.1"
+              },
+              {
+                "uid": "net.minecraftforge",
+                "version": "47.4.0"
+              }
+            ],
+            "formatVersion": 1
+          }
+          EOF
+      
+      - name: Create zip
+        run: |
+          cd instance
+          zip -r ../modpack-prism.zip .
+          cd ..
+      
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y%m%d-%H%M')" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.date.outputs.date }}
+          name: Modpack ${{ steps.date.outputs.date }}
+          body: |
+            ## 🎮 Modpack 更新
+            
+            ### インストール方法
+            1. [Prism Launcher](https://prismlauncher.org/download/) をインストール
+            2. `modpack-prism.zip` をダウンロード
+            3. Prism Launcher で「起動構成を追加」→「zipからインポート」
+            4. 起動！
+            
+            初回起動時に全ての Mod が自動ダウンロードされます。
+          files: modpack-prism.zip
+          draft: false
+          prerelease: false
