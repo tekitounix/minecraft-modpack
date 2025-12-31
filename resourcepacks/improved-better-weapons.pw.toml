@@ -1,0 +1,13 @@
+name = "(Improved) Better Weapons"
+filename = "Better_Weapons_1.20-1.21.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0bd54156cd7f12400fddac9960cca28c35751c07"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7286777
+project-id = 1396681

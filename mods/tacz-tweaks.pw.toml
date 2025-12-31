@@ -1,13 +1,13 @@
 name = "TaCZ Tweaks"
-filename = "tacz-tweaks-2.11.2-all.jar"
+filename = "tacz-tweaks-2.7.1-all.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/H8peNuJG/versions/qD990J7Z/tacz-tweaks-2.11.2-all.jar"
+url = "https://cdn.modrinth.com/data/H8peNuJG/versions/IqlxYvYy/tacz-tweaks-2.7.1-all.jar"
 hash-format = "sha512"
-hash = "67ab623a60951ce1d6bb9b5a9e0b7a8770b399d19c8de739a7bc7a4f3536126a232cb1292be4f7599b921c2075344dc360e6a80fabbfe6c73c775bcb77fae739"
+hash = "675c0c24b0f2d325a758565ff86e297f0b60394e6cffbbb8901db7afc00d0d5cb339bd5a9874784f4cf422e440f40f776b988931480135c13aaeee331d702c5c"
 
 [update]
 [update.modrinth]
 mod-id = "H8peNuJG"
-version = "qD990J7Z"
+version = "IqlxYvYy"

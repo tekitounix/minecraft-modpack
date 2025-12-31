@@ -3,11 +3,11 @@ filename = "iglib-1.0.5-forge-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "8312e0569793bedcad9c404250ac7748393c8153"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5axv9QEo/versions/7q9XiWze/iglib-1.0.5-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "d18ebf0a661e13b5309c17df2d795e19936547e82071103811a4dc3059bacc4790c7087c4ab7e42a94c56da79b940d17ff4bf33476cea94a96bb7b43e9e8aa75"
 
 [update]
-[update.curseforge]
-file-id = 7193147
-project-id = 1137214
+[update.modrinth]
+mod-id = "5axv9QEo"
+version = "7q9XiWze"
