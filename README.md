@@ -7,13 +7,31 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
 ---
 
-## � 目次
+## 📋 目次
 
-1. [Hamachi のインストール](#-hamachi-のインストール必須)
-2. [Prism Launcher のインストール](#-prism-launcher-のインストール)
-3. [Modpack のインポート](#-modpack-のインポート)
-4. [メモリ設定（重要！）](#%EF%B8%8F-メモリ設定重要)
-5. [起動とサーバー接続](#-起動とサーバー接続)
+1. [Minecraft Java Edition の購入](#-minecraft-java-edition-の購入)
+2. [Hamachi のインストール](#-hamachi-のインストール必須)
+3. [Prism Launcher のインストール](#-prism-launcher-のインストール)
+4. [Modpack のインポート](#-modpack-のインポート)
+5. [メモリ設定（重要！）](#%EF%B8%8F-メモリ設定重要)
+6. [起動とサーバー接続](#-起動とサーバー接続)
+
+---
+
+## 🎮 Minecraft Java Edition の購入
+
+このモッドパックを使用するには **Minecraft Java Edition** が必要です。
+
+### 購入方法
+
+1. **[Minecraft 公式サイト](https://www.minecraft.net/ja-jp/store/minecraft-java-bedrock-edition-pc)** にアクセス
+2. **「MINECRAFT: JAVA & BEDROCK EDITION」** を購入（約3,960円）
+3. **Microsoft アカウント** でサインイン（持っていない場合は作成）
+4. 購入完了後、アカウントに Minecraft が紐付けられます
+
+> 💡 **ヒント**: Java Edition と Bedrock Edition がセットになっています。Mod を使うには **Java Edition** が必要です。
+
+> ⚠️ **注意**: 公式サイト以外からの購入は詐欺の可能性があります。必ず公式サイトから購入してください。
 
 ---
 
