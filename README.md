@@ -1,4 +1,4 @@
-# 🎮 Custom Modpack for Minecraft 1.20.1
+# 🎮 Minecraft Modpack (1.20.1 + Forge)
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)](https://minecraft.net)
 [![Forge](https://img.shields.io/badge/Forge-47.4.0-orange)](https://files.minecraftforge.net)
@@ -7,41 +7,47 @@ Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
 
 ---
 
-## 📦 インストール方法
+## 🚀 クイックスタート（5分で完了）
 
-### 方法1: 自動インストール（推奨）
+### Step 1: Prism Launcher をインストール
 
-Prism Launcher / MultiMC を使用すると、起動時に自動で Mod が更新されます。
+**[Prism Launcher](https://prismlauncher.org/download/)** をダウンロードしてインストール
 
-1. **[Prism Launcher](https://prismlauncher.org/)** をインストール
-2. 「インスタンスを追加」→「Minecraft 1.20.1」→「Forge 47.4.0」を選択
-3. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
-4. インスタンスの `.minecraft` フォルダに配置
-5. インスタンス設定 → 「カスタムコマンド」→ 「Pre-launch command」:
+| OS | ダウンロード |
+|----|-------------|
+| Windows | [インストーラー (.exe)](https://prismlauncher.org/download/windows/) |
+| macOS | [DMG](https://prismlauncher.org/download/mac/) |
+| Linux | [AppImage / Flatpak](https://prismlauncher.org/download/linux/) |
 
-```bash
+### Step 2: Minecraft インスタンスを作成
+
+1. Prism Launcher を起動
+2. 左上の **「インスタンスを追加」** をクリック
+3. 以下を設定:
+   - **バージョン:** `1.20.1`
+   - **Mod ローダー:** `Forge` → `47.4.0`
+4. **「OK」** で作成
+
+### Step 3: 自動更新を設定
+
+1. 作成したインスタンスを **右クリック** → **「編集」**
+2. 左メニューから **「設定」** を選択
+3. **「カスタムコマンド」** にチェックを入れる
+4. **「Pre-launch command」** に以下をコピペ:
+
+```
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
 ```
 
-6. **完了！** 以降はゲーム起動時に自動更新されます ✨
+5. [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) をダウンロード
+6. インスタンスを右クリック → **「フォルダ」** → **「Minecraft フォルダ」**
+7. ダウンロードした `packwiz-installer-bootstrap.jar` をこのフォルダに配置
 
-### 方法2: 手動インストール
+### Step 4: 起動！
 
-公式ランチャーを使用する場合:
+インスタンスをダブルクリックして起動するだけ！
 
-**macOS/Linux:**
-```bash
-cd scripts && ./install.sh
-```
-
-**Windows:**
-```
-scripts\install.bat をダブルクリック
-```
-
-### 方法3: ZIP ダウンロード
-
-[Releases](../../releases) から最新の ZIP をダウンロードして展開。
+初回起動時に全ての Mod が自動ダウンロードされます ✨
 
 ---
 
@@ -50,13 +56,13 @@ scripts\install.bat をダブルクリック
 ```
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
 │  管理者が更新   │────▶│   GitHub     │────▶│  Discord 通知   │
-│  git push       │     │   Actions    │     │  「更新あり！」 │
+│  (git push)     │     │   (自動処理) │     │  「更新あり！」 │
 └─────────────────┘     └──────────────┘     └─────────────────┘
                                                       │
                                                       ▼
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  プレイヤーが   │────▶│  packwiz が  │────▶│  最新 Mod で    │
-│  ゲーム起動     │     │  自動更新    │     │  プレイ開始！   │
+│  プレイヤーが   │────▶│  Mod 自動    │────▶│  最新 Mod で    │
+│  ゲーム起動     │     │  ダウンロード │     │  プレイ開始！   │
 └─────────────────┘     └──────────────┘     └─────────────────┘
 ```
 
@@ -64,9 +70,19 @@ scripts\install.bat をダブルクリック
 
 ---
 
-## 📋 Mod 一覧
+## 🖥️ サーバー情報
 
-### 銃火器・戦闘
+| 項目 | 値 |
+|------|-----|
+| **サーバー IP** | `25.51.29.103:25565` |
+| **ネットワーク** | Hamachi 参加必須 |
+| **バージョン** | Minecraft 1.20.1 + Forge 47.4.0 |
+
+---
+
+## 📋 収録 Mod 一覧
+
+### 🔫 銃火器・戦闘
 | Mod | 説明 |
 |-----|------|
 | TaCZ (Timeless and Classics Zero) | リアルな銃火器 |
@@ -74,61 +90,70 @@ scripts\install.bat をダブルクリック
 | Superb Warfare | 追加武器 |
 | WWII Machine Guns | 第二次世界大戦の機関銃 |
 
-### 乗り物
+### 🚗 乗り物
 | Mod | 説明 |
 |-----|------|
 | Immersive Aircraft | 飛行機・グライダー |
 | ASH Vehicles | 車両 |
 | MCSP Military Vehicle | 軍用車両 |
 
-### 家具・建築
+### 🛋️ 家具・建築
 | Mod | 説明 |
 |-----|------|
 | Paladin's Furniture | 家具セット |
 | Refurbished Furniture | モダン家具 |
-| Macaw's シリーズ | 橋、ドア、フェンス、屋根、窓など |
+| Macaw's シリーズ | 橋、ドア、フェンス、屋根、窓、照明など |
+| ManyIdeas Doors | ドアバリエーション |
 
-### その他
+### 🍳 その他
 | Mod | 説明 |
 |-----|------|
 | Farmer's Delight | 料理拡張 |
 | Embeddium | パフォーマンス改善 |
 | Oculus | シェーダー対応 |
+| JEI | レシピ検索 |
 
 ---
 
-## 🖥️ サーバー情報
+## ⚠️ TaCZ 拡張パック（初回のみ手動）
 
-| 項目 | 値 |
-|------|-----|
-| **IP** | `25.51.29.103:25565` |
-| **ネットワーク** | Hamachi 要参加 |
-| **バージョン** | Minecraft 1.20.1 + Forge 47.4.0 |
+TaCZ の銃パックは自動配布に対応していません。  
+**初回のみ** 以下の手順で手動インストールしてください。
 
----
-
-## ⚠️ TaCZ 拡張パックについて
-
-TaCZ の拡張パック（銃パック）は Packwiz での自動配布に対応していません。
-初回のみ以下から手動ダウンロードし、`.minecraft/tacz/` に配置してください。
-
-| パック名 | ダウンロード |
-|----------|--------------|
-| Default Gun Pack | TaCZ に同梱 |
-| Apocalypse Pack | [CurseForge](https://www.curseforge.com/minecraft/texture-packs/tacz-apocalypse-gun-pack) |
-| その他 | サーバー管理者から配布 |
+1. サーバー管理者から銃パックを受け取る
+2. Prism Launcher でインスタンスを右クリック → **「フォルダ」** → **「Minecraft フォルダ」**
+3. `tacz` フォルダを開く（なければ作成）
+4. 銃パック（`.zip` ファイル）を配置
 
 ---
 
-## 🛠️ 管理者向け
+## ❓ トラブルシューティング
+
+### 「Java が見つかりません」エラー
+Prism Launcher の設定 → Java → 「自動検出」をクリック
+
+### Mod のダウンロードに失敗する
+1. インターネット接続を確認
+2. `packwiz-installer-bootstrap.jar` が正しい場所にあるか確認
+3. Pre-launch command が正しくコピーされているか確認
+
+### サーバーに接続できない
+1. Hamachi に参加しているか確認
+2. Mod バージョンがサーバーと一致しているか確認
+
+---
+
+## 🛠️ 管理者向け情報
 
 ### Mod の追加・更新
 
 ```bash
+cd /path/to/modpack
+
 # Modrinth から追加
 ./bin/packwiz modrinth install <mod-name>
 
-# CurseForge から追加
+# CurseForge から追加  
 ./bin/packwiz curseforge install <mod-name>
 
 # 全 Mod を更新
@@ -141,21 +166,13 @@ TaCZ の拡張パック（銃パック）は Packwiz での自動配布に対応
 git add -A && git commit -m "Update mods" && git push
 ```
 
-### ZIP 配布用パッケージ作成
-
-```bash
-./scripts/package.sh
-# → dist/mods-YYYYMMDD.zip, dist/tacz-YYYYMMDD.zip
-```
-
-### ディレクトリ構造
+### ディレクトリ構成
 
 ```
 modpack/
-├── .github/workflows/    # GitHub Actions（自動更新・Discord通知）
-├── mods/                 # Mod 定義ファイル（.pw.toml）
-├── scripts/              # インストーラースクリプト
-├── pack.toml             # Packwiz 設定
+├── .github/workflows/    # GitHub Actions
+├── mods/                 # Mod 定義ファイル (.pw.toml)
+├── pack.toml             # Packwiz メイン設定
 ├── index.toml            # Mod インデックス（自動生成）
-└── README.md             # このファイル
+└── README.md
 ```

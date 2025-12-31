@@ -14,14 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          cache: false
+      
       - name: Install Packwiz
         run: |
-          curl -sL -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz_linux_amd64
-          chmod +x packwiz
-          ./packwiz --version
+          go install github.com/packwiz/packwiz@latest
+          packwiz --version
           
       - name: Refresh Index
-        run: ./packwiz refresh
+        run: packwiz refresh
         
       - name: Commit changes
         run: |
