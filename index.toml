@@ -6,11 +6,11 @@ hash = "6184ffd5b12d7eff7152a2919663e8f604b51c06b1dfaecbdacda782f6f44a49"
 
 [[files]]
 file = ".github/workflows/update-index.yml"
-hash = "4b3763d9ceba9378023bcadfb8e940bddf65446ddb37930c6a2223c74926c8ad"
+hash = "0c54f36741357e81234b4e625dcd1276080699eea8c06a93aae9f182f368744c"
 
 [[files]]
 file = "README.md"
-hash = "14bace0048c8fb708f43d3379c765fefc0c632fa83477fdd05967859de7af4ff"
+hash = "a8585c73aa42de43cbf49a38b6cace62d9c37f36c94e6c5851157b17aa3dcdfe"
 
 [[files]]
 file = "mods/ashvehicle.pw.toml"
@@ -211,22 +211,6 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "f3b3d035b89519faccc4ddd8b0b4407ce96c0eb49068fe50a445d43a3baa8bea"
 metafile = true
-
-[[files]]
-file = "scripts/install.bat"
-hash = "171d35628bbc1ba6e283bec226f0ea9becb5077667dbf164efc91fa933a6f11a"
-
-[[files]]
-file = "scripts/install.ps1"
-hash = "96b8306a60074b376dc6e91b26fe7e4d54fa1e906266ea3caec2b8396453d4fe"
-
-[[files]]
-file = "scripts/install.sh"
-hash = "1119268642e81718443e570162acd1f2725449ec75f62b65df5cffe4b47252d3"
-
-[[files]]
-file = "scripts/package.sh"
-hash = "ee8332e8ce21e976c70f8bd7e00af74736673fa01236f985c911c07f371bb2c9"
 
 [[files]]
 file = "tacz-apocalypse-gun-pack.pw.toml"
