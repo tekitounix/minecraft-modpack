@@ -272,33 +272,169 @@ Prism Launcher の設定 → Java → 「自動検出」をクリック
 
 ## 🛠️ 管理者向け情報
 
-### Mod の追加・更新
+### packwiz のインストール
+
+Mod 管理には **packwiz** が必要です。
+
+```bash
+# Go をインストール（未インストールの場合）
+brew install go
+
+# packwiz をインストール
+go install github.com/packwiz/packwiz@latest
+
+# PATH に追加（~/.zshrc に追記）
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# 確認
+packwiz help
+```
+
+---
+
+### Mod の追加
+
+#### Modrinth / CurseForge から追加（推奨）
 
 ```bash
 cd modpack
 
-# Modrinth から追加
-../bin/packwiz modrinth install <mod-name>
+# Modrinth から検索して追加
+packwiz modrinth install <mod-name>
 
-# 全 Mod を更新
-../bin/packwiz update --all
+# CurseForge から追加
+packwiz curseforge install <mod-name>
 
-# インデックス再生成
-../bin/packwiz refresh
-
-# 変更をプッシュ（GitHub Actions が自動でリリース作成）
-git add -A && git commit -m "Update mods" && git push
+# 例: JEI を追加
+packwiz modrinth install jei
 ```
+
+#### 直接 jar ファイルを追加（Modrinth/CurseForge にない場合）
+
+```bash
+cd modpack
+
+# jar ファイルを mods/ に配置
+cp ~/Downloads/some-mod-1.0.0.jar mods/
+
+# インデックスを更新（.pw.toml は生成されない、jar がそのまま配布される）
+packwiz refresh
+```
+
+---
+
+### Mod の更新
+
+```bash
+cd modpack
+
+# 特定の Mod を更新
+packwiz update <mod-name>
+
+# 全 Mod を一括更新
+packwiz update --all
+
+# 更新可能な Mod を確認（更新はしない）
+packwiz update --all --dry-run
+```
+
+---
+
+### Mod の削除
+
+```bash
+cd modpack
+
+# Mod を削除
+packwiz remove <mod-name>
+
+# または直接ファイルを削除して refresh
+rm mods/<mod-name>.pw.toml
+packwiz refresh
+```
+
+---
+
+### TaCZ 銃パックの追加・更新
+
+TaCZ の銃パック（.zip ファイル）は `tacz/` フォルダに配置します。
+
+#### 新しい銃パックを追加
+
+```bash
+cd modpack
+
+# 銃パックを tacz/ に配置
+cp ~/Downloads/NewGunPack-v1.0.zip tacz/
+
+# インデックスを更新
+packwiz refresh
+```
+
+#### 銃パックを更新
+
+```bash
+cd modpack
+
+# 古いファイルを削除
+rm tacz/OldGunPack-v1.0.zip
+
+# 新しいファイルを配置
+cp ~/Downloads/OldGunPack-v1.1.zip tacz/
+
+# インデックスを更新
+packwiz refresh
+```
+
+#### 銃パックを削除
+
+```bash
+cd modpack
+rm tacz/<gunpack-name>.zip
+packwiz refresh
+```
+
+---
+
+### 設定ファイルの変更
+
+`config/` 内のファイルを編集後、`packwiz refresh` は不要です（そのまま push すればOK）。
+
+```bash
+# 例: TaCZ Tweaks の設定を変更
+vim config/tacztweaks.json
+
+# そのままコミット
+git add -A && git commit -m "Update config" && git push
+```
+
+---
+
+### 変更の反映
+
+```bash
+cd modpack
+
+# 変更をコミットしてプッシュ
+git add -A && git commit -m "Add new mod" && git push
+```
+
+push すると：
+1. GitHub Actions が起動
+2. `modpack-prism.zip` を自動生成
+3. GitHub Releases に自動アップロード
+4. **プレイヤーは次回起動時に自動更新**
+
+---
 
 ### ディレクトリ構成
 
 ```
 modpack/
 ├── .github/workflows/    # GitHub Actions（自動リリース）
-├── mods/                 # Mod 定義ファイル (.pw.toml)
-├── tacz/                 # TaCZ 銃パック定義 (.pw.toml)
-├── gunpacks/             # TaCZ 銃パック本体（Git LFS）
-├── jars/                 # 直接配布する Mod（特殊バージョン）
+├── mods/                 # Mod 定義ファイル (.pw.toml, .jar)
+├── tacz/                 # TaCZ 銃パック (.zip)
 ├── config/               # Mod 設定ファイル
 ├── options.txt           # キー設定
 ├── pack.toml             # Packwiz メイン設定
@@ -306,9 +442,31 @@ modpack/
 └── README.md
 ```
 
-### 自動化の仕組み
+---
 
-1. `git push` すると GitHub Actions が起動
-2. `modpack-prism.zip` を自動生成
-3. GitHub Releases に自動アップロード
-4. プレイヤーは次回起動時に自動更新
+### トラブルシューティング（管理者向け）
+
+#### `packwiz refresh` でエラーが出る
+
+```bash
+# キャッシュをクリア
+rm -rf ~/.cache/packwiz
+
+# 再実行
+packwiz refresh
+```
+
+#### 特定の Mod が更新されない
+
+```bash
+# .pw.toml を削除して再追加
+rm mods/<mod-name>.pw.toml
+packwiz modrinth install <mod-name>
+```
+
+#### index.toml のハッシュが合わない
+
+```bash
+# インデックスを再生成
+packwiz refresh --force
+```

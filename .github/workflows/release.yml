@@ -6,9 +6,9 @@ on:
     branches: [main]
     paths:
       - 'mods/**'
-      - 'gunpacks/**'
-      - 'jars/**'
+      - 'tacz/**'
       - 'config/**'
+      - 'options.txt'
       - 'pack.toml'
       - 'index.toml'
   workflow_dispatch:
@@ -30,46 +30,45 @@ jobs:
       - name: Create Prism Launcher instance
         run: |
           mkdir -p instance/.minecraft
-          mkdir -p instance
           
           # packwiz-installer-bootstrap.jar を配置
           cp packwiz-installer-bootstrap.jar instance/.minecraft/
           
           # Prism Launcher の instance.cfg を作成（メモリ設定込み）
           cat > instance/instance.cfg << 'EOF'
-          InstanceType=OneSix
-          JavaVersion=17
-          LogPrePostOutput=true
-          ManagedPack=false
-          ManagedPackID=
-          ManagedPackName=
-          ManagedPackType=
-          ManagedPackVersionID=
-          ManagedPackVersionName=
-          OverrideCommands=true
-          OverrideMemory=true
-          MinMemAlloc=2048
-          MaxMemAlloc=6144
-          PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar -g -s client https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
-          name=Modpack Server
-          EOF
+InstanceType=OneSix
+JavaVersion=17
+LogPrePostOutput=true
+ManagedPack=false
+ManagedPackID=
+ManagedPackName=
+ManagedPackType=
+ManagedPackVersionID=
+ManagedPackVersionName=
+OverrideCommands=true
+OverrideMemory=true
+MinMemAlloc=2048
+MaxMemAlloc=6144
+PreLaunchCommand="$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" -g -s client https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
+name=Modpack Server
+EOF
           
           # mmc-pack.json を作成（Forge 47.4.0 指定）
           cat > instance/mmc-pack.json << 'EOF'
-          {
-            "components": [
-              {
-                "uid": "net.minecraft",
-                "version": "1.20.1"
-              },
-              {
-                "uid": "net.minecraftforge",
-                "version": "47.4.0"
-              }
-            ],
-            "formatVersion": 1
-          }
-          EOF
+{
+  "components": [
+    {
+      "uid": "net.minecraft",
+      "version": "1.20.1"
+    },
+    {
+      "uid": "net.minecraftforge",
+      "version": "47.4.0"
+    }
+  ],
+  "formatVersion": 1
+}
+EOF
       
       - name: Create zip
         run: |
