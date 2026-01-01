@@ -1,0 +1,13 @@
+name = "[TaCZ] Throwable Thing"
+filename = "throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "14c88d07f9d24b70fd1b4d492d1eca609534a442"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6097376
+project-id = 1156247

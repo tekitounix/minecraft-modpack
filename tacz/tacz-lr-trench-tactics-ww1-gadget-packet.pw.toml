@@ -1,0 +1,13 @@
+name = "[TacZ & LR]Trench Tactics WW1 gadget packet"
+filename = "Trench_Tactics v0.05.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2742afb3eb204d032f2fedbb830d0c1ff6244395"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6610302
+project-id = 1279342

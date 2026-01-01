@@ -1,0 +1,13 @@
+name = "[TACZ] The Continental Gunpack"
+filename = "The Continental v1.4.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c9365f43c928b4217b771098cd6129ba9c8df14c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6532000
+project-id = 1188142

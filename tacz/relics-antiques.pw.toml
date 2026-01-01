@@ -1,0 +1,13 @@
+name = "[TaCZ] Relics & Antiques"
+filename = "antiques_gunpack_v0.2.2.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "717cc31fc5d7f067733fc5449b5610e077f877ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6686381
+project-id = 1215254

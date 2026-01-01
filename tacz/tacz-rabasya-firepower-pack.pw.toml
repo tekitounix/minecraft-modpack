@@ -1,0 +1,13 @@
+name = "[TaCZ] RABasya Firepower Pack"
+filename = "RFP v1.0.8.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a407c4b8b0aa75f2dc45764f1f88f40ca9efefde"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7071078
+project-id = 1126780

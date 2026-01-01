@@ -1,0 +1,13 @@
+name = "[TaCZ]Rebel gunpack"
+filename = "Rebel v1.0.8a.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2855331bfb3b4fddde52ecc68dd6e522da2e7321"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6620195
+project-id = 1110919

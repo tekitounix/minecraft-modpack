@@ -1,0 +1,13 @@
+name = "[TaCZ] ARIPS Content Expansion Pack"
+filename = "ARIPS_ver.1.2.3-LVS.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a5b494d8cacd7fb8d6fa175dfe89639ce928b35"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6307159
+project-id = 1033596

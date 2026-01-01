@@ -9,12 +9,9 @@ file = "config/tacztweaks.json"
 hash = "ec4540a020a34b1b1fca27dcee0d5c1026d97a7acb1187a889950788f6bec39a"
 
 [[files]]
-file = "mods/MCSP-1.20.1-V1.0.5.jar"
-hash = "94242f0fbd5f7fe62293d4e5d91148aaf5ec0d34656fe5c91b5b2a3baea06ce9"
-
-[[files]]
-file = "mods/ashvehicle-4.1-8.7-SNAPSHOT.jar"
-hash = "79d55640685b5abfa5f510355b97edc5bc1203464167ae8c8384a03d99dd9924"
+file = "mods/ashvehicle.pw.toml"
+hash = "e555fbc080e1d5381c3ea01ba8dc9e8d9034c6bfc189fac72f4b3c5e9136c41f"
+metafile = true
 
 [[files]]
 file = "mods/better-parachute-paraquedas.pw.toml"
@@ -33,17 +30,13 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
+hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
 metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
 hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
 metafile = true
-
-[[files]]
-file = "mods/endlessammo-1.2.0.jar"
-hash = "aad1f64a7469f11c6fa68e2f6f9d977f0c3e3ca5a45be50bbffcd89506f16ab3"
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
@@ -61,8 +54,9 @@ hash = "376f8a190f00bd120193d7a665ebe1b03dfe329cc395f7d944f7216c1182c84d"
 metafile = true
 
 [[files]]
-file = "mods/geckolib-forge-1.20.1-4.7.2.jar"
-hash = "13926e4c3f64dcf67109ed3e3c85d6eb9ba8089eaa308de17eb15d2f846e3f3d"
+file = "mods/geckolib.pw.toml"
+hash = "5290e7961ab2ca528b8bf3fecfbcb33240029314fd7cb2086c06c3ee13daf1fc"
+metafile = true
 
 [[files]]
 file = "mods/iguana-lib.pw.toml"
@@ -70,16 +64,19 @@ hash = "0834edba8208be0c39e6681efb671db7a8504c2f8086189a062bf303001b7ee8"
 metafile = true
 
 [[files]]
-file = "mods/immersive_aircraft-1.2.2+1.20.1-forge.jar"
-hash = "84e1e87d32e4a8b36cd9529efcb633c2a8c8c189d15e61a7b422310047566b89"
+file = "mods/immersive-aircraft.pw.toml"
+hash = "120be2bee17effa9c285cdacd8b5f74b24049c66a24fada1d4ec616e7bbc2f49"
+metafile = true
 
 [[files]]
-file = "mods/jei-1.20.1-forge-15.20.0.112.jar"
-hash = "2d3a86f503dbde51afa5142951525c37e227016ce8d9e7dfd10bbdd9233f0204"
+file = "mods/jei.pw.toml"
+hash = "69918d4cb0fac54c9ed94f7a2223b04f9291f79c7f481f0b0e3649a77648fe1b"
+metafile = true
 
 [[files]]
-file = "mods/kotlinforforge-4.11.0-all.jar"
-hash = "ef988f86d170af499d147ea8a5c34c99dbd6d8f4a5ad236a4b43818dc4470a10"
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "7ea985404ee4cc9082472c6869ec146309f526e395361b39f2f4c1a43506c41d"
+metafile = true
 
 [[files]]
 file = "mods/macaws-bridges.pw.toml"
@@ -92,8 +89,38 @@ hash = "33af5f73cc7b802cf45b02ef7ec7b9a516919d55ed32a035a4661f33331b5531"
 metafile = true
 
 [[files]]
+file = "mods/macaws-fences-and-walls.pw.toml"
+hash = "c671e975aad1c5aeeb6ddd19894baa899334cc266001402c1a956f83c465cc34"
+metafile = true
+
+[[files]]
+file = "mods/macaws-furniture.pw.toml"
+hash = "454c8dd01b9f5e9b9288f37230dd0e38b7a2bba8d14bf4adce738185626191bd"
+metafile = true
+
+[[files]]
+file = "mods/macaws-holidays.pw.toml"
+hash = "9abe732e3bc657c4123d4ccd482405dca9388539ee3bf3715b60ca74dbf01632"
+metafile = true
+
+[[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+hash = "a205d0ab764efa4bb2eb93c114bbfde4cd3e117d117be9a941b8b56148945d0a"
+metafile = true
+
+[[files]]
 file = "mods/macaws-roofs.pw.toml"
 hash = "6445161fb93a765e776f97573a32af44d0615133b76f33d56da1b842eb5fc377"
+metafile = true
+
+[[files]]
+file = "mods/macaws-stairs.pw.toml"
+hash = "27745585e7d6cebb2fcb687563ce64d67a6dedc9ba1755b34d08309f591c8e92"
+metafile = true
+
+[[files]]
+file = "mods/macaws-windows.pw.toml"
+hash = "8fb0ae9433533a1d24f9b738d6fa27f1d3091b10fd60fd9b0944b48901993c7e"
 metafile = true
 
 [[files]]
@@ -107,28 +134,9 @@ hash = "548d16d7f0c909854128a1eca9eca35b4837e8c04901370773cd5e24a57017e8"
 metafile = true
 
 [[files]]
-file = "mods/mcw-fences-1.2.0-1.20.1forge.jar"
-hash = "6fe3bc1e2bb26854e2f0f62bacbaea518b4681b342fca52d2ce6c595775c4c88"
-
-[[files]]
-file = "mods/mcw-furniture-3.3.0-mc1.20.1forge.jar"
-hash = "65562bcfcf1deb473e68f9f06605f43a521670e2ce3712a60b91bbd2e479fe7c"
-
-[[files]]
-file = "mods/mcw-lights-1.1.2-mc1.20.1forge.jar"
-hash = "c729c555e5635aeea17ab90acf1532488f96ed409b937ac1a71b40b61d46c1b1"
-
-[[files]]
-file = "mods/mcw-mcwholidays-1.1.1-mc1.20.1forge.jar"
-hash = "bdfc2db24c71c40b19c136666a12460556f9f39e49bb2092d6881b67f42896de"
-
-[[files]]
-file = "mods/mcw-mcwwindows-2.4.1-mc1.20.1forge.jar"
-hash = "438344fb202a594f47bf490a638a80bf70f4a74c0f1afcec7aa896a753235710"
-
-[[files]]
-file = "mods/mcw-stairs-1.0.1-1.20.1forge.jar"
-hash = "2e79425f5dfe585947270063f71e4fc14ef59f1bcd6911a489e879121e1e0b94"
+file = "mods/mcsp-military-vehicle.pw.toml"
+hash = "69fdde7006e0c6229a03ecda54fafe6bc05a743d051342c6a545446534042d50"
+metafile = true
 
 [[files]]
 file = "mods/oculus.pw.toml"
@@ -161,16 +169,19 @@ hash = "652abe9780694aacade5cd54711cd25228f7e2f7656e98207a14ce5c639270c7"
 metafile = true
 
 [[files]]
-file = "mods/refurbished_furniture-forge-1.20.1-1.0.14.jar"
-hash = "a44d4b232e906ecdbbddafec5b9edc2c9a1dc8a8fa7d7ea0782f0a694eb9d21a"
+file = "mods/refurbished-furniture.pw.toml"
+hash = "d0bf99ee6738fe077f5da39695f8f04aaa5fc25b5aad9387310d9d6134759500"
+metafile = true
 
 [[files]]
-file = "mods/superbwarfare-1.20.1-0.8.7-final-d6ea9a72b.jar"
-hash = "d2ace9eaf40d0424dc8909bfd327bbec97a9a1329e0eeb2fb8aa4090094298c8"
+file = "mods/superb-warfare.pw.toml"
+hash = "593b1ce758cd5b13e3fc0c82dc145f2882923f5c0ae2c743cd68796b5d747e9c"
+metafile = true
 
 [[files]]
-file = "mods/tacz-1.20.1-1.1.6-hotfix.jar"
-hash = "f9b4bb27cecff72750e6ef6e72a1ae579006f7dd1d5ac213c9b228fb4c8747fb"
+file = "mods/tacz-endless-ammo.pw.toml"
+hash = "064cb58f3d36b03828ea6f2f2980a46bb9f620d9ccd6c6329ff3140b21dc5559"
+metafile = true
 
 [[files]]
 file = "mods/tacz-gucci-vuitton-attachments.pw.toml"
@@ -188,6 +199,11 @@ hash = "d37cfe952a966bc4ffde79eb53b730de9b7d77fc515c30650133d13d9cc99001"
 metafile = true
 
 [[files]]
+file = "mods/timeless-and-classics-zero.pw.toml"
+hash = "199087fa3afcccbe6f328ee16f58ab0785bcee13291ebc197f3245c440318e08"
+metafile = true
+
+[[files]]
 file = "mods/yacl.pw.toml"
 hash = "f3b3d035b89519faccc4ddd8b0b4407ce96c0eb49068fe50a445d43a3baa8bea"
 metafile = true
@@ -197,53 +213,65 @@ file = "options.txt"
 hash = "1a76e3ab121ed7defef02f1a5d53d9100224938d5f950279175b5463042d5886"
 
 [[files]]
-file = "tacz/ARIPS_ver.1.2.3-LVS.zip"
-hash = "649d2c2bbfa726e0c42d6f4f9a7c9a6285e0b17e617f022f0925804cd86a5efd"
+file = "tacz/eurrussia-variantz-tacz.pw.toml"
+hash = "42896b56ab56a42f36f98c28fab72ace576a743404919a9c9424638ab85cbabd"
+metafile = true
 
 [[files]]
-file = "tacz/Apocalypse_v1.1.7_G.zip"
-hash = "d5b620657cf0afe89ee671d3d89e7698341106c3b5ac184a8b8688463e2783f2"
+file = "tacz/relics-antiques.pw.toml"
+hash = "f5ba1a84bb8f1294d53132539516953f115d5bf20286361bc8552653f9104079"
+metafile = true
 
 [[files]]
-file = "tacz/Eurrussia-Variantz-3.0.5c-hotfix.zip"
-hash = "9b4fd2f14db92ab2cd99e78b44ffb380badfce62090211813efefba81226ba00"
+file = "tacz/suffuse-gunsmoke.pw.toml"
+hash = "e0a841a3f9b7c534617536144b926c2425e0a7df73542dc12b5669b3656675d5"
+metafile = true
 
 [[files]]
-file = "tacz/GunpowderRevolution_gunpack v1.2.7.zip"
-hash = "5d1deb681fb087442b35f16100aacdf81a13cb9dfd5a1085fef7169e3088a749"
+file = "tacz/tacz-apocalypse-gun-pack.pw.toml"
+hash = "e76d96fa591f8e3b708bff4013ccea2af72bf1637dc38af1c5a21528fa18ea0e"
+metafile = true
 
 [[files]]
-file = "tacz/RFP v1.0.8.zip"
-hash = "359c83622da3baf6f15daddc98e96778ca91d6a7cf099aa82e40cd448e061196"
+file = "tacz/tacz-arips-pack-by-astrallin.pw.toml"
+hash = "230ff519f693ea7ca1682c20b0b244e07eef7482977fe5b4e486896b0f63a9e7"
+metafile = true
 
 [[files]]
-file = "tacz/Rebel v1.0.8a.zip"
-hash = "a6b62ce960763b9fb006524f5fee7cc463b7828fd348414830bcf03187ef5fd9"
+file = "tacz/tacz-classics-reborn.pw.toml"
+hash = "600ffee70211eb24a92cf5590c841951cae2becf1527b6568fb69d28a129adf8"
+metafile = true
 
 [[files]]
-file = "tacz/Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
-hash = "db829e453f38ec5e91731b90ea48ea13b062e5bd936a12b27407cefba752e439"
+file = "tacz/tacz-gunpowder-revolution-great-war-gunpack.pw.toml"
+hash = "e52acc3e74e7c5bfe47b29611621caa1e087707b87588b37f2296d11ab9c3dc3"
+metafile = true
 
 [[files]]
-file = "tacz/The Continental v1.4.zip"
-hash = "73b8db95c171e01131aeba7e77739612721425f8a93ca000b3914500d05a312c"
-
-[[files]]
-file = "tacz/Trench_Tactics v0.05.zip"
-hash = "3d3efcd3e4252768d3bf16a17c3975e654d134b05103fd90ad55a0f0c2276b3e"
-
-[[files]]
-file = "tacz/[TACZ1.1.4]ClassicRCCRP v1.1.0 release hf.zip"
-hash = "26728d80db900cc369800a317b095d571d101a18f1ca27c9e10bb91197a4b4db"
-
-[[files]]
-file = "tacz/antiques_gunpack_v0.2.2.zip"
-hash = "f63d1a9526acb0f051c43aba3583b27e67c9011a61152dadc102a25467649035"
+file = "tacz/tacz-lr-trench-tactics-ww1-gadget-packet.pw.toml"
+hash = "0b488c74b9f0279e6b7719f702a826caeb5fdba70b85e7f5f13c7581bab0a984"
+metafile = true
 
 [[files]]
 file = "tacz/tacz-pre.toml"
 hash = "380a3105e0739f6bbae202352d29d68a7a1e88bab8912c95cd9204492c7d48ae"
 
 [[files]]
-file = "tacz/throwable_thing_v1.3.1-1.1.4_hotfix_1.zip"
-hash = "af32e24ff6f7c4249d078259cb871f853226493b63992063c140d73a2bbc2711"
+file = "tacz/tacz-rabasya-firepower-pack.pw.toml"
+hash = "f3769011f53bd5d63b54db01482503d2753c1636c164f3410bc5a1e047d22fe7"
+metafile = true
+
+[[files]]
+file = "tacz/tacz-rebel-gunpack.pw.toml"
+hash = "ef97fc5091a63ad95d7e732e3e3bd5254e49c916e02b03acf858c89bca768532"
+metafile = true
+
+[[files]]
+file = "tacz/tacz-the-continental-gunpack.pw.toml"
+hash = "5ff1fc4f051b979f533c05ac1416b2cd364c27d2d70c2daccb594f7f3bd13ffb"
+metafile = true
+
+[[files]]
+file = "tacz/tacz-throwable-thing.pw.toml"
+hash = "c0f71127f40c26fc65df62b791f3815897096bebb7852a2488fbbd2f1240b08c"
+metafile = true

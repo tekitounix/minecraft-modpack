@@ -1,0 +1,13 @@
+name = "[TACZ] Eurrussia Variantz"
+filename = "Eurrussia-Variantz-3.0.5c-hotfix.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5c6f9ab704bdc0636672c8391563791bce93967a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6652488
+project-id = 1225424
