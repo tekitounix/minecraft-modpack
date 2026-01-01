@@ -35,40 +35,42 @@ jobs:
           cp packwiz-installer-bootstrap.jar instance/.minecraft/
           
           # Prism Launcher の instance.cfg を作成（メモリ設定込み）
-          cat > instance/instance.cfg << 'EOF'
-InstanceType=OneSix
-JavaVersion=17
-LogPrePostOutput=true
-ManagedPack=false
-ManagedPackID=
-ManagedPackName=
-ManagedPackType=
-ManagedPackVersionID=
-ManagedPackVersionName=
-OverrideCommands=true
-OverrideMemory=true
-MinMemAlloc=2048
-MaxMemAlloc=6144
-PreLaunchCommand="$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" -g -s client https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
-name=Modpack Server
-EOF
+          cat > instance/instance.cfg << 'INSTANCE_EOF'
+          InstanceType=OneSix
+          JavaVersion=17
+          LogPrePostOutput=true
+          ManagedPack=false
+          ManagedPackID=
+          ManagedPackName=
+          ManagedPackType=
+          ManagedPackVersionID=
+          ManagedPackVersionName=
+          OverrideCommands=true
+          OverrideMemory=true
+          MinMemAlloc=2048
+          MaxMemAlloc=6144
+          PreLaunchCommand="$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" -g -s client https://raw.githubusercontent.com/tekitounix/minecraft-modpack/main/pack.toml
+          name=Modpack Server
+          INSTANCE_EOF
+          sed -i 's/^          //' instance/instance.cfg
           
           # mmc-pack.json を作成（Forge 47.4.0 指定）
-          cat > instance/mmc-pack.json << 'EOF'
-{
-  "components": [
-    {
-      "uid": "net.minecraft",
-      "version": "1.20.1"
-    },
-    {
-      "uid": "net.minecraftforge",
-      "version": "47.4.0"
-    }
-  ],
-  "formatVersion": 1
-}
-EOF
+          cat > instance/mmc-pack.json << 'JSON_EOF'
+          {
+            "components": [
+              {
+                "uid": "net.minecraft",
+                "version": "1.20.1"
+              },
+              {
+                "uid": "net.minecraftforge",
+                "version": "47.4.0"
+              }
+            ],
+            "formatVersion": 1
+          }
+          JSON_EOF
+          sed -i 's/^          //' instance/mmc-pack.json
       
       - name: Create zip
         run: |
