@@ -213,9 +213,16 @@ file = "options.txt"
 hash = "1a76e3ab121ed7defef02f1a5d53d9100224938d5f950279175b5463042d5886"
 
 [[files]]
-file = "tacz/eurrussia-variantz-tacz.pw.toml"
-hash = "42896b56ab56a42f36f98c28fab72ace576a743404919a9c9424638ab85cbabd"
-metafile = true
+file = "tacz/Eurrussia-Variantz-3.0.5c-hotfix.zip"
+hash = "9b4fd2f14db92ab2cd99e78b44ffb380badfce62090211813efefba81226ba00"
+
+[[files]]
+file = "tacz/GunpowderRevolution_gunpack v1.2.7.zip"
+hash = "5d1deb681fb087442b35f16100aacdf81a13cb9dfd5a1085fef7169e3088a749"
+
+[[files]]
+file = "tacz/RFP v1.0.8.zip"
+hash = "359c83622da3baf6f15daddc98e96778ca91d6a7cf099aa82e40cd448e061196"
 
 [[files]]
 file = "tacz/relics-antiques.pw.toml"
@@ -243,11 +250,6 @@ hash = "600ffee70211eb24a92cf5590c841951cae2becf1527b6568fb69d28a129adf8"
 metafile = true
 
 [[files]]
-file = "tacz/tacz-gunpowder-revolution-great-war-gunpack.pw.toml"
-hash = "e52acc3e74e7c5bfe47b29611621caa1e087707b87588b37f2296d11ab9c3dc3"
-metafile = true
-
-[[files]]
 file = "tacz/tacz-lr-trench-tactics-ww1-gadget-packet.pw.toml"
 hash = "0b488c74b9f0279e6b7719f702a826caeb5fdba70b85e7f5f13c7581bab0a984"
 metafile = true
@@ -255,11 +257,6 @@ metafile = true
 [[files]]
 file = "tacz/tacz-pre.toml"
 hash = "380a3105e0739f6bbae202352d29d68a7a1e88bab8912c95cd9204492c7d48ae"
-
-[[files]]
-file = "tacz/tacz-rabasya-firepower-pack.pw.toml"
-hash = "f3769011f53bd5d63b54db01482503d2753c1636c164f3410bc5a1e047d22fe7"
-metafile = true
 
 [[files]]
 file = "tacz/tacz-rebel-gunpack.pw.toml"
