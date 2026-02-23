@@ -139,11 +139,6 @@ hash = "69fdde7006e0c6229a03ecda54fafe6bc05a743d051342c6a545446534042d50"
 metafile = true
 
 [[files]]
-file = "mods/oculus.pw.toml"
-hash = "f83b253ca6a8e6f2f847952704da0e1fb00e65cbb10b7c9cb15d1a1780618da0"
-metafile = true
-
-[[files]]
 file = "mods/paladins-furniture.pw.toml"
 hash = "a1c2e02ee5cba7a3fc13315d35b04919fdb8cfdb453f023372d4e1b369607f1b"
 metafile = true
