@@ -162,13 +162,15 @@ packwiz remove <mod-name>
 
 ### Manage TaCZ Gun Packs
 
-Gun packs go in the `tacz/` folder. The process differs depending on whether the pack is on CurseForge or manually placed.
+Gun packs go in the `tacz/` folder. The process differs depending on whether the pack is on CurseForge / Modrinth or manually placed.
 
-#### CurseForge Packs (managed via `.pw.toml`)
+#### CurseForge / Modrinth Packs (managed via `.pw.toml`)
 
 ```bash
 # Add (creates a .pw.toml in tacz/ automatically)
 packwiz curseforge install --meta-folder tacz <URL or slug>
+# For Modrinth:
+packwiz modrinth install --meta-folder tacz <URL or slug>
 
 # Update (single pack)
 packwiz update <pack-name>
