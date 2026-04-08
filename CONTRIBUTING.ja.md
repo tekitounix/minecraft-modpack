@@ -52,14 +52,49 @@ Mod の追加・更新・削除の方法をまとめたガイドです。
 
 ## 🛠️ 初期セットアップ
 
-### 1. packwiz をインストール
+### 1. Go & packwiz をインストール
+
+<details>
+<summary>macOS</summary>
 
 ```bash
-brew install go          # macOS（まず Go をインストール）
+brew install go
 go install github.com/packwiz/packwiz@latest
-echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
+
+</details>
+
+<details>
+<summary>Windows</summary>
+
+1. [go.dev/dl](https://go.dev/dl/) から Go をダウンロード・インストール
+2. **PowerShell** を開いて実行：
+```powershell
+go install github.com/packwiz/packwiz@latest
+```
+3. `%USERPROFILE%\go\bin` を PATH に追加（[手順](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)）
+
+</details>
+
+<details>
+<summary>Linux</summary>
+
+```bash
+# Debian/Ubuntu
+sudo apt install golang-go
+# Fedora
+sudo dnf install golang
+# Arch
+sudo pacman -S go
+
+go install github.com/packwiz/packwiz@latest
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
+</details>
+
+確認: `packwiz help`
 
 ### 2. リポジトリをクローン
 
@@ -67,19 +102,6 @@ source ~/.zshrc
 git clone https://github.com/tekitounix/minecraft-modpack.git
 cd minecraft-modpack
 ```
-
-<details>
-<summary>💡 Linux の場合 / インストール確認</summary>
-
-```bash
-# Linux: Go をインストール
-sudo apt install golang-go
-
-# packwiz が動くか確認
-packwiz help
-```
-
-</details>
 
 <details>
 <summary>💡 packwiz とは？</summary>
@@ -106,7 +128,7 @@ packwiz modrinth install <mod-name>
 packwiz curseforge install <mod-name>
 
 # 手動で jar ファイルを追加（Modrinth/CurseForge にない場合）
-cp ~/Downloads/some-mod-1.0.0.jar mods/
+# jar ファイルを mods/ フォルダにコピーしてから refresh:
 packwiz refresh
 ```
 
@@ -142,15 +164,8 @@ packwiz remove <mod-name>
 
 銃パックは `tacz/` フォルダに配置します：
 
-```bash
-# 追加
-cp ~/Downloads/NewGunPack.zip tacz/
-packwiz refresh
-
-# 削除
-rm tacz/<pack-name>.zip
-packwiz refresh
-```
+1. **追加**: `.zip` ファイルを `tacz/` にコピーしてから `packwiz refresh` を実行
+2. **削除**: `tacz/` から `.zip` ファイルを削除してから `packwiz refresh` を実行
 
 ### 設定ファイルの変更
 
@@ -260,18 +275,19 @@ modpack/
 <details>
 <summary><code>packwiz refresh</code> でエラーが出る</summary>
 
-```bash
-rm -rf ~/.cache/packwiz
-packwiz refresh
-```
+packwiz のキャッシュフォルダを削除して再試行：
+- **macOS / Linux**: `rm -rf ~/.cache/packwiz`
+- **Windows (PowerShell)**: `Remove-Item -Recurse -Force "$env:LOCALAPPDATA\packwiz"`
+
+その後 `packwiz refresh` を再実行。
 
 </details>
 
 <details>
 <summary>特定の Mod が更新されない</summary>
 
+その Mod の `.pw.toml` ファイルを削除してから再追加：
 ```bash
-rm mods/<mod-name>.pw.toml
 packwiz modrinth install <mod-name>
 ```
 
