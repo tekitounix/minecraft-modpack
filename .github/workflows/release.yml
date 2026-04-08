@@ -1,17 +1,17 @@
-# push時に Prism Launcher 用の起動構成zipを自動生成
+# Auto-generate Prism Launcher instance zip on push
 name: Build and Release
 
 on:
   push:
     branches: [main]
     paths:
-      - 'mods/**'
-      - 'tacz/**'
-      - 'config/**'
-      - 'options.txt'
-      - 'pack.toml'
-      - 'index.toml'
-      - '.github/workflows/release.yml'
+      - "mods/**"
+      - "tacz/**"
+      - "config/**"
+      - "options.txt"
+      - "pack.toml"
+      - "index.toml"
+      - ".github/workflows/release.yml"
   workflow_dispatch:
 
 jobs:
@@ -19,23 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Download packwiz-installer-bootstrap
         run: |
           curl -sL -o packwiz-installer-bootstrap.jar \
             https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
-      
+
       - name: Create Prism Launcher instance
         run: |
           mkdir -p instance/.minecraft
-          
-          # packwiz-installer-bootstrap.jar を配置
+
+          # Place packwiz-installer-bootstrap.jar
           cp packwiz-installer-bootstrap.jar instance/.minecraft/
-          
-          # Prism Launcher の instance.cfg を作成（メモリ設定込み）
+
+          # Create Prism Launcher instance.cfg (with memory settings)
           cat > instance/instance.cfg << 'INSTANCE_EOF'
           InstanceType=OneSix
           JavaVersion=17
@@ -54,8 +54,8 @@ jobs:
           name=Modpack Server
           INSTANCE_EOF
           sed -i 's/^          //' instance/instance.cfg
-          
-          # mmc-pack.json を作成（Forge 47.4.0 指定）
+
+          # Create mmc-pack.json (Forge 47.4.0)
           cat > instance/mmc-pack.json << 'JSON_EOF'
           {
             "components": [
@@ -72,27 +72,46 @@ jobs:
           }
           JSON_EOF
           sed -i 's/^          //' instance/mmc-pack.json
-      
+
       - name: Create zip
         run: |
           cd instance
           zip -r ../modpack-prism.zip .
           cd ..
-      
+
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y%m%d-%H%M')" >> $GITHUB_OUTPUT
-      
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.date.outputs.date }}
           name: Modpack ${{ steps.date.outputs.date }}
           body: |
-            ## 🎮 Modpack 更新
-            
-            ### 📥 インストール方法
-            
+            ## 🎮 Modpack Update
+
+            ### 📥 How to Install
+
+            1. Install **[Hamachi](https://vpn.net/)** and join the network (get info from the server admin)
+            2. Install **[Prism Launcher](https://prismlauncher.org/download/)**
+            3. In Prism Launcher: **Add Instance** → **Import**
+            4. Paste the following URL into **"Local file or link to a direct download"**:
+               ```
+               https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
+               ```
+            5. Click **"OK"**
+            6. Launch and connect to the server! (Ask the admin for the IP)
+
+            ✅ **Memory settings (6GB) are pre-configured**
+            ✅ **All mods and TaCZ gun packs are auto-downloaded on first launch**
+
+            📖 See the [README](https://github.com/tekitounix/minecraft-modpack#readme) for details
+
+            ---
+
+            <details><summary>🇯🇵 日本語</summary>
+
             1. **[Hamachi](https://vpn.net/)** をインストールしてネットワークに参加（サーバー管理者から情報を受け取る）
             2. **[Prism Launcher](https://prismlauncher.org/download/)** をインストール
             3. Prism Launcher で **「起動構成を追加」** → **「インポート」**
@@ -102,13 +121,10 @@ jobs:
                ```
             5. **「OK」** をクリック
             6. 起動してサーバーに接続！（IP はサーバー管理者に確認）
-            
-            > 🇺🇸 English UI: **Add Instance** → **Import** → Paste URL in **"Local file or link to a direct download"** → **OK**
-            
-            ✅ **メモリ設定（6GB）は自動適用済み**
-            ✅ **初回起動時に全ての Mod と TaCZ 銃パックが自動ダウンロード**
-            
-            📖 詳細は [README](https://github.com/tekitounix/minecraft-modpack#readme) を参照
+
+            📖 詳細は [README (日本語)](https://github.com/tekitounix/minecraft-modpack/blob/main/README.ja.md) を参照
+
+            </details>
           files: modpack-prism.zip
           draft: false
           prerelease: false

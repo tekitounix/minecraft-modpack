@@ -1,4 +1,4 @@
-# Modpack 更新時に Discord へ通知
+# Send Discord notification on modpack update
 name: Discord Notification
 
 on:
@@ -38,16 +38,16 @@ jobs:
           curl -H "Content-Type: application/json" \
             -d "{
               \"embeds\": [{
-                \"title\": \"🎮 Modpack が更新されました！\",
-                \"description\": \"次回ゲーム起動時に自動更新されます。\",
+                \"title\": \"🎮 Modpack Updated / Modpack が更新されました！\",
+                \"description\": \"Will auto-update on next launch. / 次回起動時に自動更新されます。\",
                 \"color\": 5763719,
                 \"fields\": [
                   {
-                    \"name\": \"📦 変更された Mod\",
+                    \"name\": \"📦 Changed Mods / 変更された Mod\",
                     \"value\": \"$CHANGED_MODS\"
                   },
                   {
-                    \"name\": \"📝 コミット\",
+                    \"name\": \"📝 Commit / コミット\",
                     \"value\": \"[\`${GITHUB_SHA:0:7}\`]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)\"
                   }
                 ],
