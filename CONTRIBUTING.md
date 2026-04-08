@@ -2,35 +2,36 @@
 
 > 🌐 **Language / 言語**: **English** | [日本語](CONTRIBUTING.ja.md)
 
-This guide explains how to contribute to the modpack — adding, updating, or removing mods, and how changes get released to players.
+This guide covers how to add, update, or remove mods from the modpack.
 
 ---
 
-## 📋 Table of Contents
+## 📋 Quick Reference
 
-1. [Workflow Overview](#-workflow-overview)
-2. [Initial Setup](#-initial-setup)
-3. [Making Changes](#-making-changes)
-4. [Creating a Pull Request](#-creating-a-pull-request)
-5. [Merge & Release](#-merge--release)
-6. [Discord Notifications](#-discord-notifications-optional)
-7. [Directory Structure](#-directory-structure)
-8. [Troubleshooting](#-troubleshooting)
+| I want to... | Command |
+|--------------|---------|
+| Add a mod | `packwiz modrinth install <name>` |
+| Update a mod | `packwiz update <name>` |
+| Update all mods | `packwiz update --all` |
+| Remove a mod | `packwiz remove <name>` |
 
 ---
 
-## 🔄 Workflow Overview
-
-Since **merging to `main` = instant release to all players**, we use a Pull Request (PR) workflow to prevent accidental releases.
+## 🔄 How It Works
 
 ```
-1. Create branch  →  2. Make changes  →  3. Open PR  →  4. Review/Merge  →  5. Auto-release
+Create branch  →  Make changes  →  Open PR  →  Merge  →  Auto-release to players
 ```
+
+> ⚠️ **Merging to `main` = instant release to all players.** That's why we use Pull Requests.
+
+<details>
+<summary>💡 Branch naming & review rules</summary>
 
 ### Branch Naming
 
-| Change Type | Branch Name Example |
-|-------------|-------------------|
+| Change Type | Example |
+|-------------|---------|
 | Add a mod | `add/immersive-aircraft` |
 | Update a mod | `update/tacz` |
 | Remove a mod | `remove/old-mod` |
@@ -39,225 +40,201 @@ Since **merging to `main` = instant release to all players**, we use a Pull Requ
 
 ### When to Get a Review
 
-| Change Size | Example | Rule |
-|-------------|---------|------|
+| Size | Example | Rule |
+|------|---------|------|
 | **Small** | Add/remove 1 mod | Self-merge OK |
-| **Medium** | Multiple mods, config changes | Ask 1 person to check |
-| **Large** | Forge version change, major restructure | Everyone reviews |
+| **Medium** | Multiple mods, config changes | Ask 1 person |
+| **Large** | Forge version change | Everyone reviews |
+
+</details>
 
 ---
 
 ## 🛠️ Initial Setup
 
-### Prerequisites
-
-- Git
-- Go (for packwiz)
-- GitHub CLI (`gh`) — optional but recommended
-
-### Install packwiz
-
-**packwiz** is the tool used to manage mods in this modpack.
+### 1. Install packwiz
 
 ```bash
-# Install Go (if not already installed)
-brew install go          # macOS
-# or: sudo apt install golang-go   # Linux
-
-# Install packwiz
+brew install go          # macOS (install Go first)
 go install github.com/packwiz/packwiz@latest
-
-# Add to PATH (append to ~/.zshrc or ~/.bashrc)
 echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
-
-# Verify
-packwiz help
 ```
 
-### Clone the Repository
+### 2. Clone the repository
 
 ```bash
 git clone https://github.com/tekitounix/minecraft-modpack.git
 cd minecraft-modpack
 ```
 
+<details>
+<summary>💡 Linux setup / verify installation</summary>
+
+```bash
+# Linux: Install Go
+sudo apt install golang-go
+
+# Verify packwiz is working
+packwiz help
+```
+
+</details>
+
+<details>
+<summary>💡 What is packwiz?</summary>
+
+**packwiz** is a command-line tool for managing Minecraft modpacks. It handles downloading mods from Modrinth/CurseForge, tracking versions, and generating the files needed for distribution. You don't need to manually download `.jar` files.
+
+</details>
+
 ---
 
 ## ✏️ Making Changes
 
-### Adding Mods
-
-#### From Modrinth / CurseForge (Recommended)
+### Add a Mod
 
 ```bash
-# Search and install from Modrinth
 packwiz modrinth install <mod-name>
-
-# Install from CurseForge
-packwiz curseforge install <mod-name>
-
-# Example: Add JEI
-packwiz modrinth install jei
 ```
 
-#### Adding jar files directly (if not on Modrinth/CurseForge)
+<details>
+<summary>💡 Other ways to add mods</summary>
 
 ```bash
-# Place the jar file in mods/
-cp ~/Downloads/some-mod-1.0.0.jar mods/
+# From CurseForge
+packwiz curseforge install <mod-name>
 
-# Update the index (no .pw.toml generated; jar is distributed as-is)
+# Manual jar file (if not on Modrinth/CurseForge)
+cp ~/Downloads/some-mod-1.0.0.jar mods/
 packwiz refresh
 ```
 
-### Updating Mods
+</details>
+
+### Update Mods
 
 ```bash
-# Update a specific mod
+# Update one mod
 packwiz update <mod-name>
 
 # Update all mods
 packwiz update --all
+```
 
-# Check for available updates (dry run)
+<details>
+<summary>💡 Check what's available before updating</summary>
+
+```bash
+# Dry run — shows what would be updated without doing it
 packwiz update --all --dry-run
 ```
 
-### Removing Mods
+</details>
+
+### Remove a Mod
 
 ```bash
-# Remove a mod
 packwiz remove <mod-name>
-
-# Or delete the file and refresh
-rm mods/<mod-name>.pw.toml
-packwiz refresh
 ```
 
-### Managing TaCZ Gun Packs
+### Manage TaCZ Gun Packs
 
-TaCZ gun packs (.zip files) are placed in the `tacz/` folder.
+Gun packs go in the `tacz/` folder:
 
 ```bash
-# Add a new gun pack
-cp ~/Downloads/NewGunPack-v1.0.zip tacz/
+# Add
+cp ~/Downloads/NewGunPack.zip tacz/
 packwiz refresh
 
-# Update a gun pack
-rm tacz/OldGunPack-v1.0.zip
-cp ~/Downloads/OldGunPack-v1.1.zip tacz/
-packwiz refresh
-
-# Remove a gun pack
-rm tacz/<gunpack-name>.zip
+# Remove
+rm tacz/<pack-name>.zip
 packwiz refresh
 ```
 
-### Changing Config Files
+### Change Config Files
 
-After editing files in `config/`, no `packwiz refresh` is needed.
-
-```bash
-# Example: Edit TaCZ Tweaks config
-vim config/tacztweaks.json
-```
+Edit files in `config/` directly. No `packwiz refresh` needed.
 
 ---
 
-## 🚀 Creating a Pull Request
-
-### Step-by-step
+## 🚀 Create a Pull Request & Merge
 
 ```bash
-# 1. Create a new branch
+# 1. Create a branch
 git checkout -b add/new-mod
 
-# 2. Make your changes (add/update/remove mods)
+# 2. Make changes
 packwiz modrinth install <mod-name>
 
-# 3. Commit
+# 3. Commit & push
 git add -A
 git commit -m "Add <mod-name>"
-
-# 4. Push the branch
 git push -u origin add/new-mod
 
-# 5. Create a PR
+# 4. Create a PR
 gh pr create --title "Add <mod-name>" --body "Added <mod-name> for <reason>"
+
+# 5. Merge (for small changes, self-merge is OK)
+gh pr merge --squash
 ```
 
-Or create the PR from the GitHub website after pushing.
+> You can also create and merge PRs from the GitHub website.
 
-### PR Title Examples
+<details>
+<summary>💡 PR title examples</summary>
 
 - `Add Immersive Aircraft`
 - `Update TaCZ to v1.2.0`
 - `Remove deprecated mod XYZ`
 - `Update TaCZ Tweaks config`
 
----
+</details>
 
-## 📦 Merge & Release
-
-After merging a PR to `main`:
+<details>
+<summary>💡 What happens after merge?</summary>
 
 1. **GitHub Actions** triggers automatically
-2. `modpack-prism.zip` is generated
+2. `modpack-prism.zip` is built
 3. Uploaded to **GitHub Releases**
-4. **Players get the update on next game launch**
+4. Players get the update on next game launch
 
-### Self-merge
-
-For small changes, you can merge your own PR:
-
-```bash
-gh pr merge --squash
-```
-
-Or click **"Merge pull request"** on the GitHub website.
+</details>
 
 ---
 
-## 🔔 Discord Notifications (Optional)
+## 🔔 Discord Notifications
 
-A **Webhook** is a special URL provided by Discord that allows external services (like GitHub) to send messages to a specific channel automatically — no bot required.
+<details>
+<summary>Set up Discord notifications (optional)</summary>
 
-By setting this up, your Discord server will receive a notification whenever the modpack is updated. Players will know immediately that a new version is available without manual announcements.
+When configured, Discord gets a notification every time the modpack is updated.
 
 ### 1. Create a Discord Webhook
 
-1. In Discord, go to the channel where you want notifications (or create a new one, e.g. `#modpack-updates`)
-2. Click the **⚙️ (Edit Channel)** icon next to the channel name
-3. Select **"Integrations"** in the left menu
-4. Click **"Webhooks"**
-5. Click **"New Webhook"**
-6. Set a name (e.g. `Modpack Bot`) and optionally change the avatar
-7. Click **"Copy Webhook URL"** — you'll get a URL like `https://discord.com/api/webhooks/xxxx/yyyy`
-8. Click **"Save Changes"**
+1. Go to the channel for notifications (e.g. `#modpack-updates`)
+2. Click **⚙️ Edit Channel** → **Integrations** → **Webhooks**
+3. Click **New Webhook** → set a name (e.g. `Modpack Bot`)
+4. Click **Copy Webhook URL**
+5. **Save Changes**
 
-> ⚠️ You need **Manage Webhooks** permission or server admin rights to do this.
-
-### 2. Add the Webhook URL to GitHub Secrets
+### 2. Add to GitHub Secrets
 
 ```bash
-# Using GitHub CLI
 gh secret set DISCORD_WEBHOOK --repo tekitounix/minecraft-modpack
 # Paste the webhook URL when prompted
 ```
 
-Or manually:
-1. Go to your GitHub repository → **Settings** → **Secrets and variables** → **Actions**
-2. Click **"New repository secret"**
-3. Name: `DISCORD_WEBHOOK`
-4. Value: paste the webhook URL
-5. Click **"Add secret"**
+Or: GitHub repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret** → Name: `DISCORD_WEBHOOK`, Value: the URL.
 
-Once configured, Discord will receive a bilingual notification (English / Japanese) every time the modpack is updated.
+</details>
 
 ---
 
 ## 📁 Directory Structure
+
+<details>
+<summary>View directory structure</summary>
 
 ```
 modpack/
@@ -274,45 +251,51 @@ modpack/
 └── CONTRIBUTING.ja.md    # This file (Japanese)
 ```
 
+</details>
+
 ---
 
 ## ❓ Troubleshooting
 
-### `packwiz refresh` errors
+<details>
+<summary><code>packwiz refresh</code> errors</summary>
 
 ```bash
-# Clear cache
 rm -rf ~/.cache/packwiz
-
-# Retry
 packwiz refresh
 ```
 
-### A specific mod won't update
+</details>
+
+<details>
+<summary>A mod won't update</summary>
 
 ```bash
-# Delete .pw.toml and re-add
 rm mods/<mod-name>.pw.toml
 packwiz modrinth install <mod-name>
 ```
 
-### index.toml hash mismatch
+</details>
+
+<details>
+<summary>index.toml hash mismatch</summary>
 
 ```bash
-# Regenerate the index
 packwiz refresh --force
 ```
 
-### PR won't merge
+</details>
 
-- Make sure you're not trying to push directly to `main`
-- Check if there are merge conflicts (pull latest `main` and rebase)
+<details>
+<summary>PR won't merge / merge conflicts</summary>
 
 ```bash
 git checkout main
 git pull
 git checkout your-branch
 git rebase main
-# Resolve conflicts if any, then force-push
+# Resolve conflicts if any
 git push --force-with-lease
 ```
+
+</details>
