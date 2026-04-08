@@ -52,14 +52,49 @@ Create branch  →  Make changes  →  Open PR  →  Merge  →  Auto-release to
 
 ## 🛠️ Initial Setup
 
-### 1. Install packwiz
+### 1. Install Go & packwiz
+
+<details>
+<summary>macOS</summary>
 
 ```bash
-brew install go          # macOS (install Go first)
+brew install go
 go install github.com/packwiz/packwiz@latest
-echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
+
+</details>
+
+<details>
+<summary>Windows</summary>
+
+1. Download and install Go from [go.dev/dl](https://go.dev/dl/)
+2. Open **PowerShell** and run:
+```powershell
+go install github.com/packwiz/packwiz@latest
+```
+3. Add `%USERPROFILE%\go\bin` to your PATH ([guide](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/))
+
+</details>
+
+<details>
+<summary>Linux</summary>
+
+```bash
+# Debian/Ubuntu
+sudo apt install golang-go
+# Fedora
+sudo dnf install golang
+# Arch
+sudo pacman -S go
+
+go install github.com/packwiz/packwiz@latest
+echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
+</details>
+
+Verify: `packwiz help`
 
 ### 2. Clone the repository
 
@@ -67,19 +102,6 @@ source ~/.zshrc
 git clone https://github.com/tekitounix/minecraft-modpack.git
 cd minecraft-modpack
 ```
-
-<details>
-<summary>💡 Linux setup / verify installation</summary>
-
-```bash
-# Linux: Install Go
-sudo apt install golang-go
-
-# Verify packwiz is working
-packwiz help
-```
-
-</details>
 
 <details>
 <summary>💡 What is packwiz?</summary>
@@ -106,7 +128,7 @@ packwiz modrinth install <mod-name>
 packwiz curseforge install <mod-name>
 
 # Manual jar file (if not on Modrinth/CurseForge)
-cp ~/Downloads/some-mod-1.0.0.jar mods/
+# Copy the jar into the mods/ folder, then refresh:
 packwiz refresh
 ```
 
@@ -142,15 +164,8 @@ packwiz remove <mod-name>
 
 Gun packs go in the `tacz/` folder:
 
-```bash
-# Add
-cp ~/Downloads/NewGunPack.zip tacz/
-packwiz refresh
-
-# Remove
-rm tacz/<pack-name>.zip
-packwiz refresh
-```
+1. **Add**: Copy the `.zip` file into `tacz/`, then run `packwiz refresh`
+2. **Remove**: Delete the `.zip` file from `tacz/`, then run `packwiz refresh`
 
 ### Change Config Files
 
@@ -260,18 +275,19 @@ modpack/
 <details>
 <summary><code>packwiz refresh</code> errors</summary>
 
-```bash
-rm -rf ~/.cache/packwiz
-packwiz refresh
-```
+Delete the packwiz cache folder and retry:
+- **macOS / Linux**: `rm -rf ~/.cache/packwiz`
+- **Windows (PowerShell)**: `Remove-Item -Recurse -Force "$env:LOCALAPPDATA\packwiz"`
+
+Then run `packwiz refresh` again.
 
 </details>
 
 <details>
 <summary>A mod won't update</summary>
 
+Delete the `.pw.toml` file for that mod and re-add it:
 ```bash
-rm mods/<mod-name>.pw.toml
 packwiz modrinth install <mod-name>
 ```
 
