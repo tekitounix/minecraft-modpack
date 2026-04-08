@@ -5,159 +5,226 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)](https://minecraft.net)
 [![Forge](https://img.shields.io/badge/Forge-47.4.0-orange)](https://files.minecraftforge.net)
 
-A custom modpack for Minecraft 1.20.1 + Forge 47.4.0.
+A custom modpack for Minecraft 1.20.1 + Forge 47.4.0.  
+Follow the steps below in order — you'll be playing in about 15 minutes.
 
 ---
 
-## 📋 Table of Contents
+## 📋 Steps to Get Started
 
-1. [Purchase Minecraft Java Edition](#-purchase-minecraft-java-edition)
-2. [Install Hamachi (Required)](#-install-hamachi-required)
-3. [Install Prism Launcher](#-install-prism-launcher)
-4. [Import the Modpack](#-import-the-modpack)
-5. [Memory Settings (Auto-configured)](#%EF%B8%8F-memory-settings-auto-configured)
-6. [Launch & Connect to Server](#-launch--connect-to-server)
-
----
-
-## 🎮 Purchase Minecraft Java Edition
-
-You need **Minecraft Java Edition** to use this modpack.
-
-### How to Purchase
-
-1. Visit the **[Minecraft Official Site](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc)**
-2. Purchase **"MINECRAFT: JAVA & BEDROCK EDITION"**
-3. Sign in with your **Microsoft account** (create one if you don't have one)
-4. After purchase, Minecraft will be linked to your account
-
-> 💡 **Tip**: Java Edition and Bedrock Edition are bundled together. You need **Java Edition** for mods.
-
-> ⚠️ **Warning**: Only purchase from the official site. Third-party sellers may be scams.
+| Step | What to Do |
+|:----:|------------|
+| 1 | [Purchase Minecraft](#1--purchase-minecraft) |
+| 2 | [Install Hamachi](#2--install-hamachi) |
+| 3 | [Install Prism Launcher](#3--install-prism-launcher) |
+| 4 | [Import the Modpack](#4--import-the-modpack) |
+| 5 | [Launch & Play](#5--launch--play) |
 
 ---
 
-## 🌐 Install Hamachi (Required)
+## 1. 🎮 Purchase Minecraft
 
-This server uses **Hamachi VPN**. You must install it to connect to the server.
+1. Go to **[minecraft.net](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc)**
+2. Buy **"MINECRAFT: JAVA & BEDROCK EDITION"**
+3. Sign in with your **Microsoft account**
 
-### Download
+> Already own Minecraft Java Edition? Skip to Step 2.
 
-👉 Download from **[https://vpn.net/](https://vpn.net/)**
+<details>
+<summary>💡 More info about purchasing</summary>
 
-| OS | Instructions |
-|----|-------------|
-| **Windows** | Download `LogMeInHamachi.msi` → Run the installer |
-| **macOS** | Download `LogMeInHamachi.dmg` → Install the app |
+- Java Edition and Bedrock Edition are sold as a bundle
+- You need **Java Edition** specifically — that's the one that supports mods
+- Only buy from the **official site**. Third-party sellers may be scams
+- If you don't have a Microsoft account, create one for free at [account.microsoft.com](https://account.microsoft.com)
 
-### Create Account & Log In
-
-1. Launch Hamachi
-2. If it's your first time, click **"Sign up"** to create a LogMeIn account
-3. Register with your email and password
-4. Log in with your new account
-
-### Join the Network
-
-1. In Hamachi, click **"Network"** → **"Join an existing network"**
-2. Enter the information provided by the server admin:
-   - **Network ID**: (ask the admin)
-   - **Password**: (ask the admin)
-3. Click **"Join"**
-4. If the network appears in your list, you're connected!
-
-> ⚠️ **Important**: Make sure Hamachi is connected before launching Minecraft
+</details>
 
 ---
 
-## 📥 Install Prism Launcher
+## 2. 🌐 Install Hamachi
 
-Download and install **[Prism Launcher](https://prismlauncher.org/download/)**
+We use **Hamachi VPN** to connect to the server. Everyone needs it.
 
-| OS | Download |
-|----|----------|
+1. Download from **[vpn.net](https://vpn.net/)**
+2. Install and launch Hamachi
+3. Create a LogMeIn account (or sign in if you have one)
+4. Click **"Network"** → **"Join an existing network"**
+5. Enter the **Network ID** and **Password** (ask the server admin)
+
+> ✅ You'll see the network in your list when connected.
+
+<details>
+<summary>💡 Which file do I download?</summary>
+
+| OS | File |
+|----|------|
+| Windows | `LogMeInHamachi.msi` |
+| macOS | `LogMeInHamachi.dmg` |
+
+</details>
+
+<details>
+<summary>⚠️ Can't connect to Hamachi?</summary>
+
+1. Check if your firewall is blocking Hamachi
+2. Restart Hamachi
+3. Double-check the Network ID and Password
+4. Try restarting your computer
+
+</details>
+
+---
+
+## 3. 📥 Install Prism Launcher
+
+1. Download from **[prismlauncher.org](https://prismlauncher.org/download/)**
+2. Install and launch it
+3. Add your Minecraft account:
+   - Click **"Accounts"** (top right) → **"Manage Accounts"**
+   - Click **"Add Microsoft"**
+   - Sign in via the browser that opens
+
+<details>
+<summary>💡 Download links by OS</summary>
+
+| OS | Link |
+|----|------|
 | Windows | [Installer (.exe)](https://prismlauncher.org/download/windows/) |
 | macOS | [DMG](https://prismlauncher.org/download/mac/) |
 | Linux | [AppImage / Flatpak](https://prismlauncher.org/download/linux/) |
 
-### Initial Setup
-
-1. Launch Prism Launcher
-2. Set the language to **English** (or your preferred language)
-3. **Add your Minecraft account**:
-   - Click **"Accounts"** (top right) → **"Manage Accounts"**
-   - Click **"Add Microsoft"**
-   - Log in via the browser
+</details>
 
 ---
 
-## 📦 Import the Modpack
+## 4. 📦 Import the Modpack
 
 1. In Prism Launcher, click **"Add Instance"**
 2. Select **"Import"** in the left sidebar
-3. Paste the following URL into **"Local file or link to a direct download"**:
+3. Paste this URL:
 
 ```
 https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
 ```
 
-4. Click **"OK"** and you're done!
+4. Click **"OK"**
 
-> 📝 **Note**: Mods are not downloaded at this point. The actual download happens automatically when you launch the game for the first time.
+> 📝 Mods aren't downloaded yet at this step. They download automatically when you first launch the game.
+
+<details>
+<summary>💡 How to update the modpack later</summary>
+
+When the modpack is updated, just **re-import** using the same URL above. The latest version is always at that link.
+
+Alternatively, just launch the game — it automatically downloads the latest mods!
+
+</details>
 
 ---
 
-## ⚙️ Memory Settings (Auto-configured)
+## 5. 🚀 Launch & Play
 
-This modpack comes with **pre-configured memory settings**:
+1. **Make sure Hamachi is connected** (check Step 2)
+2. Double-click the modpack instance in Prism Launcher
+3. Wait for mods to download (first launch only — may take a minute)
+4. From the title screen: **"Multiplayer"** → **"Direct Connection"**
+5. Enter the server address (ask the server admin for the Hamachi IP)
+6. Click **"Join Server"**
+
+> 💡 The server admin's Hamachi IP is shown next to their name in the Hamachi network list.
+
+<details>
+<summary>⚠️ Can't connect to the server?</summary>
+
+1. **Most common cause**: Hamachi is not connected. Open Hamachi and check
+2. Ask the server admin for the latest IP address
+3. Make sure your modpack is up to date (re-import if needed)
+
+</details>
+
+<details>
+<summary>⚠️ Game is laggy or crashes?</summary>
+
+1. Check memory settings: Prism Launcher → Settings → Java → Max memory should be **at least 6144 MB**
+2. Close other apps to free up RAM
+3. If your PC has 16GB+ RAM, try setting max memory to `8192` MB
+
+</details>
+
+---
+
+## ⚙️ Memory Settings
+
+Memory is **pre-configured** — you don't need to change anything.
 
 | Setting | Value |
 |---------|-------|
-| Minimum Memory | 2048 MB (2GB) |
-| Maximum Memory | 6144 MB (6GB) |
+| Minimum | 2048 MB (2 GB) |
+| Maximum | 6144 MB (6 GB) |
 
-> 💡 **Tip**: If your PC has 16GB+ RAM, you can increase the max memory to `8192` MB in Settings → Java for smoother performance
+<details>
+<summary>💡 Want to adjust memory?</summary>
 
-> ⚠️ **Low RAM**: If your PC has less than 8GB RAM, you may experience lag
+Go to Prism Launcher → **Settings** → **Java**:
+- **16GB+ RAM PC**: Set Maximum to `8192` MB for better performance
+- **8GB RAM PC**: Leave at `6144` MB (default)
+- **Less than 8GB RAM**: You may experience lag. Close other apps
 
----
-
-## 🚀 Launch & Connect to Server
-
-### Launch
-
-1. Double-click the instance in Prism Launcher
-2. On first launch, all mods will be downloaded automatically (this may take a moment)
-
-### Connect to Server
-
-1. From the Minecraft title screen, click **"Multiplayer"**
-2. Click **"Direct Connection"** or **"Add Server"**
-3. Server address: **Ask the server admin** (Hamachi IP address)
-4. Click **"Join Server"**
-
-> ⚠️ You cannot connect to the server without being connected to Hamachi
-
-> 💡 **Tip**: The server admin's Hamachi IP is shown next to their name in the Hamachi network list
+</details>
 
 ---
 
-## 🔄 How Auto-Updates Work
+## 🔄 How Updates Work
 
 ```
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  Admin pushes   │────▶│   GitHub     │────▶│ Discord notifies│
-│  an update      │     │  (auto-build)│     │ "Update ready!" │
-└─────────────────┘     └──────────────┘     └─────────────────┘
-                                                      │
-                                                      ▼
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  Player launches│────▶│  Mods auto-  │────▶│  Play with the  │
-│  the game       │     │  download    │     │  latest mods!   │
-└─────────────────┘     └──────────────┘     └─────────────────┘
+Admin pushes update  →  GitHub builds it  →  Discord notification
+                                                     ↓
+You launch the game  →  Mods update automatically  →  Play!
 ```
 
-**All you need to do:** Just launch the game!
+**You don't need to do anything** — just launch the game as usual.
+
+<details>
+<summary>💡 How does this work?</summary>
+
+1. When an admin pushes changes to GitHub, a **GitHub Action** automatically builds a new `modpack-prism.zip`
+2. If Discord notifications are set up, you'll get a ping in your server
+3. When you launch the game, Prism Launcher checks for mod updates and downloads them
+4. You're always on the latest version
+
+</details>
+
+---
+
+## 🎮 Key Bindings
+
+Some keys have been customized:
+
+| Action | Key |
+|--------|-----|
+| Sneak | **C** |
+| Sprint | **Left Shift** |
+| Inventory | **Tab** |
+| Player List | **\\** (Backslash) |
+| Dismount Aircraft | **E** |
+| TaCZ Action | **Middle Mouse** |
+| TaCZ Crawl | **X** |
+
+<details>
+<summary>💡 What changed from default?</summary>
+
+| Action | Default | Changed To |
+|--------|---------|------------|
+| Sneak | Shift | **C** |
+| Sprint | Ctrl | **Left Shift** |
+| Inventory | E | **Tab** |
+| Player List | Tab | **\\** |
+| Dismount Aircraft (Immersive Aircraft) | R | **E** |
+| TaCZ Action | O | **Middle Mouse** |
+| TaCZ Crawl | C | **X** |
+
+</details>
 
 ---
 
@@ -172,25 +239,11 @@ This modpack comes with **pre-configured memory settings**:
 
 ---
 
-## 🎮 Key Bindings
-
-Some key bindings have been changed in this modpack:
-
-| Action | Default | Changed To |
-|--------|---------|------------|
-| Sneak | Shift | **C** |
-| Sprint | Ctrl | **Left Shift** |
-| Inventory | E | **Tab** |
-| Player List | Tab | **\\** (Backslash) |
-| Dismount Aircraft (Immersive Aircraft) | R | **E** |
-| TaCZ Action | O | **Middle Mouse Button** |
-| TaCZ Crawl | C | **X** |
-
----
-
 ## 📋 Included Mods
 
-### 🔫 Firearms & Combat
+<details>
+<summary>🔫 Firearms & Combat (4 mods)</summary>
+
 | Mod | Description |
 |-----|-------------|
 | TaCZ (Timeless and Classics Zero) | Realistic firearms |
@@ -198,14 +251,22 @@ Some key bindings have been changed in this modpack:
 | Superb Warfare | Additional weapons |
 | WWII Machine Guns | World War II machine guns |
 
-### 🚗 Vehicles
+</details>
+
+<details>
+<summary>🚗 Vehicles (3 mods)</summary>
+
 | Mod | Description |
 |-----|-------------|
 | Immersive Aircraft | Planes & gliders |
 | ASH Vehicles | Vehicles |
 | MCSP Military Vehicle | Military vehicles |
 
-### 🛋️ Furniture & Building
+</details>
+
+<details>
+<summary>🛋️ Furniture & Building (4 mods)</summary>
+
 | Mod | Description |
 |-----|-------------|
 | Paladin's Furniture | Furniture set |
@@ -213,26 +274,26 @@ Some key bindings have been changed in this modpack:
 | Macaw's Series | Bridges, doors, fences, roofs, windows, lighting, etc. |
 | ManyIdeas Doors | Door variations |
 
-### ⚡ Performance
+</details>
+
+<details>
+<summary>⚡ Performance & Other (3 mods)</summary>
+
 | Mod | Description |
 |-----|-------------|
 | Embeddium | Rendering optimization (Sodium for Forge) |
-
-### 🍳 Other
-| Mod | Description |
-|-----|-------------|
 | Farmer's Delight | Cooking expansion |
 | JEI | Recipe browser |
 
----
+</details>
 
-## ⚠️ TaCZ Expansion Packs (Auto-distributed)
+<details>
+<summary>🔫 TaCZ Expansion Packs (auto-installed)</summary>
 
-TaCZ gun packs are **distributed automatically**!  
-The following packs are auto-installed on first launch:
+These gun packs are installed automatically on first launch:
 
-| Pack Name | Description |
-|-----------|-------------|
+| Pack | Description |
+|------|-------------|
 | A3SQF | Additional firearms |
 | AsHi | Additional firearms |
 | BOpack | BO series firearms |
@@ -246,35 +307,30 @@ The following packs are auto-installed on first launch:
 | TGWF | Additional firearms |
 | WW2Pack | World War II firearms |
 
+</details>
+
 ---
 
-## ❓ Troubleshooting
+## ❓ More Troubleshooting
 
-### Can't connect to Hamachi
-1. Check if Hamachi is blocked by your firewall
-2. Try restarting Hamachi
-3. Verify the Network ID and password are correct
+<details>
+<summary>"Java not found" error</summary>
 
-### "Java not found" error
-Go to Prism Launcher Settings → Java → Click "Auto-detect"
+Go to Prism Launcher → **Settings** → **Java** → Click **"Auto-detect"**
 
-### Mod download fails
+</details>
+
+<details>
+<summary>Mod download fails</summary>
+
 1. Check your internet connection
 2. Restart Prism Launcher and try again
 3. Check if Prism Launcher is blocked by your firewall
 
-### Can't connect to server
-1. **Make sure you're connected to Hamachi** (most common issue)
-2. Get the latest IP address from the server admin
-3. Ensure your mod versions match the server (re-import the latest modpack)
-
-### Game is laggy or crashes
-1. Check memory settings (at least 6144 MB max recommended)
-2. Close other apps to free up memory
+</details>
 
 ---
 
 ## 🛠️ Contributing
 
-Want to add, update, or remove mods? See the **[Contributing Guide](CONTRIBUTING.md)** for the full workflow.
-
+Want to add, update, or remove mods? See the **[Contributing Guide](CONTRIBUTING.md)**.

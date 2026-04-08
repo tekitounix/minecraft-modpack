@@ -5,159 +5,226 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)](https://minecraft.net)
 [![Forge](https://img.shields.io/badge/Forge-47.4.0-orange)](https://files.minecraftforge.net)
 
-Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
+Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。  
+以下の手順に沿って進めれば、約15分でプレイ開始できます。
 
 ---
 
-## 📋 目次
+## 📋 始め方
 
-1. [Minecraft Java Edition の購入](#-minecraft-java-edition-の購入)
-2. [Hamachi のインストール](#-hamachi-のインストール必須)
-3. [Prism Launcher のインストール](#-prism-launcher-のインストール)
-4. [Modpack のインポート](#-modpack-のインポート)
-5. [メモリ設定（自動設定済み）](#%EF%B8%8F-メモリ設定自動設定済み)
-6. [起動とサーバー接続](#-起動とサーバー接続)
+| ステップ | やること |
+|:--------:|---------|
+| 1 | [Minecraft を購入する](#1--minecraft-を購入する) |
+| 2 | [Hamachi をインストール](#2--hamachi-をインストール) |
+| 3 | [Prism Launcher をインストール](#3--prism-launcher-をインストール) |
+| 4 | [Modpack をインポート](#4--modpack-をインポート) |
+| 5 | [起動して遊ぶ](#5--起動して遊ぶ) |
 
 ---
 
-## 🎮 Minecraft Java Edition の購入
+## 1. 🎮 Minecraft を購入する
 
-このモッドパックを使用するには **Minecraft Java Edition** が必要です。
-
-### 購入方法
-
-1. **[Minecraft 公式サイト](https://www.minecraft.net/ja-jp/store/minecraft-java-bedrock-edition-pc)** にアクセス
+1. **[minecraft.net](https://www.minecraft.net/ja-jp/store/minecraft-java-bedrock-edition-pc)** にアクセス
 2. **「MINECRAFT: JAVA & BEDROCK EDITION」** を購入（約3,960円）
-3. **Microsoft アカウント** でサインイン（持っていない場合は作成）
-4. 購入完了後、アカウントに Minecraft が紐付けられます
+3. **Microsoft アカウント** でサインイン
 
-> 💡 **ヒント**: Java Edition と Bedrock Edition がセットになっています。Mod を使うには **Java Edition** が必要です。
+> 既に Java Edition を持っている？ → ステップ 2 へ
 
-> ⚠️ **注意**: 公式サイト以外からの購入は詐欺の可能性があります。必ず公式サイトから購入してください。
+<details>
+<summary>💡 購入についての詳細</summary>
 
----
+- Java Edition と Bedrock Edition がセットで販売されています
+- Mod を使うには **Java Edition** が必要です
+- **公式サイト以外** からの購入は詐欺の可能性があるので注意
+- Microsoft アカウントがない場合は [account.microsoft.com](https://account.microsoft.com) で無料作成
 
-## 🌐 Hamachi のインストール（必須）
-
-このサーバーは **Hamachi VPN** を使用しています。サーバーに接続するには必ずインストールが必要です。
-
-### ダウンロード
-
-👉 **[https://vpn.net/](https://vpn.net/)** からダウンロード
-
-| OS | 手順 |
-|----|------|
-| **Windows** | `LogMeInHamachi.msi` をダウンロード → インストーラーを実行 |
-| **macOS** | `LogMeInHamachi.dmg` をダウンロード → アプリをインストール |
-
-### アカウント作成とログイン
-
-1. Hamachi を起動
-2. 初回の場合は **「サインアップ」** をクリックして LogMeIn アカウントを作成
-3. メールアドレスとパスワードを登録
-4. 作成したアカウントでログイン
-
-### ネットワークに参加
-
-1. Hamachi のメイン画面で **「ネットワーク」** → **「既存のネットワークに参加」** をクリック
-2. サーバー管理者から教えてもらった以下の情報を入力：
-   - **ネットワーク ID**: （管理者に確認）
-   - **パスワード**: （管理者に確認）
-3. **「参加」** をクリック
-4. ネットワーク一覧に参加したネットワークが表示されれば成功！
-
-> ⚠️ **重要**: Hamachi は Minecraft を起動する前に接続しておいてください
+</details>
 
 ---
 
-## 📥 Prism Launcher のインストール
+## 2. 🌐 Hamachi をインストール
 
-**[Prism Launcher](https://prismlauncher.org/download/)** をダウンロードしてインストール
+サーバーに接続するために **Hamachi VPN** が必要です。全員インストールしてください。
 
-| OS | ダウンロード |
-|----|-------------|
+1. **[vpn.net](https://vpn.net/)** からダウンロード
+2. インストールして起動
+3. LogMeIn アカウントを作成（またはサインイン）
+4. **「ネットワーク」** → **「既存のネットワークに参加」**
+5. **ネットワーク ID** と **パスワード** を入力（サーバー管理者に聞いてください）
+
+> ✅ ネットワーク一覧に表示されれば接続成功！
+
+<details>
+<summary>💡 どのファイルをダウンロード？</summary>
+
+| OS | ファイル |
+|----|---------|
+| Windows | `LogMeInHamachi.msi` |
+| macOS | `LogMeInHamachi.dmg` |
+
+</details>
+
+<details>
+<summary>⚠️ Hamachi に接続できない場合</summary>
+
+1. ファイアウォールで Hamachi がブロックされていないか確認
+2. Hamachi を再起動する
+3. ネットワーク ID とパスワードを再確認
+4. PC を再起動してみる
+
+</details>
+
+---
+
+## 3. 📥 Prism Launcher をインストール
+
+1. **[prismlauncher.org](https://prismlauncher.org/download/)** からダウンロード
+2. インストールして起動
+3. Minecraft アカウントを追加：
+   - 右上の **「アカウント」** → **「アカウントを管理」**
+   - **「Microsoft アカウントを追加」** をクリック
+   - ブラウザでサインイン
+
+<details>
+<summary>💡 OS別ダウンロードリンク</summary>
+
+| OS | リンク |
+|----|-------|
 | Windows | [インストーラー (.exe)](https://prismlauncher.org/download/windows/) |
 | macOS | [DMG](https://prismlauncher.org/download/mac/) |
 | Linux | [AppImage / Flatpak](https://prismlauncher.org/download/linux/) |
 
-### 初回設定
-
-1. Prism Launcher を起動
-2. 言語を **「日本語」** に設定
-3. **Minecraft アカウントを追加**：
-   - 右上の **「アカウント」** → **「アカウントを管理」**
-   - **「Microsoft アカウントを追加」** をクリック
-   - ブラウザでログイン
+</details>
 
 ---
 
-## 📦 Modpack のインポート
+## 4. 📦 Modpack をインポート
 
 1. Prism Launcher で **「起動構成を追加」** をクリック
-2. 左サイドバーで **「インポート」** を選択
-3. **「ローカルファイルへのパスまたは直リンク」** に以下の URL を入力:
+2. 左メニューの **「インポート」** を選択
+3. 以下の URL を貼り付け：
 
 ```
 https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
 ```
 
-4. **「OK」** をクリックで完了！
+4. **「OK」** をクリック
 
-> 📝 **注意**: この時点では Mod はまだダウンロードされません。実際のダウンロードは初回起動時に自動で行われます。
+> 📝 この時点では Mod はまだダウンロードされません。初回起動時に自動でダウンロードされます。
+
+<details>
+<summary>💡 あとでアップデートする方法</summary>
+
+モッドパックが更新されたら、同じ URL で **もう一度インポート** するだけ。常に最新版がこのリンクにあります。
+
+または、ゲームを起動するだけでも OK — Mod は自動的に最新版がダウンロードされます！
+
+</details>
 
 ---
 
-## ⚙️ メモリ設定（自動設定済み）
+## 5. 🚀 起動して遊ぶ
 
-このモッドパックは **メモリ設定が自動で適用** されます：
+1. **Hamachi が接続されていることを確認**（ステップ 2 参照）
+2. Prism Launcher でモッドパックをダブルクリック
+3. Mod のダウンロードを待つ（初回のみ、少し時間がかかります）
+4. タイトル画面で **「マルチプレイ」** → **「ダイレクト接続」**
+5. サーバーアドレスを入力（管理者に Hamachi IP を聞いてください）
+6. **「サーバーに接続」**
 
-| 項目 | 値 |
+> 💡 管理者の Hamachi IP は、Hamachi のネットワーク一覧で名前の横に表示されています。
+
+<details>
+<summary>⚠️ サーバーに接続できない場合</summary>
+
+1. **最も多い原因**: Hamachi が接続されていない → Hamachi を開いて確認
+2. サーバー管理者に最新の IP アドレスを確認
+3. モッドパックが最新か確認（必要なら再インポート）
+
+</details>
+
+<details>
+<summary>⚠️ ゲームが重い・クラッシュする場合</summary>
+
+1. メモリ設定を確認：Prism Launcher → 設定 → Java → 最大メモリが **6144 MB 以上** か確認
+2. PC の他のアプリを閉じて RAM を確保
+3. PC のメモリが 16GB 以上なら、最大メモリを `8192` MB にすると快適
+
+</details>
+
+---
+
+## ⚙️ メモリ設定
+
+メモリは **自動設定済み** です。変更は不要です。
+
+| 設定 | 値 |
 |------|-----|
-| 最小メモリ | 2048 MB (2GB) |
-| 最大メモリ | 6144 MB (6GB) |
+| 最小 | 2048 MB (2 GB) |
+| 最大 | 6144 MB (6 GB) |
 
-> 💡 **ヒント**: PC のメモリが 16GB 以上ある場合は、設定 → Java → 最大メモリを `8192` MB に増やすとより快適です
+<details>
+<summary>💡 メモリを調整したい場合</summary>
 
-> ⚠️ **メモリ不足の場合**: PC のメモリが 8GB 未満の場合、カクつく可能性があります
+Prism Launcher → **設定** → **Java**：
+- **16GB+ のPC**: 最大メモリを `8192` MB に増やすとより快適
+- **8GB のPC**: `6144` MB のまま（デフォルト）で OK
+- **8GB 未満**: カクつく可能性あり。他のアプリを閉じて対処
 
----
-
-## 🚀 起動とサーバー接続
-
-### 起動
-
-1. Prism Launcher で起動構成をダブルクリック
-2. 初回起動時は全ての Mod が自動ダウンロードされます（少し時間がかかります）
-
-### サーバー接続
-
-1. Minecraft のタイトル画面で **「マルチプレイ」**
-2. **「ダイレクト接続」** または **「サーバーを追加」**
-3. サーバーアドレス: **サーバー管理者に確認**（Hamachi の IP アドレス）
-4. **「サーバーに接続」**
-
-> ⚠️ Hamachi に接続していないとサーバーに接続できません
-
-> 💡 **ヒント**: サーバー管理者の Hamachi IP は、Hamachi のネットワーク一覧で管理者の名前の横に表示されています
+</details>
 
 ---
 
 ## 🔄 自動更新の仕組み
 
 ```
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  管理者が更新   │────▶│   GitHub     │────▶│  Discord 通知   │
-│  (git push)     │     │   (自動処理) │     │  「更新あり！」 │
-└─────────────────┘     └──────────────┘     └─────────────────┘
-                                                      │
-                                                      ▼
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  プレイヤーが   │────▶│  Mod 自動    │────▶│  最新 Mod で    │
-│  ゲーム起動     │     │  ダウンロード │     │  プレイ開始！   │
-└─────────────────┘     └──────────────┘     └─────────────────┘
+管理者が更新  →  GitHub が自動処理  →  Discord 通知
+                                          ↓
+ゲームを起動  →  Mod が自動更新  →  最新版でプレイ！
 ```
 
-**プレイヤーがやること:** ゲームを起動するだけ！
+**あなたがやること：** いつもどおりゲームを起動するだけ！
+
+<details>
+<summary>💡 仕組みの詳細</summary>
+
+1. 管理者が GitHub に変更をプッシュすると、**GitHub Action** が自動で新しい `modpack-prism.zip` を作成
+2. Discord 通知が設定されていれば、サーバーに通知が届く
+3. ゲーム起動時に Prism Launcher が Mod の更新を確認・ダウンロード
+4. 常に最新版でプレイできます
+
+</details>
+
+---
+
+## 🎮 操作キー設定
+
+一部のキーがカスタマイズされています：
+
+| 操作 | キー |
+|------|------|
+| スニーク（しゃがむ） | **C** |
+| スプリント（走る） | **左 Shift** |
+| インベントリ | **Tab** |
+| プレイヤーリスト | **\\**（バックスラッシュ） |
+| 航空機から降りる | **E** |
+| TaCZ 操作 | **マウス中ボタン** |
+| TaCZ クロール | **X** |
+
+<details>
+<summary>💡 デフォルトからの変更一覧</summary>
+
+| 操作 | デフォルト | 変更後 |
+|------|-----------|--------|
+| スニーク | Shift | **C** |
+| スプリント | Ctrl | **左 Shift** |
+| インベントリ | E | **Tab** |
+| プレイヤーリスト | Tab | **\\** |
+| 航空機から降りる (Immersive Aircraft) | R | **E** |
+| TaCZ 操作 | O | **マウス中ボタン** |
+| TaCZ クロール | C | **X** |
+
+</details>
 
 ---
 
@@ -172,25 +239,11 @@ https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack
 
 ---
 
-## 🎮 操作キー設定
-
-このモッドパックでは一部のキー設定が変更されています：
-
-| 操作 | デフォルト | 変更後 |
-|------|-----------|--------|
-| スニーク（しゃがむ） | Shift | **C** |
-| スプリント（走る） | Ctrl | **左Shift** |
-| インベントリ | E | **Tab** |
-| プレイヤーリスト | Tab | **\\** (バックスラッシュ) |
-| 航空機から降りる (Immersive Aircraft) | R | **E** |
-| TaCZ 操作 | O | **マウス中ボタン** |
-| TaCZ クロール | C | **X** |
-
----
-
 ## 📋 収録 Mod 一覧
 
-### 🔫 銃火器・戦闘
+<details>
+<summary>🔫 銃火器・戦闘（4 Mod）</summary>
+
 | Mod | 説明 |
 |-----|------|
 | TaCZ (Timeless and Classics Zero) | リアルな銃火器 |
@@ -198,14 +251,22 @@ https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack
 | Superb Warfare | 追加武器 |
 | WWII Machine Guns | 第二次世界大戦の機関銃 |
 
-### 🚗 乗り物
+</details>
+
+<details>
+<summary>🚗 乗り物（3 Mod）</summary>
+
 | Mod | 説明 |
 |-----|------|
 | Immersive Aircraft | 飛行機・グライダー |
 | ASH Vehicles | 車両 |
 | MCSP Military Vehicle | 軍用車両 |
 
-### 🛋️ 家具・建築
+</details>
+
+<details>
+<summary>🛋️ 家具・建築（4 Mod）</summary>
+
 | Mod | 説明 |
 |-----|------|
 | Paladin's Furniture | 家具セット |
@@ -213,26 +274,26 @@ https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack
 | Macaw's シリーズ | 橋、ドア、フェンス、屋根、窓、照明など |
 | ManyIdeas Doors | ドアバリエーション |
 
-### ⚡ パフォーマンス
+</details>
+
+<details>
+<summary>⚡ パフォーマンス・その他（3 Mod）</summary>
+
 | Mod | 説明 |
 |-----|------|
 | Embeddium | 描画最適化（Forge 版 Sodium） |
-
-### 🍳 その他
-| Mod | 説明 |
-|-----|------|
 | Farmer's Delight | 料理拡張 |
 | JEI | レシピ検索 |
 
----
+</details>
 
-## ⚠️ TaCZ 拡張パック（自動配布）
+<details>
+<summary>🔫 TaCZ 拡張パック（自動インストール）</summary>
 
-TaCZ の銃パックは **自動で配布** されます！  
-初回起動時に以下のパックが自動インストールされます：
+初回起動時に自動でインストールされます：
 
-| パック名 | 説明 |
-|----------|------|
+| パック | 説明 |
+|--------|------|
 | A3SQF | 追加銃器 |
 | AsHi | 追加銃器 |
 | BOpack | BO シリーズ銃器 |
@@ -246,35 +307,30 @@ TaCZ の銃パックは **自動で配布** されます！
 | TGWF | 追加銃器 |
 | WW2Pack | 第二次世界大戦銃器 |
 
+</details>
+
 ---
 
-## ❓ トラブルシューティング
+## ❓ その他のトラブルシューティング
 
-### Hamachi に接続できない
-1. ファイアウォールで Hamachi がブロックされていないか確認
-2. Hamachi を再起動してみる
-3. ネットワーク ID とパスワードが正しいか確認
+<details>
+<summary>「Java が見つかりません」エラー</summary>
 
-### 「Java が見つかりません」エラー
-Prism Launcher の設定 → Java → 「自動検出」をクリック
+Prism Launcher → **設定** → **Java** → **「自動検出」** をクリック
 
-### Mod のダウンロードに失敗する
+</details>
+
+<details>
+<summary>Mod のダウンロードに失敗する</summary>
+
 1. インターネット接続を確認
-2. Prism Launcher を再起動してもう一度試す
+2. Prism Launcher を再起動して再試行
 3. ファイアウォールで Prism Launcher がブロックされていないか確認
 
-### サーバーに接続できない
-1. **Hamachi に接続しているか確認**（最も多い原因）
-2. サーバー管理者から最新の IP アドレスを確認
-3. Mod バージョンがサーバーと一致しているか確認（最新版をインポートし直す）
-
-### ゲームが重い・クラッシュする
-1. メモリ設定を確認（最大 6144 MB 以上推奨）
-2. PC の他のアプリを終了してメモリを確保
+</details>
 
 ---
 
 ## 🛠️ コントリビューション
 
-Mod の追加・更新・削除をしたい場合は **[コントリビューションガイド](CONTRIBUTING.ja.md)** を参照してください。
-
+Mod の追加・更新・削除をしたい？ → **[コントリビューションガイド](CONTRIBUTING.ja.md)** を見てください。
