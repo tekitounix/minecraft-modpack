@@ -1,472 +1,280 @@
 # 🎮 Minecraft Modpack (1.20.1 + Forge)
 
+> 🌐 **Language / 言語**: **English** | [日本語](README.ja.md)
+
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)](https://minecraft.net)
 [![Forge](https://img.shields.io/badge/Forge-47.4.0-orange)](https://files.minecraftforge.net)
 
-Minecraft 1.20.1 + Forge 47.4.0 用のカスタムモッドパックです。
+A custom modpack for Minecraft 1.20.1 + Forge 47.4.0.
 
 ---
 
-## 📋 目次
+## 📋 Table of Contents
 
-1. [Minecraft Java Edition の購入](#-minecraft-java-edition-の購入)
-2. [Hamachi のインストール](#-hamachi-のインストール必須)
-3. [Prism Launcher のインストール](#-prism-launcher-のインストール)
-4. [Modpack のインポート](#-modpack-のインポート)
-5. [メモリ設定（重要！）](#%EF%B8%8F-メモリ設定重要)
-6. [起動とサーバー接続](#-起動とサーバー接続)
-
----
-
-## 🎮 Minecraft Java Edition の購入
-
-このモッドパックを使用するには **Minecraft Java Edition** が必要です。
-
-### 購入方法
-
-1. **[Minecraft 公式サイト](https://www.minecraft.net/ja-jp/store/minecraft-java-bedrock-edition-pc)** にアクセス
-2. **「MINECRAFT: JAVA & BEDROCK EDITION」** を購入（約3,960円）
-3. **Microsoft アカウント** でサインイン（持っていない場合は作成）
-4. 購入完了後、アカウントに Minecraft が紐付けられます
-
-> 💡 **ヒント**: Java Edition と Bedrock Edition がセットになっています。Mod を使うには **Java Edition** が必要です。
-
-> ⚠️ **注意**: 公式サイト以外からの購入は詐欺の可能性があります。必ず公式サイトから購入してください。
+1. [Purchase Minecraft Java Edition](#-purchase-minecraft-java-edition)
+2. [Install Hamachi (Required)](#-install-hamachi-required)
+3. [Install Prism Launcher](#-install-prism-launcher)
+4. [Import the Modpack](#-import-the-modpack)
+5. [Memory Settings (Auto-configured)](#%EF%B8%8F-memory-settings-auto-configured)
+6. [Launch & Connect to Server](#-launch--connect-to-server)
 
 ---
 
-## 🌐 Hamachi のインストール（必須）
+## 🎮 Purchase Minecraft Java Edition
 
-このサーバーは **Hamachi VPN** を使用しています。サーバーに接続するには必ずインストールが必要です。
+You need **Minecraft Java Edition** to use this modpack.
 
-### ダウンロード
+### How to Purchase
 
-👉 **[https://vpn.net/](https://vpn.net/)** からダウンロード
+1. Visit the **[Minecraft Official Site](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc)**
+2. Purchase **"MINECRAFT: JAVA & BEDROCK EDITION"**
+3. Sign in with your **Microsoft account** (create one if you don't have one)
+4. After purchase, Minecraft will be linked to your account
 
-| OS | 手順 |
-|----|------|
-| **Windows** | `LogMeInHamachi.msi` をダウンロード → インストーラーを実行 |
-| **macOS** | `LogMeInHamachi.dmg` をダウンロード → アプリをインストール |
+> 💡 **Tip**: Java Edition and Bedrock Edition are bundled together. You need **Java Edition** for mods.
 
-### アカウント作成とログイン
-
-1. Hamachi を起動
-2. 初回の場合は **「サインアップ」** をクリックして LogMeIn アカウントを作成
-3. メールアドレスとパスワードを登録
-4. 作成したアカウントでログイン
-
-### ネットワークに参加
-
-1. Hamachi のメイン画面で **「ネットワーク」** → **「既存のネットワークに参加」** をクリック
-2. サーバー管理者から教えてもらった以下の情報を入力：
-   - **ネットワーク ID**: （管理者に確認）
-   - **パスワード**: （管理者に確認）
-3. **「参加」** をクリック
-4. ネットワーク一覧に参加したネットワークが表示されれば成功！
-
-> ⚠️ **重要**: Hamachi は Minecraft を起動する前に接続しておいてください
+> ⚠️ **Warning**: Only purchase from the official site. Third-party sellers may be scams.
 
 ---
 
-## 📥 Prism Launcher のインストール
+## 🌐 Install Hamachi (Required)
 
-**[Prism Launcher](https://prismlauncher.org/download/)** をダウンロードしてインストール
+This server uses **Hamachi VPN**. You must install it to connect to the server.
 
-| OS | ダウンロード |
+### Download
+
+👉 Download from **[https://vpn.net/](https://vpn.net/)**
+
+| OS | Instructions |
 |----|-------------|
-| Windows | [インストーラー (.exe)](https://prismlauncher.org/download/windows/) |
+| **Windows** | Download `LogMeInHamachi.msi` → Run the installer |
+| **macOS** | Download `LogMeInHamachi.dmg` → Install the app |
+
+### Create Account & Log In
+
+1. Launch Hamachi
+2. If it's your first time, click **"Sign up"** to create a LogMeIn account
+3. Register with your email and password
+4. Log in with your new account
+
+### Join the Network
+
+1. In Hamachi, click **"Network"** → **"Join an existing network"**
+2. Enter the information provided by the server admin:
+   - **Network ID**: (ask the admin)
+   - **Password**: (ask the admin)
+3. Click **"Join"**
+4. If the network appears in your list, you're connected!
+
+> ⚠️ **Important**: Make sure Hamachi is connected before launching Minecraft
+
+---
+
+## 📥 Install Prism Launcher
+
+Download and install **[Prism Launcher](https://prismlauncher.org/download/)**
+
+| OS | Download |
+|----|----------|
+| Windows | [Installer (.exe)](https://prismlauncher.org/download/windows/) |
 | macOS | [DMG](https://prismlauncher.org/download/mac/) |
 | Linux | [AppImage / Flatpak](https://prismlauncher.org/download/linux/) |
 
-### 初回設定
+### Initial Setup
 
-1. Prism Launcher を起動
-2. 言語を **「日本語」** に設定
-3. **Minecraft アカウントを追加**：
-   - 右上の **「アカウント」** → **「アカウントを管理」**
-   - **「Microsoft アカウントを追加」** をクリック
-   - ブラウザでログイン
+1. Launch Prism Launcher
+2. Set the language to **English** (or your preferred language)
+3. **Add your Minecraft account**:
+   - Click **"Accounts"** (top right) → **"Manage Accounts"**
+   - Click **"Add Microsoft"**
+   - Log in via the browser
 
 ---
 
-## 📦 Modpack のインポート
+## 📦 Import the Modpack
 
-1. Prism Launcher で **「起動構成を追加」** をクリック
-2. 左サイドバーで **「インポート」** を選択
-3. **「ローカルファイルへのパスまたは直リンク」** に以下の URL を入力:
+1. In Prism Launcher, click **"Add Instance"**
+2. Select **"Import"** in the left sidebar
+3. Paste the following URL into **"Local file or link to a direct download"**:
 
 ```
 https://github.com/tekitounix/minecraft-modpack/releases/latest/download/modpack-prism.zip
 ```
 
-4. **「OK」** をクリックで完了！
+4. Click **"OK"** and you're done!
 
-> 🇺🇸 **English UI**: Add Instance → Import → Paste URL in "Local file or link to a direct download" → OK
-
----
-
-## ⚙️ メモリ設定（自動設定済み）
-
-このモッドパックは **メモリ設定が自動で適用** されます：
-
-| 項目 | 値 |
-|------|-----|
-| 最小メモリ | 2048 MB (2GB) |
-| 最大メモリ | 6144 MB (6GB) |
-
-> 💡 **ヒント**: PC のメモリが 16GB 以上ある場合は、設定 → Java → 最大メモリを `8192` MB に増やすとより快適です
-
-> ⚠️ **メモリ不足の場合**: PC のメモリが 8GB 未満の場合、カクつく可能性があります
+> 📝 **Note**: Mods are not downloaded at this point. The actual download happens automatically when you launch the game for the first time.
 
 ---
 
-## 🚀 起動とサーバー接続
+## ⚙️ Memory Settings (Auto-configured)
 
-### 起動
+This modpack comes with **pre-configured memory settings**:
 
-1. Prism Launcher で起動構成をダブルクリック
-2. 初回起動時は全ての Mod が自動ダウンロードされます（少し時間がかかります）
+| Setting | Value |
+|---------|-------|
+| Minimum Memory | 2048 MB (2GB) |
+| Maximum Memory | 6144 MB (6GB) |
 
-### サーバー接続
+> 💡 **Tip**: If your PC has 16GB+ RAM, you can increase the max memory to `8192` MB in Settings → Java for smoother performance
 
-1. Minecraft のタイトル画面で **「マルチプレイ」**
-2. **「ダイレクト接続」** または **「サーバーを追加」**
-3. サーバーアドレス: **サーバー管理者に確認**（Hamachi の IP アドレス）
-4. **「サーバーに接続」**
-
-> ⚠️ Hamachi に接続していないとサーバーに接続できません
-
-> 💡 **ヒント**: サーバー管理者の Hamachi IP は、Hamachi のネットワーク一覧で管理者の名前の横に表示されています
+> ⚠️ **Low RAM**: If your PC has less than 8GB RAM, you may experience lag
 
 ---
 
-## 🔄 自動更新の仕組み
+## 🚀 Launch & Connect to Server
+
+### Launch
+
+1. Double-click the instance in Prism Launcher
+2. On first launch, all mods will be downloaded automatically (this may take a moment)
+
+### Connect to Server
+
+1. From the Minecraft title screen, click **"Multiplayer"**
+2. Click **"Direct Connection"** or **"Add Server"**
+3. Server address: **Ask the server admin** (Hamachi IP address)
+4. Click **"Join Server"**
+
+> ⚠️ You cannot connect to the server without being connected to Hamachi
+
+> 💡 **Tip**: The server admin's Hamachi IP is shown next to their name in the Hamachi network list
+
+---
+
+## 🔄 How Auto-Updates Work
 
 ```
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  管理者が更新   │────▶│   GitHub     │────▶│  Discord 通知   │
-│  (git push)     │     │   (自動処理) │     │  「更新あり！」 │
+│  Admin pushes   │────▶│   GitHub     │────▶│ Discord notifies│
+│  an update      │     │  (auto-build)│     │ "Update ready!" │
 └─────────────────┘     └──────────────┘     └─────────────────┘
                                                       │
                                                       ▼
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  プレイヤーが   │────▶│  Mod 自動    │────▶│  最新 Mod で    │
-│  ゲーム起動     │     │  ダウンロード │     │  プレイ開始！   │
+│  Player launches│────▶│  Mods auto-  │────▶│  Play with the  │
+│  the game       │     │  download    │     │  latest mods!   │
 └─────────────────┘     └──────────────┘     └─────────────────┘
 ```
 
-**プレイヤーがやること:** ゲームを起動するだけ！
+**All you need to do:** Just launch the game!
 
 ---
 
-## 🖥️ サーバー情報
+## 🖥️ Server Info
 
-| 項目 | 値 |
-|------|-----|
-| **サーバー IP** | サーバー管理者に確認（Hamachi IP） |
-| **ポート** | `25565`（デフォルト） |
-| **ネットワーク** | Hamachi VPN 必須 |
-| **バージョン** | Minecraft 1.20.1 + Forge 47.4.0 |
-
----
-
-## 🎮 操作キー設定
-
-このモッドパックでは一部のキー設定が変更されています：
-
-| 操作 | デフォルト | 変更後 |
-|------|-----------|--------|
-| スニーク（しゃがむ） | Shift | **C** |
-| スプリント（走る） | Ctrl | **左Shift** |
-| インベントリ | E | **Tab** |
-| プレイヤーリスト | Tab | **\\** (バックスラッシュ) |
-| 航空機から降りる (Immersive Aircraft) | R | **E** |
-| TaCZ 操作 | O | **マウス中ボタン** |
-| TaCZ クロール | C | **X** |
+| Item | Value |
+|------|-------|
+| **Server IP** | Ask the server admin (Hamachi IP) |
+| **Port** | `25565` (default) |
+| **Network** | Hamachi VPN required |
+| **Version** | Minecraft 1.20.1 + Forge 47.4.0 |
 
 ---
 
-## 📋 収録 Mod 一覧
+## 🎮 Key Bindings
 
-### 🔫 銃火器・戦闘
-| Mod | 説明 |
-|-----|------|
-| TaCZ (Timeless and Classics Zero) | リアルな銃火器 |
-| TaCZ Tweaks | TaCZ の調整・拡張 |
-| Superb Warfare | 追加武器 |
-| WWII Machine Guns | 第二次世界大戦の機関銃 |
+Some key bindings have been changed in this modpack:
 
-### 🚗 乗り物
-| Mod | 説明 |
-|-----|------|
-| Immersive Aircraft | 飛行機・グライダー |
-| ASH Vehicles | 車両 |
-| MCSP Military Vehicle | 軍用車両 |
-
-### 🛋️ 家具・建築
-| Mod | 説明 |
-|-----|------|
-| Paladin's Furniture | 家具セット |
-| Refurbished Furniture | モダン家具 |
-| Macaw's シリーズ | 橋、ドア、フェンス、屋根、窓、照明など |
-| ManyIdeas Doors | ドアバリエーション |
-
-### 🍳 その他
-| Mod | 説明 |
-|-----|------|
-| Farmer's Delight | 料理拡張 |
-| Embeddium | パフォーマンス改善 |
-| Oculus | シェーダー対応 |
-| JEI | レシピ検索 |
+| Action | Default | Changed To |
+|--------|---------|------------|
+| Sneak | Shift | **C** |
+| Sprint | Ctrl | **Left Shift** |
+| Inventory | E | **Tab** |
+| Player List | Tab | **\\** (Backslash) |
+| Dismount Aircraft (Immersive Aircraft) | R | **E** |
+| TaCZ Action | O | **Middle Mouse Button** |
+| TaCZ Crawl | C | **X** |
 
 ---
 
-## ⚠️ TaCZ 拡張パック（自動配布）
+## 📋 Included Mods
 
-TaCZ の銃パックは **自動で配布** されます！  
-初回起動時に以下のパックが自動インストールされます：
+### 🔫 Firearms & Combat
+| Mod | Description |
+|-----|-------------|
+| TaCZ (Timeless and Classics Zero) | Realistic firearms |
+| TaCZ Tweaks | TaCZ adjustments & extensions |
+| Superb Warfare | Additional weapons |
+| WWII Machine Guns | World War II machine guns |
 
-| パック名 | 説明 |
-|----------|------|
-| A3SQF | 追加銃器 |
-| AsHi | 追加銃器 |
-| BOpack | BO シリーズ銃器 |
-| CoD_BO_TACZ | Call of Duty Black Ops 銃器 |
-| FNP90TR | FN P90 銃器 |
-| Gucci | Gucci Vuitton アタッチメント |
-| LesRaisins | LesRaisins 戦術装備 |
-| NVGs | ナイトビジョン装備 |
-| T_Attachments | 追加アタッチメント |
-| Tarkov | Escape from Tarkov 銃器 |
-| TGWF | 追加銃器 |
-| WW2Pack | 第二次世界大戦銃器 |
+### 🚗 Vehicles
+| Mod | Description |
+|-----|-------------|
+| Immersive Aircraft | Planes & gliders |
+| ASH Vehicles | Vehicles |
+| MCSP Military Vehicle | Military vehicles |
 
----
+### 🛋️ Furniture & Building
+| Mod | Description |
+|-----|-------------|
+| Paladin's Furniture | Furniture set |
+| Refurbished Furniture | Modern furniture |
+| Macaw's Series | Bridges, doors, fences, roofs, windows, lighting, etc. |
+| ManyIdeas Doors | Door variations |
 
-## ❓ トラブルシューティング
+### ⚡ Performance
+| Mod | Description |
+|-----|-------------|
+| Embeddium | Rendering optimization (Sodium for Forge) |
 
-### Hamachi に接続できない
-1. ファイアウォールで Hamachi がブロックされていないか確認
-2. Hamachi を再起動してみる
-3. ネットワーク ID とパスワードが正しいか確認
-
-### 「Java が見つかりません」エラー
-Prism Launcher の設定 → Java → 「自動検出」をクリック
-
-### Mod のダウンロードに失敗する
-1. インターネット接続を確認
-2. Prism Launcher を再起動してもう一度試す
-3. ファイアウォールで Prism Launcher がブロックされていないか確認
-
-### サーバーに接続できない
-1. **Hamachi に接続しているか確認**（最も多い原因）
-2. サーバー管理者から最新の IP アドレスを確認
-3. Mod バージョンがサーバーと一致しているか確認（最新版をインポートし直す）
-
-### ゲームが重い・クラッシュする
-1. メモリ設定を確認（最大 6144 MB 以上推奨）
-2. シェーダーを無効にしてみる（Oculus 設定）
-3. PC の他のアプリを終了してメモリを確保
+### 🍳 Other
+| Mod | Description |
+|-----|-------------|
+| Farmer's Delight | Cooking expansion |
+| JEI | Recipe browser |
 
 ---
 
-## 🛠️ 管理者向け情報
+## ⚠️ TaCZ Expansion Packs (Auto-distributed)
 
-### packwiz のインストール
+TaCZ gun packs are **distributed automatically**!  
+The following packs are auto-installed on first launch:
 
-Mod 管理には **packwiz** が必要です。
-
-```bash
-# Go をインストール（未インストールの場合）
-brew install go
-
-# packwiz をインストール
-go install github.com/packwiz/packwiz@latest
-
-# PATH に追加（~/.zshrc に追記）
-echo 'export PATH="$HOME/go/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-
-# 確認
-packwiz help
-```
-
----
-
-### Mod の追加
-
-#### Modrinth / CurseForge から追加（推奨）
-
-```bash
-cd modpack
-
-# Modrinth から検索して追加
-packwiz modrinth install <mod-name>
-
-# CurseForge から追加
-packwiz curseforge install <mod-name>
-
-# 例: JEI を追加
-packwiz modrinth install jei
-```
-
-#### 直接 jar ファイルを追加（Modrinth/CurseForge にない場合）
-
-```bash
-cd modpack
-
-# jar ファイルを mods/ に配置
-cp ~/Downloads/some-mod-1.0.0.jar mods/
-
-# インデックスを更新（.pw.toml は生成されない、jar がそのまま配布される）
-packwiz refresh
-```
+| Pack Name | Description |
+|-----------|-------------|
+| A3SQF | Additional firearms |
+| AsHi | Additional firearms |
+| BOpack | BO series firearms |
+| CoD_BO_TACZ | Call of Duty Black Ops firearms |
+| FNP90TR | FN P90 firearm |
+| Gucci | Gucci Vuitton attachments |
+| LesRaisins | LesRaisins tactical equipment |
+| NVGs | Night vision equipment |
+| T_Attachments | Additional attachments |
+| Tarkov | Escape from Tarkov firearms |
+| TGWF | Additional firearms |
+| WW2Pack | World War II firearms |
 
 ---
 
-### Mod の更新
+## ❓ Troubleshooting
 
-```bash
-cd modpack
+### Can't connect to Hamachi
+1. Check if Hamachi is blocked by your firewall
+2. Try restarting Hamachi
+3. Verify the Network ID and password are correct
 
-# 特定の Mod を更新
-packwiz update <mod-name>
+### "Java not found" error
+Go to Prism Launcher Settings → Java → Click "Auto-detect"
 
-# 全 Mod を一括更新
-packwiz update --all
+### Mod download fails
+1. Check your internet connection
+2. Restart Prism Launcher and try again
+3. Check if Prism Launcher is blocked by your firewall
 
-# 更新可能な Mod を確認（更新はしない）
-packwiz update --all --dry-run
-```
+### Can't connect to server
+1. **Make sure you're connected to Hamachi** (most common issue)
+2. Get the latest IP address from the server admin
+3. Ensure your mod versions match the server (re-import the latest modpack)
 
----
-
-### Mod の削除
-
-```bash
-cd modpack
-
-# Mod を削除
-packwiz remove <mod-name>
-
-# または直接ファイルを削除して refresh
-rm mods/<mod-name>.pw.toml
-packwiz refresh
-```
+### Game is laggy or crashes
+1. Check memory settings (at least 6144 MB max recommended)
+2. Close other apps to free up memory
 
 ---
 
-### TaCZ 銃パックの追加・更新
+## 🛠️ Contributing
 
-TaCZ の銃パック（.zip ファイル）は `tacz/` フォルダに配置します。
+Want to add, update, or remove mods? See the **[Contributing Guide](CONTRIBUTING.md)** for the full workflow.
 
-#### 新しい銃パックを追加
-
-```bash
-cd modpack
-
-# 銃パックを tacz/ に配置
-cp ~/Downloads/NewGunPack-v1.0.zip tacz/
-
-# インデックスを更新
-packwiz refresh
-```
-
-#### 銃パックを更新
-
-```bash
-cd modpack
-
-# 古いファイルを削除
-rm tacz/OldGunPack-v1.0.zip
-
-# 新しいファイルを配置
-cp ~/Downloads/OldGunPack-v1.1.zip tacz/
-
-# インデックスを更新
-packwiz refresh
-```
-
-#### 銃パックを削除
-
-```bash
-cd modpack
-rm tacz/<gunpack-name>.zip
-packwiz refresh
-```
-
----
-
-### 設定ファイルの変更
-
-`config/` 内のファイルを編集後、`packwiz refresh` は不要です（そのまま push すればOK）。
-
-```bash
-# 例: TaCZ Tweaks の設定を変更
-vim config/tacztweaks.json
-
-# そのままコミット
-git add -A && git commit -m "Update config" && git push
-```
-
----
-
-### 変更の反映
-
-```bash
-cd modpack
-
-# 変更をコミットしてプッシュ
-git add -A && git commit -m "Add new mod" && git push
-```
-
-push すると：
-1. GitHub Actions が起動
-2. `modpack-prism.zip` を自動生成
-3. GitHub Releases に自動アップロード
-4. **プレイヤーは次回起動時に自動更新**
-
----
-
-### ディレクトリ構成
-
-```
-modpack/
-├── .github/workflows/    # GitHub Actions（自動リリース）
-├── mods/                 # Mod 定義ファイル (.pw.toml, .jar)
-├── tacz/                 # TaCZ 銃パック (.zip)
-├── config/               # Mod 設定ファイル
-├── options.txt           # キー設定
-├── pack.toml             # Packwiz メイン設定
-├── index.toml            # Mod インデックス（自動生成）
-└── README.md
-```
-
----
-
-### トラブルシューティング（管理者向け）
-
-#### `packwiz refresh` でエラーが出る
-
-```bash
-# キャッシュをクリア
-rm -rf ~/.cache/packwiz
-
-# 再実行
-packwiz refresh
-```
-
-#### 特定の Mod が更新されない
-
-```bash
-# .pw.toml を削除して再追加
-rm mods/<mod-name>.pw.toml
-packwiz modrinth install <mod-name>
-```
-
-#### index.toml のハッシュが合わない
-
-```bash
-# インデックスを再生成
-packwiz refresh --force
-```
