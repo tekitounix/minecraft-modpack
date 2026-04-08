@@ -162,10 +162,33 @@ packwiz remove <mod-name>
 
 ### TaCZ 銃パックの管理
 
-銃パックは `tacz/` フォルダに配置します：
+銃パックは `tacz/` フォルダに配置します。CurseForge にあるパックと手動配置パックで手順が異なります。
 
-1. **追加**: `.zip` ファイルを `tacz/` にコピーしてから `packwiz refresh` を実行
-2. **削除**: `tacz/` から `.zip` ファイルを削除してから `packwiz refresh` を実行
+#### CurseForge のパック（`.pw.toml` で管理）
+
+```bash
+# 追加（.pw.toml が tacz/ に自動生成される）
+packwiz curseforge install --meta-folder tacz <URL またはスラッグ>
+
+# 更新（単体）
+packwiz update <パック名>
+
+# 更新（全パック一括）
+packwiz update --all
+
+# 削除
+packwiz remove <パック名>
+```
+
+#### 手動配置パック（`.zip` を直接管理）
+
+CurseForge / Modrinth に無いパックはこちら：
+
+1. **追加**: `.zip` を `tacz/` にコピー → `packwiz refresh`
+2. **更新**: 古い `.zip` を新しいファイルに差し替え → `packwiz refresh`
+3. **削除**: `.zip` を `tacz/` から削除 → `packwiz refresh`
+
+> 💡 手動 `.zip` は Git で直接追跡されるためリポジトリサイズが増えます。CurseForge にあるパックは必ず上の方法を使ってください。
 
 ### 設定ファイルの変更
 

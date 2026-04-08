@@ -162,10 +162,33 @@ packwiz remove <mod-name>
 
 ### Manage TaCZ Gun Packs
 
-Gun packs go in the `tacz/` folder:
+Gun packs go in the `tacz/` folder. The process differs depending on whether the pack is on CurseForge or manually placed.
 
-1. **Add**: Copy the `.zip` file into `tacz/`, then run `packwiz refresh`
-2. **Remove**: Delete the `.zip` file from `tacz/`, then run `packwiz refresh`
+#### CurseForge Packs (managed via `.pw.toml`)
+
+```bash
+# Add (creates a .pw.toml in tacz/ automatically)
+packwiz curseforge install --meta-folder tacz <URL or slug>
+
+# Update (single pack)
+packwiz update <pack-name>
+
+# Update (all packs at once)
+packwiz update --all
+
+# Remove
+packwiz remove <pack-name>
+```
+
+#### Manual Packs (`.zip` placed directly)
+
+For packs not available on CurseForge / Modrinth:
+
+1. **Add**: Copy the `.zip` into `tacz/`, then run `packwiz refresh`
+2. **Update**: Replace the old `.zip` with the new file, then run `packwiz refresh`
+3. **Remove**: Delete the `.zip` from `tacz/`, then run `packwiz refresh`
+
+> 💡 Manual `.zip` files are tracked directly by Git, increasing repository size. Always use the CurseForge method above when the pack is available there.
 
 ### Change Config Files
 
